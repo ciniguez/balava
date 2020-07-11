@@ -1,0 +1,482 @@
+<HTML>
+<HEAD>
+  <TITLE>Animaciones CSS.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Carlos, Mapa Conceptual, cmap, CmapTools, IHMC, Animaciones CSS,  SHORTHAND,  varios keyframes %,  from ... to,  ITERACION animation-iteration-count,  ????,  ease-out,  ANIMACIONES CSS,  ????,  forwards,  ????,  RETARDO animation-delay,  Hoja de Estilos,  numero segundos,  alternate,  numero de iteraciones,  MODO DE LLENADO animation-fill-mode,  ????,  alternate-reverse,  Estilo de Elemento,  normal">
+  <meta NAME = "DESCRIPTION"        CONTENT = "Este Cmap, tiene información relacionada con: Animaciones CSS, Estilo de Elemento propiedades posibles RETARDO animation-delay, MODO DE LLENADO animation-fill-mode valor ????, Hoja de Estilos incluye Estilo de Elemento, Estilo de Elemento propiedades posibles SHORTHAND, Estilo de Elemento propiedades posibles VELOCIDAD animation-timing-function, DURACION animation-duration valor ????, DIRECCION animation-direction valor ????, Hoja de Estilos incluye Keyframe, ANIMACIONES CSS consiste en Elemento HTML, ANIMACIONES CSS consiste en Hoja de Estilos, Estilo de Elemento propiedades posibles MODO DE LLENADO animation-fill-mode, Estilo de Elemento propiedades posibles DIRECCION animation-direction, Keyframe definido por from ... to, VELOCIDAD animation-timing-function valor ????, Estilo de Elemento propiedades posibles ITERACION animation-iteration-count, ITERACION animation-iteration-count valor ????, RETARDO animation-delay valor ????, Estilo de Elemento propiedades posibles DURACION animation-duration, Keyframe definido por varios keyframes %, Estilo de Elemento referencia a Keyframe">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 4.11, http://cmap.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport@ihmc.us
+    //  Date: 12/14/2006
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.layerX;
+	    document.getElementById(popupName).style.top = event.layerY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+Este Cmap, tiene información relacionada con: Animaciones CSS, Estilo de Elemento propiedades posibles RETARDO animation-delay, MODO DE LLENADO animation-fill-mode valor ????, Hoja de Estilos incluye Estilo de Elemento, Estilo de Elemento propiedades posibles SHORTHAND, Estilo de Elemento propiedades posibles VELOCIDAD animation-timing-function, DURACION animation-duration valor ????, DIRECCION animation-direction valor ????, Hoja de Estilos incluye Keyframe, ANIMACIONES CSS consiste en Elemento HTML, ANIMACIONES CSS consiste en Hoja de Estilos, Estilo de Elemento propiedades posibles MODO DE LLENADO animation-fill-mode, Estilo de Elemento propiedades posibles DIRECCION animation-direction, Keyframe definido por from ... to, VELOCIDAD animation-timing-function valor ????, Estilo de Elemento propiedades posibles ITERACION animation-iteration-count, ITERACION animation-iteration-count valor ????, RETARDO animation-delay valor ????, Estilo de Elemento propiedades posibles DURACION animation-duration, Keyframe definido por varios keyframes %, Estilo de Elemento referencia a Keyframe
+
+</noscript>
+
+<map name="Animaciones CSS.html">
+  <area shape="rect"
+        href="1VYFR8RFSI2DYMN9CI172ItextIhtml"
+        onClick="popUpEvt(event,'1VYFR8RFSI2DYMN9CI172ItextIhtml'); return false;"
+        coords="1171,278,1189,296">
+  <area shape="rect"
+        href="1VYFR1XM2I7FRRZNIQFItextIhtml"
+        onClick="popUpEvt(event,'1VYFR1XM2I7FRRZNIQFItextIhtml'); return false;"
+        coords="195,350,213,368">
+  <area shape="rect"
+        href="1VYFR1J2DI2CBFRLINZItextIhtml"
+        onClick="popUpEvt(event,'1VYFR1J2DI2CBFRLINZItextIhtml'); return false;"
+        coords="31,348,49,366">
+  <area shape="rect"
+        href="1VYFS2WH6I1X857WLI51DItextIhtml"
+        onClick="popUpEvt(event,'1VYFS2WH6I1X857WLI51DItextIhtml'); return false;"
+        coords="1539,517,1557,535">
+  <area shape="rect"
+        href="1VYFV0VJYI2088V6MI88YItextIhtml"
+        onClick="popUpEvt(event,'1VYFV0VJYI2088V6MI88YItextIhtml'); return false;"
+        coords="385,475,403,493">
+  <area shape="rect"
+        href="1VYFS017JI3WV62DI4SVItextIhtml"
+        onClick="popUpEvt(event,'1VYFS017JI3WV62DI4SVItextIhtml'); return false;"
+        coords="1069,517,1087,535">
+  <area shape="rect"
+        href="1VYFS4V5GI1BLXKMRI554ItextIhtml"
+        onClick="popUpEvt(event,'1VYFS4V5GI1BLXKMRI554ItextIhtml'); return false;"
+        coords="841,474,859,492">
+  <area shape="rect"
+        href="1VYFS08Z5I1LJT3NDI4TNItextIhtml"
+        onClick="popUpEvt(event,'1VYFS08Z5I1LJT3NDI4TNItextIhtml'); return false;"
+        coords="1069,609,1087,627">
+  <area shape="rect"
+        href="1VYFRT6QZI4DGBJ8I4K2ItextIhtml"
+        onClick="popUpEvt(event,'1VYFRT6QZI4DGBJ8I4K2ItextIhtml'); return false;"
+        coords="1306,702,1324,720">
+  <area shape="rect"
+        href="1VYFS350CI252JXX6I525ItextIhtml"
+        onClick="popUpEvt(event,'1VYFS350CI252JXX6I525ItextIhtml'); return false;"
+        coords="1539,567,1557,585">
+  <area shape="rect"
+        href="1VYFS3DV5I12WL59QI52ZItextIhtml"
+        onClick="popUpEvt(event,'1VYFS3DV5I12WL59QI52ZItextIhtml'); return false;"
+        coords="1539,617,1557,635">
+  <area shape="rect"
+        href="1VYFRZVMSIHW69B2I4S3ItextIhtml"
+        onClick="popUpEvt(event,'1VYFRZVMSIHW69B2I4S3ItextIhtml'); return false;"
+        coords="1069,471,1087,489">
+  <area shape="rect"
+        href="1VYFS5C5KI168YZ2ZI56QItextIhtml"
+        onClick="popUpEvt(event,'1VYFS5C5KI168YZ2ZI56QItextIhtml'); return false;"
+        coords="841,521,859,539">
+  <area shape="rect"
+        href="1VYFTGYV0I12RSZ0ZI7S6ItextIhtml"
+        onClick="popUpEvt(event,'1VYFTGYV0I12RSZ0ZI7S6ItextIhtml'); return false;"
+        coords="613,475,631,493">
+  <area shape="rect"
+        href="1VYFRR77JI20PP2MKI4J1ItextIhtml"
+        onClick="popUpEvt(event,'1VYFRR77JI20PP2MKI4J1ItextIhtml'); return false;"
+        coords="1306,472,1324,490">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Animaciones CSS.html"
+             SRC="Animaciones CSS.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1VYFR8RFSI2DYMN9CI172ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation5 "TITLE="">
+      shorthand
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFR1XM2I7FRRZNIQFItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3 "TITLE="">
+      keyframes
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFR1J2DI2CBFRLINZItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes "TITLE="">
+      W3C-School
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS2WH6I1X857WLI51DItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode "TITLE="">
+      forward
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFV0VJYI2088V6MI88YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3 "TITLE="">
+      keyframes
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS017JI3WV62DI4SVItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-direction "TITLE="">
+      alternate
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS4V5GI1BLXKMRI554ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count "TITLE="">
+      iteraciones
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS08Z5I1LJT3NDI4TNItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-direction2 "TITLE="">
+      alternate-reverse
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFRT6QZI4DGBJ8I4K2ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_cubic-bezier "TITLE="">
+      beizer
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS350CI252JXX6I525ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode2 "TITLE="">
+      backwards
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS3DV5I12WL59QI52ZItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode3 "TITLE="">
+      both
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFRZVMSIHW69B2I4S3ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-direction3 "TITLE="">
+      reverse
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFS5C5KI168YZ2ZI56QItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count2 "TITLE="">
+      infinite
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFTGYV0I12RSZ0ZI7S6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-delay "TITLE="">
+      delay
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1VYFRR77JI20PP2MKI4J1ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed "TITLE="">
+      speed
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
