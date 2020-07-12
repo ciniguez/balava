@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: #556699;
+            border: 1px solid #000000;
+            /*transition: all 0.5s ease 0.5s;*/
+            transform-origin: top left;
+            transition: transform 3s;
+        }
+
+        /* MOVERSE (translación)*/
+        div:nth-child(1) {
+            transform: translate(500px, 0);
+        }
+
+        /* ROTACION */
+        div:nth-child(2) {
+            transform: rotate(-90deg);
+            /*transform: rotate(-45deg);*/
+        }
+
+        /* ESCALAR */
+        /* Escalar dos veces el ancho y tres veces el alto*/
+        div:nth-child(3) {
+            transform: scale(0.5, 0.5);
+        }
+
+        /* INCLINAR */
+        div:nth-child(4) {
+            /*transform: skew(5deg); /*solo en x*/
+            transform: skew(0deg, 5deg);
+            /*en x e y*/
+        }
+
+        /* MATRIX */
+        /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+        div:nth-child(5) {
+            transform: matrix(1, 0, 0, 1, 300, 0);
+        }
+    </style>>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>uno</div>
+    <div>dos</div>
+    <div>tres</div>
+    <div>cuatro</div>
+    <div>cinco</div>
+</body>
+
+</html>
