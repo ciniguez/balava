@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        div.animacion {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: yellow;
+                width:200px;
+                height: 100px;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+    </style>
+    <title>Transformaciones Ejemplo</title>
+</head>
+
+<body>
+    <input type="button" value="Actualizar" onclick="location.reload()"/>
+    <div class="animacion"></div>
+</body>
+
+</html>
