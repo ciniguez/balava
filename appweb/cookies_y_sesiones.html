@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Protocolo HTTP | El nacimiento de la Web </title>
+<title>Cookies y Sesiones | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -16,10 +16,10 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-34"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-170"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">El nacimiento de la Web</div></header>
+<header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">BIMESTRE 1</a></li>
@@ -45,59 +45,56 @@
    </li>
    <li class="current-page-parent"><a href="capitulo_2__protocolo_http.html" class="current-page-parent daddy">CAPITULO 2 - PROTOCOLO HTTP</a>
    <ul>
-      <li class="current-page-parent"><a href="protocolo_http.html" class="current-page-parent daddy">Protocolo HTTP</a>
-      <ul>
-         <li><a href="introduccin.html" class="daddy">Introducción</a>
-         <ul class="other-section">
-            <li><a href="modelo_clienteservidor.html" class="no-ch">Modelo Cliente-Servidor</a></li>
-            <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
-         </ul>
-         </li>
-         <li id="active"><a href="protocolo_http0.html" class="active daddy">Protocolo HTTP</a>
-         <ul>
-            <li><a href="dinamismo_del_protocolo_http.html" class="no-ch">Dinamismo del protocolo HTTP</a></li>
-            <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
-            <li><a href="mensajes_http_la_solicitud.html" class="no-ch">Mensajes HTTP: La solicitud</a></li>
-            <li><a href="mensajes_http_la_respuesta.html" class="no-ch">Mensajes HTTP: La respuesta</a></li>
-         </ul>
-         </li>
-         <li><a href="la_uri.html" class="daddy">La URI</a>
-         <ul class="other-section">
-            <li><a href="sintaxis.html" class="no-ch">Sintaxis</a></li>
-            <li><a href="ejemplo_sintaxis.html" class="no-ch">Ejemplo Sintaxis</a></li>
-            <li><a href="creando_uris_adecuadas.html" class="no-ch">Creando URIs adecuadas</a></li>
-            <li><a href="referencias.html" class="no-ch">Referencias</a></li>
-         </ul>
-         </li>
-         <li><a href="cabeceras.html" class="daddy">Cabeceras</a>
-         <ul class="other-section">
-            <li><a href="cabeceras_de_peticin.html" class="no-ch">Cabeceras de Petición</a></li>
-            <li><a href="cabeceras_de_respuesta.html" class="no-ch">Cabeceras de Respuesta</a></li>
-            <li><a href="recursos_de_lectura.html" class="no-ch">Recursos de Lectura</a></li>
-         </ul>
-         </li>
-         <li><a href="mtodos_http.html" class="daddy">Métodos HTTP</a>
-         <ul class="other-section">
-            <li><a href="mtodo_get.html" class="no-ch">Método GET</a></li>
-            <li><a href="mtodo_post.html" class="no-ch">Método POST</a></li>
-         </ul>
-         </li>
-         <li><a href="parmetros.html" class="daddy">Parámetros</a>
-         <ul class="other-section">
-            <li><a href="envo_por_get.html" class="no-ch">Envío por GET</a></li>
-            <li><a href="envo_por_post.html" class="no-ch">Envío por POST</a></li>
-            <li><a href="get_o_post.html" class="no-ch">¿GET o POST?</a></li>
-         </ul>
-         </li>
-         <li><a href="cdigos_de_estado.html" class="daddy">Códigos de Estado</a>
-         <ul class="other-section">
-            <li><a href="dnde_est_el_cdigo.html" class="no-ch">¿Dónde está el Código?</a></li>
-            <li><a href="los_cdigos.html" class="no-ch">Los códigos</a></li>
-            <li><a href="recursos_de_lectura0.html" class="no-ch">Recursos de Lectura</a></li>
-         </ul>
-         </li>
+      <li><a href="introduccin.html" class="daddy">Introducción</a>
+      <ul class="other-section">
+         <li><a href="modelo_clienteservidor.html" class="no-ch">Modelo Cliente-Servidor</a></li>
+         <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
       </ul>
       </li>
+      <li><a href="protocolo_http.html" class="daddy">Protocolo HTTP</a>
+      <ul class="other-section">
+         <li><a href="dinamismo_del_protocolo_http.html" class="no-ch">Dinamismo del protocolo HTTP</a></li>
+         <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
+         <li><a href="mensajes_http_la_solicitud.html" class="no-ch">Mensajes HTTP: La solicitud</a></li>
+         <li><a href="mensajes_http_la_respuesta.html" class="no-ch">Mensajes HTTP: La respuesta</a></li>
+      </ul>
+      </li>
+      <li><a href="la_uri.html" class="daddy">La URI</a>
+      <ul class="other-section">
+         <li><a href="sintaxis.html" class="no-ch">Sintaxis</a></li>
+         <li><a href="ejemplo_sintaxis.html" class="no-ch">Ejemplo Sintaxis</a></li>
+         <li><a href="creando_uris_adecuadas.html" class="no-ch">Creando URIs adecuadas</a></li>
+         <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+      </ul>
+      </li>
+      <li><a href="cabeceras.html" class="daddy">Cabeceras</a>
+      <ul class="other-section">
+         <li><a href="cabeceras_de_peticin.html" class="no-ch">Cabeceras de Petición</a></li>
+         <li><a href="cabeceras_de_respuesta.html" class="no-ch">Cabeceras de Respuesta</a></li>
+         <li><a href="recursos_de_lectura.html" class="no-ch">Recursos de Lectura</a></li>
+      </ul>
+      </li>
+      <li><a href="mtodos_http.html" class="daddy">Métodos HTTP</a>
+      <ul class="other-section">
+         <li><a href="mtodo_get.html" class="no-ch">Método GET</a></li>
+         <li><a href="mtodo_post.html" class="no-ch">Método POST</a></li>
+      </ul>
+      </li>
+      <li><a href="parmetros.html" class="daddy">Parámetros</a>
+      <ul class="other-section">
+         <li><a href="envo_por_get.html" class="no-ch">Envío por GET</a></li>
+         <li><a href="envo_por_post.html" class="no-ch">Envío por POST</a></li>
+         <li><a href="get_o_post.html" class="no-ch">¿GET o POST?</a></li>
+      </ul>
+      </li>
+      <li><a href="cdigos_de_estado.html" class="daddy">Códigos de Estado</a>
+      <ul class="other-section">
+         <li><a href="dnde_est_el_cdigo.html" class="no-ch">¿Dónde está el Código?</a></li>
+         <li><a href="los_cdigos.html" class="no-ch">Los códigos</a></li>
+         <li><a href="recursos_de_lectura0.html" class="no-ch">Recursos de Lectura</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="cookies_y_sesiones.html" class="active no-ch">Cookies y Sesiones</a></li>
    </ul>
    </li>
    <li><a href="capitulo_3_htmlcss.html" class="daddy">CAPITULO 3 HTML-CSS</a>
@@ -300,57 +297,22 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="dinamismo_del_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="recursos_de_lectura0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capitulo_3_htmlcss.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Protocolo HTTP</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id158">
-<div class="iDevice emphasis0">
-<div id="ta158_85" class="block iDevice_content">
-<figure class="exe-figure exe-image float-right license-CC0" style="width: 400px;">
-<div class="figcaption header"><strong>Figura 2. Componente HTTP dentro de la Arquitectura de la Web</strong></div>
-<img src="HTTP_en_Arquitectura.png" alt="Protocolo HTTP" title="Protocolo HTTP" width="400" height="160" />
-<figcaption class="figcaption"><span class="author">Carlos Iñiguez</span>. <span class="title"><em>HTTP</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
-</figure>
-<p style="text-align: justify;">En la lección anterior revisamos la arquitectura Web. En esta lección nuestra atención estará enfocada en uno de los componentes de la arquitectura: <span style="color: #ff6600;">el protocolo HTTP</span> (ver Fig. 2).</p>
-<p style="text-align: justify;">En la Web, se establece un <em>diálogo</em> entre el Cliente y el Servidor con el fin de consumir recursos (con recurso nos referimos a <a href="#tcd5ddf57-eace-63f3-1ba4-183b9e9a954f" id="linkcd5ddf57-eace-63f3-1ba4-183b9e9a954f" title="hipertexto | Hipertexto" class="exe-tooltip definition-tt titled-tt rounded-tt"><span style="color: #ff6600;">hipertexto</span></a>): el Cliente solicita recursos y el servidor responde los recursos solicitados. Sin embargo, para que éste diálogo funcione, Cliente y Servidor deben hablar el mismo idioma para interactuar. Este <em>idioma, </em>que contiene un conjunto de reglas, normas y formatos, es el protocolo HTTP (<em>Hypertext Transfer Protocol</em>).</p>
-<div style="border: 1px solid #000000; background-color: #eeffee; padding: 8px; width: 400px;">HTTP entonces es un conjunto de formatos y normas que es utilizado en la Web para transferir el Hypertexto entre Cliente y Servidor.</div>
-<div id="tcd5ddf57-eace-63f3-1ba4-183b9e9a954f" class="exe-tooltip-text">
-<p>El término HIPERTEXTO fue acuñado por Ted Nelson. Hipertexto es texto que contiene enlaces a otros textos. Su estructura es parecida al pensamiento humano; solo que en lugar de conectar ideas, aquí se conectan documentos de texto, específicamente páginas Web. En efecto, una página web contiene enlaces a otras páginas web y otros recursos como videos, imágenes.</p>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id159">
+<header id="nodeDecoration"><h1 id="nodeTitle">Cookies y Sesiones</h1></header>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice" id="id45">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(icon_think.png)"><h1 class="iDeviceTitle">Características claves de HTTP</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ficheros adjuntos</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta159_120_2" class="block iDevice_content">
-<div class="exe-text"><p>HTTP tiene dos características importantes:</p>
-<ul>
-<li>SIN ESTADO</li>
-<li>ORIENTADO A LA CONEXIÓN</li>
-</ul>
-<h3><strong><span>PROTOCOLO SIN ESTADO</span></strong></h3>
-<p><em>Sin estado</em><span> </span>significa que el concepto de sesión no existe. Es decir, tras una conexión cliente-servidor, el servidor no mantiene registro del cliente que se conectó. De esta manera, cada vez que el mismo cliente se conecte al servidor, el servidor lo tratará como un cliente nuevo porque el servidor no establece relaciones entre las conexiones.</p>
-<h3><strong><span>PROTOCOLO ORIENTADO A LA CONEXIÓN</span></strong></h3>
-<p><em>Orientado a la conexión</em><span> </span>significa que HTTP utiliza por debajo el protocolo TCP/IP para establecer la comunicación entre cliente y servidor; algo propio del modelo Cliente-Servidor.</p></div>
+<div id="ta45_82" class="block iDevice_content">
+<p style="text-align: center;"><iframe width="800" height="600" src="Cookies.pdf"></iframe></p>
 </div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper FreeTextIdevice" id="id160">
-<div class="iDevice emphasis0">
-<div id="ta160_85" class="block iDevice_content">
-<p>La comunicación a través de HTTP se fundamenta en el envío y recepción de mensajes HTTP (como se muestra en la Figura 2):</p>
-<ul>
-<li>El mensaje HTTP enviado desde el Cliente al Servidor se denomina <strong><em><a id="SolicitudHTTP"></a>Solicitud HTTP</em></strong></li>
-<li>El mensaje HTTP enviado desde el Servidor al Cliente se denomina <strong><em><a id="RespuestaHTTP"></a>Respuesta HTTP</em></strong></li>
-</ul>
+<ul class='exeFileList'><li><a href='Cookies.pdf' target='_blank'>Cookies.pdf<span> (Ventana nueva)</span></a></li>
+</ul></div>
 </div>
 </div>
 </article>
@@ -361,7 +323,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="dinamismo_del_protocolo_http.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="recursos_de_lectura0.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capitulo_3_htmlcss.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
