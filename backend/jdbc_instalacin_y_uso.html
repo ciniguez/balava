@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Singleton | Fundamentos de JAVA WEB </title>
+<title>JDBC: Instalación y Uso | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-39"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-89"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
@@ -36,8 +36,8 @@
       <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
    </ul>
    </li>
-   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="principios_tecnolgicos.html" class="current-page-parent daddy">Principios Tecnológicos</a>
+   <ul>
       <li><a href="servlets.html" class="daddy">Servlets</a>
       <ul class="other-section">
          <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
@@ -56,19 +56,19 @@
       </li>
       <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
-      <li><a href="persistencia_jdbc.html" class="daddy">Persistencia JDBC</a>
-      <ul class="other-section">
-         <li><a href="jdbc_instalacin_y_uso.html" class="no-ch">JDBC: Instalación y Uso</a></li>
+      <li class="current-page-parent"><a href="persistencia_jdbc.html" class="current-page-parent daddy">Persistencia JDBC</a>
+      <ul>
+         <li id="active"><a href="jdbc_instalacin_y_uso.html" class="active no-ch">JDBC: Instalación y Uso</a></li>
          <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
       </ul>
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
-   <ul>
-      <li class="current-page-parent"><a href="patrones_de_diseo_repaso.html" class="current-page-parent daddy">Patrones de Diseño (repaso)</a>
-      <ul>
-         <li id="active"><a href="singleton.html" class="active no-ch">Singleton</a></li>
+   <li><a href="jpa.html" class="daddy">JPA</a>
+   <ul class="other-section">
+      <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
+      <ul class="other-section">
+         <li><a href="singleton.html" class="no-ch">Singleton</a></li>
       </ul>
       </li>
       <li><a href="patrones_de_acceso_a_datos.html" class="daddy">Patrones de Acceso a Datos</a>
@@ -108,136 +108,91 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="patrones_de_diseo_repaso.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="patrones_de_acceso_a_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="persistencia_jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Singleton</h1></div>
-<div class="iDevice_wrapper FreeTextIdevice" id="id34">
-<div class="iDevice emphasis0">
-<div id="ta34_1" class="block iDevice_content">
-
-<p>
-El patrón de diseño singleton (instancia única) está diseñado para restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto.
-</p>
-<p>
-Su intención consiste en garantizar que una clase sólo tenga una instancia y proporcionar un punto de acceso global a ella.
-</p>
-<p>
-El patrón singleton se implementa creando en nuestra clase un método que crea una instancia del objeto sólo si todavía no existe alguna. Para asegurar que la clase no puede ser instanciada nuevamente se regula el alcance del constructor (con atributos como protegido o privado).
-</p>
-<p>
-Fuente: <a href="http://es.wikipedia.org/wiki/Singleton">Wikipedia</a>
-</p>
-<ul>
-</ul>
-<div style="text-align: center">
-<img src="Captura_de_pantalla_2014-12-08_a_la(s)_22.48.45.png" height="162" width="500" /> 
-</div>
-<div style="text-align: center">
-</div>
-<div style="text-align: center" align="left">
-</div>
-<p>
-&nbsp;
-</p>
-<p>
-La impementación en código sería como sigue:
-</p>
-<div style="text-align: center">
-<img src="singletonJava.png" height="225" width="600" />
-</div>
-
-</div>
-</div>
-</div>
-<div class="iDevice_wrapper activityIdevice em_iDevice" id="id45">
+<div id="nodeDecoration"><h1 id="nodeTitle">JDBC: Instalación y Uso</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id75">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio. Log de Eventos</h2></div>
+<div class="iDevice_header" style="background-image:url(icon_presentation.png)"><h2 class="iDeviceTitle">Instalación</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta45_26_2" class="block iDevice_content">
-
-<p>
-Dada la Clase logger, implementar el patrón Singleton
-</p>
+<div id="ta75_121_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Copiar el conector *.jar en la carpeta lib:
 <ul>
-	<li>Realizar una creación temprana.</li>
+<li>Proyecto JavaEE: /WEB-INF/lib</li>
+<li>Proyecto Java: /lib (debe colgar directamente del proyecto) (se debe registrar con “buil path”)</li>
 </ul>
-<div style="text-align: center">
-<img src="Captura_de_pantalla_2014-12-29_a_la(s)_14.35.56.png" height="290" width="484" />
-</div>
-<p>
-<b>Pasos:</b>
-</p>
-<ol>
-	<li>Crear un proyecto en Eclipse del tipo JavaProject</li>
-	<li>Crea un paquete llamado <b>ec.edu.epn.singleton.registrador</b></li>
-	<li>Crea tu clase Looger con el patrón Singleton</li>
-	<li>Crea una clase Main que maneje la clase Looger. </li>
-</ol>
-
+</li>
+</ul></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="iDevice_wrapper activityIdevice em_iDevice" id="id46">
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id76">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio: Gestor de Impresoras</h2></div>
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Uso</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta46_27_2" class="block iDevice_content">
-
+<div id="ta76_122_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Crear el “Class” del driver del controlador
 <ul>
-	<li><b><font color="#993300">Motivación</font></b>
-	<ul>
-		<li>En una
-		aplicación se necesita que exista un solo Gestor de Impresoras, accesible desde
-		muchas clases.</li>
-	</ul>
-	</li>
-	<li><b><font color="#993300">Propósito</font></b>
-	<ul>
-		<li>Se garantiza que una clase sólo tenga una instancia y se proporciona un acceso desde cualquier otra clase.</li>
-	</ul>
-	</li>
-	<li><font color="#993300"><b>Descripción del problema:</b></font><br />
-	<ul>
-		<li>En una aplicación se disponen de dos impresoras: PrinterA y PrinterB, pero sólo una de ellas puede estar activa. Ambas ofrecen el método “print(String msg)”, que imprime un mensaje.</li>
-	</ul>
-	<ul>
-		<li>Se debe crear la clase Printer, abstracta. Se pretende que esta clase implemente el patrón Singleton para obtener la impresora activa. La impresora concreta se inyecta mediante principio de “Inversión de control”, a través del método “set”.</li>
-	</ul>
-	</li>
-	<li><font color="#993300"><b>Que se debe hacer?</b></font></li>
-</ul>
+<li>Registrar los controladores JDBC , cada fabricante tiene una clase diferente
 <ul>
-	<li> 
-	<ul>
-		<li>Diseñar con UML e implementar las clases Printer, PrinterA y PrinterB</li>
-	</ul>
-	<ul>
-		<li>Se aporta la clase PrinterMain y una aplicación para realizar la presentación de la ejecución io.5.3.jar
-		<ul>
-			<li>IO.in.select(Obejct[] objetos, String mensaje): dado un array de objetos, presenta una lista al usuario con los objetos (se apoya en el método toString de cada objeto) y devuelve la referencia del objeto elegida por el usuario.</li>
-		</ul>
-		</li>
-	</ul>
-	</li>
+<li>Class.forName("com.mysql.jdbc.Driver");</li>
+<li>Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");</li>
 </ul>
-<p>
-Nota: 
-</p>
+</li>
+</ul>
+</li>
+<li>Abrir una conexión
 <ul>
-	<li>io.5.3.jar se encuentra en el directorio de <b>Recursos/Patrones/ </b>del aula virtual.</li>
-	<li>PrinterMain se encuentra en el diretorio de <b>Recursos/Patrones/Singleton</b></li>
+<li>Se puede crear una conexión a una BD concreta, mediante la clase DriverManager, con el método getConnection(url,user,pass). Este utiliza el driver registrado. Se debe proporcionar tres datos:
+<ul>
+<li>url: "jdbc:mysql://localhost:3306/jee“ (suponiendo que la BD es “jee”)</li>
+<li>user: "root"</li>
+<li>pass: ""</li>
+<li>conexion = DriverManager.getConnection(url, user, pass);</li>
 </ul>
-<p>
-&nbsp;
-</p>
-
+</li>
+</ul>
+</li>
+<li>Crear una instancia de la clase Statement
+<ul>
+<li>Esta clase encapsula el texto SQL de la petición a la BD</li>
+<li>El objeto se crea mediante: conexion.createStatement()</li>
+</ul>
+</li>
+<li>Ejecutar modificaciones o consultas en la base de datos
+<ul>
+<li>Se realizan con el objeto Statement. Dispone de dos métodos fundamentales:
+<ul>
+<li><em>executeUpdate.</em> Para ejecutar INSERT, UPDATE o DELETE, y sentencias SQL que no devuelven nada (sentencias DDL: CREATE, DROP...)</li>
+<li><em>executeQuery</em>. Para ejecutar sentencias SQL, que devuelve un único objeto ResultSet (SELECT...)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Procesar resultados
+<ul>
+<li>ResultSet es una lista ordenada de tuplas
+<ul>
+<li>next(): próximo, previous(): previo, first(): primero, last(): último...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cerrar objetos
+<ul>
+<li>Resultset, Statement y Connection: close()</li>
+</ul>
+</li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -250,7 +205,7 @@ Nota:
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="patrones_de_diseo_repaso.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="patrones_de_acceso_a_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="persistencia_jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

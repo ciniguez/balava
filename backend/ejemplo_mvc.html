@@ -2,28 +2,31 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Fundamentos de JAVA WEB </title>
+<title>Ejemplo MVC | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
-<meta name="description" content="Curso de Aplicaciones Web" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-87"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
 <div id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">Java Web</a></li>
+   <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
    <ul class="other-section">
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
@@ -37,8 +40,8 @@
       <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
    </ul>
    </li>
-   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="principios_tecnolgicos.html" class="current-page-parent daddy">Principios Tecnológicos</a>
+   <ul>
       <li><a href="servlets.html" class="daddy">Servlets</a>
       <ul class="other-section">
          <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
@@ -56,7 +59,7 @@
       </ul>
       </li>
       <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
-      <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
+      <li id="active"><a href="ejemplo_mvc.html" class="active no-ch">Ejemplo MVC</a></li>
       <li><a href="persistencia_jdbc.html" class="daddy">Persistencia JDBC</a>
       <ul class="other-section">
          <li><a href="jdbc_instalacin_y_uso.html" class="no-ch">JDBC: Instalación y Uso</a></li>
@@ -109,36 +112,186 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="persistencia_jdbc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Java Web</h1></div>
-<div class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id29">
+<div id="nodeDecoration"><h1 id="nodeTitle">Ejemplo MVC</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id70">
+<div class="iDevice emphasis0" >
+<div id="ta70_117_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="PersonaMVC_03.png" alt="Descripción gráfica de Ejemplo MVC" width="530" height="340" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id71">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Conocimientos Previos</h2></div>
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Modelo: javabeans</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta29_21_2" class="block iDevice_content">
-<p>
-Para el mundo de JAVA web, es necesario tener presente los siguientes conocimientos:
-</p>
-<ul>
-	<li>Patrón arquitectónico Modelo Vista Controlador</li>
-	<li>Patrónes de Diseño
-	<ul>
-		<li>Singleton</li>
-	</ul>
-	<ul>
-		<li>Abstract Factory</li>
-	</ul>
-	<ul>
-		<li>Facade </li>
-	</ul>
-	</li>
-</ul>
+<div id="ta71_118_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>Modelo: Persona (JavaBean)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.modelo;
 
+import java.io.Serializable;
+
+public class Persona implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private String nombre;
+	private String[] idiomas = {"es", "en"};
+	
+	//Constructor sin parámetros y obligatorio
+	public Persona() {}
+	public Persona(int id, String nombre) {
+		this.setId(id);
+		this.setNombre(nombre);
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String[] getIdiomas() {
+		return idiomas;
+	}
+	public void setIdiomas(String[] idiomas) {
+		this.idiomas = idiomas;
+	}
+	
+
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h2>Controlador: PersonaController (servlet)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.controlador;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ec.edu.epn.modelo.Persona;
+
+@WebServlet("/PersonaController")
+public class PersonaController extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		Persona persona = new Persona();
+		String url;
+		try {
+			persona.setId(Integer.valueOf(req.getParameter("id")));
+			persona.setNombre(req.getParameter("nombre"));
+			req.setAttribute("persona", persona);
+			url = "/JSPs/persona.jsp";
+		} catch (Exception e) {
+			url = "/JSPs/error.jsp";
+		}
+		//reenvia datos a persona.jsp
+		getServletContext().getRequestDispatcher(url).forward(req, resp);
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+
+	private static final long serialVersionUID = 1L;
+
+}
+</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>Vista: persona.jsp (JSP + JSTL)</h2>
+<p>persona.jsp</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%&gt;
+&lt;%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;JSTL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Uso de JSTLs&lt;/h1&gt;
+	&lt;h2&gt;Acceso a Objetos&lt;/h2&gt;
+	&lt;c:set var="p1" value="${requestScope['persona']}" /&gt;
+	&lt;c:set var="p2" scope="request" value="${persona}" /&gt;
+	&lt;c:set var="p3" scope="session" value="${persona}" /&gt;
+
+	&lt;p&gt;Id: ${p1.id}&lt;/p&gt;
+	&lt;p&gt;Nombre: ${p1.nombre}&lt;/p&gt;
+
+	&lt;h2&gt;Sentencia if&lt;/h2&gt;
+
+	&lt;c:if test="${p1.id == 666}"&gt;
+		&lt;p&gt;Dentro del if: es un demonio&lt;/p&gt;
+	&lt;/c:if&gt;
+
+	&lt;h2&gt;Sentencia Switch&lt;/h2&gt;
+
+	&lt;c:choose&gt;
+		&lt;c:when test="${p1.id==1}"&gt;Es 1&lt;/c:when&gt;
+		&lt;c:when test="${p1.id==2}"&gt;Es 2&lt;/c:when&gt;
+		&lt;c:otherwise&gt;
+			&lt;p&gt;Es mayor que 2&lt;/p&gt;
+		&lt;/c:otherwise&gt;
+	&lt;/c:choose&gt;
+
+	&lt;h2&gt;Colecciones&lt;/h2&gt;
+	&lt;p&gt;Idiomas:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;c:forEach var="idioma" items="${p1.idiomas}"&gt;
+			&lt;li&gt;${idioma}&lt;/li&gt;
+		&lt;/c:forEach&gt;
+	&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<p>error.jsp</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;MVC - java&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Respuesta del controlador&lt;/h1&gt;
+	&lt;p&gt;Error. Se debe añadir a la URL: ?id=666&amp;nombre=uno&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</div>
+<p></p></div>
 </div>
 </div>
 </div>
@@ -151,7 +304,7 @@ Para el mundo de JAVA web, es necesario tener presente los siguientes conocimien
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="introduccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="javabeans.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="persistencia_jdbc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
