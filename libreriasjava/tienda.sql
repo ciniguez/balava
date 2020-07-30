@@ -1,7 +1,7 @@
 CREATE DATABASE tienda;
 DROP TABLE PRODUCTO;
 DROP TABLE CATEGORIA;
-DROP TABLE USUARIO;
+DROP TABLE PERSONA;
 /*==============================================================*/
 /* Table: CATEGORIA                                             */
 /*==============================================================*/
@@ -13,14 +13,14 @@ create table CATEGORIA
 )
 Engine = InnoDB;
 /*==============================================================*/
-/* Table: USUARIO                                               */
+/* Table: PERSONA                                               */
 /*==============================================================*/
-create table USUARIO
+create table PERSONA
 (
-   USU_ID               int not null auto_increment,
-   USU_NOMBRE           varchar(40) not null,
-   USU_CLAVE            varchar(40) not null,
-   primary key (USU_ID)
+   PER_ID               int not null auto_increment,
+   PER_NOMBRE           varchar(40) not null,
+   PER_CLAVE            varchar(40) not null,
+   primary key (PER_ID)
 )
 Engine = InnoDB;
 
