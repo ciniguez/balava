@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JDBC: Instalación y Uso | Fundamentos de JAVA WEB </title>
+<title>¿Cómo implementar JDBC? | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -36,8 +36,8 @@
       <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="principios_tecnolgicos.html" class="current-page-parent daddy">Principios Tecnológicos</a>
-   <ul>
+   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
+   <ul class="other-section">
       <li><a href="servlets.html" class="daddy">Servlets</a>
       <ul class="other-section">
          <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
@@ -56,91 +56,83 @@
       </li>
       <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
-      <li class="current-page-parent"><a href="persistencia_jdbc.html" class="current-page-parent daddy">Persistencia JDBC</a>
-      <ul>
-         <li id="active"><a href="jdbc_instalacin_y_uso.html" class="active no-ch">JDBC: Instalación y Uso</a></li>
-         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
-      </ul>
-      </li>
    </ul>
    </li>
-   <li><a href="jpa.html" class="daddy">JPA</a>
-   <ul class="other-section">
-      <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
-      <ul class="other-section">
-         <li><a href="singleton.html" class="no-ch">Singleton</a></li>
+   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
+   <ul>
+      <li class="current-page-parent"><a href="jdbc.html" class="current-page-parent daddy">JDBC</a>
+      <ul>
+         <li id="active"><a href="cmo_implementar_jdbc.html" class="active no-ch">¿Cómo implementar JDBC?</a></li>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li><a href="patrones_de_acceso_a_datos.html" class="daddy">Patrones de Acceso a Datos</a>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="ejercicio0.html" class="no-ch">Ejercicio</a></li>
+         <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
+         <ul class="other-section">
+            <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
+            <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+            <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+         </ul>
+         </li>
+         <li><a href="relaciones.html" class="daddy">Relaciones</a>
+         <ul class="other-section">
+            <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+            <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+            <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+            <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+            <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="daddy">Ejemplo Anotaciones: Clase Estudiante</a>
+         <ul class="other-section">
+            <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+         </ul>
+         </li>
+         <li><a href="jpql.html" class="no-ch">JPQL</a></li>
+      </ul>
+      </li>
+      <li><a href="dao_y_otros_patrones_de_acceso_a_datos.html" class="daddy">DAO y otros patrones de Acceso a Datos</a>
       <ul class="other-section">
          <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
          <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+         <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
+         <ul class="other-section">
+            <li><a href="singleton.html" class="no-ch">Singleton</a></li>
+         </ul>
+         </li>
+         <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+         <ul class="other-section">
+            <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+         </ul>
+         </li>
       </ul>
       </li>
-      <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
-      <li><a href="arquitectura.html" class="no-ch">Arquitectura</a></li>
-      <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
-      <li><a href="entidades.html" class="no-ch">Entidades</a></li>
-      <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
-      <li><a href="relaciones.html" class="daddy">Relaciones</a>
-      <ul class="other-section">
-         <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
-         <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
-         <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
-         <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
-         <li><a href="herencia.html" class="no-ch">Herencia</a></li>
-      </ul>
-      </li>
-      <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="daddy">Ejemplo Anotaciones: Clase Estudiante</a>
-      <ul class="other-section">
-         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      </ul>
-      </li>
-      <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
-      <ul class="other-section">
-         <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
-      </ul>
-      </li>
-      <li><a href="jpql.html" class="no-ch">JPQL</a></li>
    </ul>
    </li>
 </ul>
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="persistencia_jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">JDBC: Instalación y Uso</h1></div>
-<div class="iDevice_wrapper textIdevice em_iDevice" id="id75">
-<div class="iDevice emphasis1" >
-<div class="iDevice_header" style="background-image:url(icon_presentation.png)"><h2 class="iDeviceTitle">Instalación</h2></div>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta75_121_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>Copiar el conector *.jar en la carpeta lib:
-<ul>
-<li>Proyecto JavaEE: /WEB-INF/lib</li>
-<li>Proyecto Java: /lib (debe colgar directamente del proyecto) (se debe registrar con “buil path”)</li>
-</ul>
-</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div id="nodeDecoration"><h1 id="nodeTitle">¿Cómo implementar JDBC?</h1></div>
 <div class="iDevice_wrapper textIdevice em_iDevice" id="id76">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Uso</h2></div>
+<div class="iDevice_header" style="background-image:url(icon_atom.png)"><h2 class="iDeviceTitle">Pasos de Implementación</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta76_122_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>Crear el “Class” del driver del controlador
+<div class="exe-text"><ol>
+<li><span style="font-size: 18pt;">Crear el “Class” del driver del controlador</span>
 <ul>
 <li>Registrar los controladores JDBC , cada fabricante tiene una clase diferente
 <ul>
@@ -150,49 +142,52 @@
 </li>
 </ul>
 </li>
-<li>Abrir una conexión
+<li><span style="font-size: 18pt;">Abrir una conexión</span>
 <ul>
 <li>Se puede crear una conexión a una BD concreta, mediante la clase DriverManager, con el método getConnection(url,user,pass). Este utiliza el driver registrado. Se debe proporcionar tres datos:
 <ul>
 <li>url: "jdbc:mysql://localhost:3306/jee“ (suponiendo que la BD es “jee”)</li>
 <li>user: "root"</li>
 <li>pass: ""</li>
+</ul>
+</li>
 <li>conexion = DriverManager.getConnection(url, user, pass);</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Crear una instancia de la clase Statement
+<li><span style="font-size: 18pt;">Crear una instancia de la clase Statement</span>
 <ul>
 <li>Esta clase encapsula el texto SQL de la petición a la BD</li>
 <li>El objeto se crea mediante: conexion.createStatement()</li>
 </ul>
 </li>
-<li>Ejecutar modificaciones o consultas en la base de datos
+<li><span style="font-size: 18pt;">Ejecutar modificaciones o consultas en la base de datos</span>
 <ul>
 <li>Se realizan con el objeto Statement. Dispone de dos métodos fundamentales:
 <ul>
-<li><em>executeUpdate.</em> Para ejecutar INSERT, UPDATE o DELETE, y sentencias SQL que no devuelven nada (sentencias DDL: CREATE, DROP...)</li>
-<li><em>executeQuery</em>. Para ejecutar sentencias SQL, que devuelve un único objeto ResultSet (SELECT...)</li>
+<li><em><b>executeUpdate</b>.</em> Para ejecutar INSERT, UPDATE o DELETE, y sentencias SQL que no devuelven nada (sentencias DDL: CREATE, DROP...)</li>
+<li><b><em>executeQuery</em></b>. Para ejecutar sentencias SQL, que devuelve un único objeto ResultSet (SELECT...)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Procesar resultados
+<li><span style="font-size: 18pt;">Procesar resultados</span>
 <ul>
 <li>ResultSet es una lista ordenada de tuplas
 <ul>
-<li>next(): próximo, previous(): previo, first(): primero, last(): último...</li>
+<li><b>next()</b>: próximo,</li>
+<li><b>previous()</b>: previo,</li>
+<li><b>first()</b>: primero,</li>
+<li><b>last()</b>: último...</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Cerrar objetos
+<li><span style="font-size: 18pt;">Cerrar objetos</span>
 <ul>
 <li>Resultset, Statement y Connection: close()</li>
 </ul>
 </li>
-</ul></div>
+</ol></div>
 </div>
 </div>
 </div>
@@ -205,7 +200,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="persistencia_jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jdbc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

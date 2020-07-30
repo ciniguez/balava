@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>MVC en Escritorio | Fundamentos de JAVA WEB </title>
+<title>Implementaciones | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,17 +16,17 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-81"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-94"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
-   <li class="current-page-parent"><a href="introduccin.html" class="current-page-parent daddy">Introducción</a>
-   <ul>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
-      <li id="active"><a href="mvc_en_escritorio.html" class="active no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
    </ul>
    </li>
@@ -58,8 +58,8 @@
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
    </ul>
    </li>
-   <li><a href="persistencia.html" class="daddy">Persistencia</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
+   <ul>
       <li><a href="jdbc.html" class="daddy">JDBC</a>
       <ul class="other-section">
          <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
@@ -67,10 +67,10 @@
          <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li><a href="jpa.html" class="daddy">JPA</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
+      <ul>
          <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
-         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li id="active"><a href="implementaciones.html" class="active no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
          <li><a href="ejercicio0.html" class="no-ch">Ejercicio</a></li>
          <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
@@ -119,25 +119,34 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="patrn_de_arquitectura_mvc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mvc_en_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jpa_en_la_arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="instalacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">MVC en Escritorio</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id48">
-<div class="iDevice emphasis0" >
-<div id="ta48_108_2" class="block iDevice_content">
-<div class="exe-text"><p>En una pequeña aplicación de escritorio, el patrón MVC luciría como lo muestra la siguiente gráfica:</p>
-<div style="text-align: center;">
-<div class="exe-figure exe-image position-center license-copyright" style="width: 992px;">
-<div class="figcaption header"><strong>Patrón MVC en aplicación de Escritorio</strong></div>
-<img src="mvc_java_netbeans.jpg" alt="Patrón MVC en escritorio" title="Patrón MVC en escritorio" width="992" height="502" />
-<div class="figcaption"><a href="https://code.google.com/archive/p/gestion-matricula/wikis/MVC.wiki" target="_blank" class="author" rel="noopener">Google Code Archive</a> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></div>
-</div>
-</div>
-<p></p>
-<p> </p></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Implementaciones</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id90">
+<div class="iDevice emphasis0">
+<div id="ta90_1" class="block iDevice_content">
+<p><span style="color: #ff0000;"><b>Implementaciones</b></span></p>
+<p>Existen varias <b>implementaciones</b> de JPA, por citar algunas:</p>
+<ul>
+<li><span style="color: #993300;"><b>EclipseLink</b></span> (Eclipse)
+<ul>
+<li>Documentación: <a href="http://www.eclipse.org/eclipselink/documentation/" onclick="window.parent.browseURL('http://www.eclipse.org/eclipselink/documentation/'); return false">http://www.eclipse.org/eclipselink/documentation/</a></li>
+</ul>
+</li>
+<li><span style="color: #993300;"><b>TopLink</b></span> (Oracle)</li>
+<li><span style="color: #993300;"><b>Hibernate</b>(</span>JPA , propia Java, .NET)</li>
+<li><span style="color: #993300;"><b>OpenJPA</b></span> (Apache)</li>
+<li><span style="color: #993300;"><b>ObjectDB</b></span>
+<ul>
+<li>Documentación: http://www.objectdb.com/java/jpa</li>
+</ul>
+</li>
+</ul>
+<ul></ul>
+<p>Para efectos de este curso, utilizaremos EclipseLink con Eclipse.</p>
 </div>
 </div>
 </div>
@@ -148,7 +157,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="patrn_de_arquitectura_mvc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mvc_en_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jpa_en_la_arquitectura_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="instalacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

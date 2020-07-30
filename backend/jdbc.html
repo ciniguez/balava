@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>MVC en Escritorio | Fundamentos de JAVA WEB </title>
+<title>JDBC | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,17 +16,17 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-81"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-92"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
-   <li class="current-page-parent"><a href="introduccin.html" class="current-page-parent daddy">Introducción</a>
-   <ul>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
       <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
-      <li id="active"><a href="mvc_en_escritorio.html" class="active no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
    </ul>
    </li>
@@ -58,10 +58,10 @@
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
    </ul>
    </li>
-   <li><a href="persistencia.html" class="daddy">Persistencia</a>
-   <ul class="other-section">
-      <li><a href="jdbc.html" class="daddy">JDBC</a>
-      <ul class="other-section">
+   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
+   <ul>
+      <li id="active"><a href="jdbc.html" class="active daddy">JDBC</a>
+      <ul>
          <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
          <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
          <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
@@ -119,25 +119,39 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="patrn_de_arquitectura_mvc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mvc_en_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="persistencia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cmo_implementar_jdbc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">MVC en Escritorio</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id48">
+<div id="nodeDecoration"><h1 id="nodeTitle">JDBC</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id73">
 <div class="iDevice emphasis0" >
-<div id="ta48_108_2" class="block iDevice_content">
-<div class="exe-text"><p>En una pequeña aplicación de escritorio, el patrón MVC luciría como lo muestra la siguiente gráfica:</p>
-<div style="text-align: center;">
-<div class="exe-figure exe-image position-center license-copyright" style="width: 992px;">
-<div class="figcaption header"><strong>Patrón MVC en aplicación de Escritorio</strong></div>
-<img src="mvc_java_netbeans.jpg" alt="Patrón MVC en escritorio" title="Patrón MVC en escritorio" width="992" height="502" />
-<div class="figcaption"><a href="https://code.google.com/archive/p/gestion-matricula/wikis/MVC.wiki" target="_blank" class="author" rel="noopener">Google Code Archive</a> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></div>
+<div id="ta73_120_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>JDBC (Java Database Connectivity) o en español, <em>Conectividad a Base de Datos de Java</em>,  Son un conjunto de interfaces para independizar el acceso a las bases de datos relacionales desde las aplicaciones Java</li>
+<li>Se requiere la implementación específica del gestor de bases de datos utilizado</li>
+</ul></div>
 </div>
 </div>
-<p></p>
-<p> </p></div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id75">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_presentation.png)"><h2 class="iDeviceTitle">Instalación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta75_121_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Descarga el conector Mysql JDBC (mysql-connector-java-8.0.21.jar) de la página web de <a href="https://ciniguez.github.io/balava/libreriasjava/" target="_blank" title="Librerías de Desarrollo Web" rel="noopener">Librerías de Desarrollo Web</a></li>
+<li>Copiar el conector *.jar en la carpeta lib:
+<ul>
+<li>Proyecto JavaEE: /WEB-INF/lib</li>
+<li>Proyecto Java: /lib (debe colgar directamente del proyecto) (se debe registrar con “buil path”)</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -148,7 +162,7 @@
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="patrn_de_arquitectura_mvc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mvc_en_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="persistencia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cmo_implementar_jdbc.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>

@@ -2,6 +2,7 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -56,52 +58,63 @@
       </li>
       <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
-      <li><a href="persistencia_jdbc.html" class="daddy">Persistencia JDBC</a>
-      <ul class="other-section">
-         <li><a href="jdbc_instalacin_y_uso.html" class="no-ch">JDBC: Instalación y Uso</a></li>
-         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
-      </ul>
-      </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
+   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
    <ul>
-      <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
+      <li><a href="jdbc.html" class="daddy">JDBC</a>
       <ul class="other-section">
-         <li><a href="singleton.html" class="no-ch">Singleton</a></li>
+         <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li><a href="patrones_de_acceso_a_datos.html" class="daddy">Patrones de Acceso a Datos</a>
+      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
+      <ul>
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="ejercicio0.html" class="no-ch">Ejercicio</a></li>
+         <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
+         <ul class="other-section">
+            <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
+            <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+            <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+         </ul>
+         </li>
+         <li><a href="relaciones.html" class="daddy">Relaciones</a>
+         <ul class="other-section">
+            <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+            <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+            <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+            <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+            <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="ejemplo_anotaciones_clase_estudiante.html" class="active daddy">Ejemplo Anotaciones: Clase Estudiante</a>
+         <ul>
+            <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+         </ul>
+         </li>
+         <li><a href="jpql.html" class="no-ch">JPQL</a></li>
+      </ul>
+      </li>
+      <li><a href="dao_y_otros_patrones_de_acceso_a_datos.html" class="daddy">DAO y otros patrones de Acceso a Datos</a>
       <ul class="other-section">
          <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
          <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+         <li><a href="patrones_de_diseo_repaso.html" class="daddy">Patrones de Diseño (repaso)</a>
+         <ul class="other-section">
+            <li><a href="singleton.html" class="no-ch">Singleton</a></li>
+         </ul>
+         </li>
+         <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+         <ul class="other-section">
+            <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+         </ul>
+         </li>
       </ul>
       </li>
-      <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
-      <li><a href="arquitectura.html" class="no-ch">Arquitectura</a></li>
-      <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
-      <li><a href="entidades.html" class="no-ch">Entidades</a></li>
-      <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
-      <li><a href="relaciones.html" class="daddy">Relaciones</a>
-      <ul class="other-section">
-         <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
-         <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
-         <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
-         <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
-         <li><a href="herencia.html" class="no-ch">Herencia</a></li>
-      </ul>
-      </li>
-      <li id="active"><a href="ejemplo_anotaciones_clase_estudiante.html" class="active daddy">Ejemplo Anotaciones: Clase Estudiante</a>
-      <ul>
-         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      </ul>
-      </li>
-      <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
-      <ul class="other-section">
-         <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
-      </ul>
-      </li>
-      <li><a href="jpql.html" class="no-ch">JPQL</a></li>
    </ul>
    </li>
 </ul>
@@ -117,13 +130,9 @@
 <div class="iDevice_wrapper FreeTextIdevice" id="id107">
 <div class="iDevice emphasis0">
 <div id="ta107_85" class="block iDevice_content">
-<p><link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css" /></p>
-<script language="javascript" src="scripts/shCore.js" type="text/javascript"></script>
-<script language="javascript" src="scripts/shBrushJava.js" type="text/javascript"></script>
-<script type="text/javascript">// <![CDATA[
-SyntaxHighlighter.all();
-// ]]></script>
-<pre rows="5" cols="80" class="brush: java">import java.io.Serializable;
+<div class="highlighted-code code-style-2 language-java line-numbers">
+<div>
+<pre><code>import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -152,7 +161,7 @@ public class Estudiante implements Serializable {
 	@Column(name = "est_correo")
 	private String correo;
 	@OneToMany(mappedBy = "estudiante")
-	private List<tutoria> tutorias;
+	private List tutorias;
 
 	public Estudiante() {
 
@@ -190,11 +199,11 @@ public class Estudiante implements Serializable {
 		this.correo = correo;
 	}
 
-	public List<tutoria> getTutorias() {
+	public List getTutorias() {
 		return tutorias;
 	}
 
-	public void setTutorias(List<tutoria> tutorias) {
+	public void setTutorias(List tutorias) {
 		this.tutorias = tutorias;
 	}
 
@@ -225,8 +234,9 @@ public class Estudiante implements Serializable {
 		return true;
 	}
 
-}
-</tutoria></tutoria></tutoria></pre>
+}</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
