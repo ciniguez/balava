@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Named Queries | Fundamentos de JAVA WEB </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Carlos Iniguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-104"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Java Web</a></li>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
+      <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
+   </ul>
+   </li>
+   <li><a href="instalacin_de_herramientas.html" class="daddy">Instalación de Herramientas</a>
+   <ul class="other-section">
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
+   </ul>
+   </li>
+   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
+   <ul class="other-section">
+      <li><a href="servlets.html" class="daddy">Servlets</a>
+      <ul class="other-section">
+         <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
+         <li><a href="servlet_hola_mundo.html" class="no-ch">Servlet: Hola Mundo</a></li>
+         <li><a href="recogiendo_parmetros.html" class="no-ch">Recogiendo parámetros</a></li>
+         <li><a href="reenvo_entre_componentes.html" class="no-ch">Reenvío entre componentes</a></li>
+      </ul>
+      </li>
+      <li><a href="jsp.html" class="daddy">JSP</a>
+      <ul class="other-section">
+         <li><a href="cdigo_java_no_recomendado.html" class="no-ch">Código Java: No recomendado</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
+         <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+      </ul>
+      </li>
+      <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
+      <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
+   <ul>
+      <li><a href="jdbc.html" class="daddy">JDBC</a>
+      <ul class="other-section">
+         <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
+      <ul>
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
+         <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
+         <ul class="other-section">
+            <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
+            <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+            <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+         </ul>
+         </li>
+         <li><a href="relaciones.html" class="daddy">Relaciones</a>
+         <ul class="other-section">
+            <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+            <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+            <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+            <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+            <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="no-ch">Ejemplo Anotaciones: Clase Estudiante</a></li>
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+         <li class="current-page-parent"><a href="jpql.html" class="current-page-parent daddy">JPQL</a>
+         <ul>
+            <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
+            <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
+            <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
+            <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
+            <li id="active"><a href="named_queries.html" class="active no-ch">Named Queries</a></li>
+            <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+            <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
+            <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="dao_y_otros_patrones_de_acceso_a_datos.html" class="daddy">DAO y otros patrones de Acceso a Datos</a>
+      <ul class="other-section">
+         <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
+         <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+         <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
+         <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+         <ul class="other-section">
+            <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="createquery.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="autoevaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Named Queries</h1></div>
+<div class="iDevice_wrapper textIdevice" id="id105">
+<div class="iDevice emphasis0" >
+<div id="ta105_115_2" class="block iDevice_content">
+<div class="exe-text"><p>Opción 1</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>	@SuppressWarnings("unchecked")
+	TypedQuery&lt;Estudiante&gt; consultaEstudiantes = em.createNamedQuery("findAllStudentsLikeSurnameName",Estudiante.class);
+	consultaEstudiantes.setParameter("surename", "P%");
+	List&lt;Estudiante&gt; results = consultaEstudiantes.getResultList();
+	for (Estudiante estudiante : results) {
+		System.out.println(estudiante);</code><br />}</pre>
+</div>
+</div>
+<p>Opción 2</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>Query query = em.createNamedQuery("findAllStudentsLikeSurnameName");query.setParameter("surename", "P%");
+@SuppressWarnings("unchecked")
+List&lt;Estudiante&gt; resultados = query.getResultList();
+		
+for (Estudiante estudiante : resultados) {
+	System.out.println(estudiante);			
+}</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-nc">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="createquery.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="autoevaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

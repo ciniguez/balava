@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Servlet: Hola Mundo | Fundamentos de JAVA WEB </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Carlos Iniguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-27"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Java Web</a></li>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
+      <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
+   </ul>
+   </li>
+   <li><a href="instalacin_de_herramientas.html" class="daddy">Instalación de Herramientas</a>
+   <ul class="other-section">
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="principios_tecnolgicos.html" class="current-page-parent daddy">Principios Tecnológicos</a>
+   <ul>
+      <li class="current-page-parent"><a href="servlets.html" class="current-page-parent daddy">Servlets</a>
+      <ul>
+         <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
+         <li id="active"><a href="servlet_hola_mundo.html" class="active no-ch">Servlet: Hola Mundo</a></li>
+         <li><a href="recogiendo_parmetros.html" class="no-ch">Recogiendo parámetros</a></li>
+         <li><a href="reenvo_entre_componentes.html" class="no-ch">Reenvío entre componentes</a></li>
+      </ul>
+      </li>
+      <li><a href="jsp.html" class="daddy">JSP</a>
+      <ul class="other-section">
+         <li><a href="cdigo_java_no_recomendado.html" class="no-ch">Código Java: No recomendado</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
+         <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+      </ul>
+      </li>
+      <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
+      <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
+   </ul>
+   </li>
+   <li><a href="persistencia.html" class="daddy">Persistencia</a>
+   <ul class="other-section">
+      <li><a href="jdbc.html" class="daddy">JDBC</a>
+      <ul class="other-section">
+         <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+      </ul>
+      </li>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
+         <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
+         <ul class="other-section">
+            <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
+            <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+            <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+         </ul>
+         </li>
+         <li><a href="relaciones.html" class="daddy">Relaciones</a>
+         <ul class="other-section">
+            <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+            <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+            <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+            <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+            <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="no-ch">Ejemplo Anotaciones: Clase Estudiante</a></li>
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+         <li><a href="jpql.html" class="daddy">JPQL</a>
+         <ul class="other-section">
+            <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
+            <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
+            <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
+            <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
+            <li><a href="named_queries.html" class="no-ch">Named Queries</a></li>
+            <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+            <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
+            <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="dao_y_otros_patrones_de_acceso_a_datos.html" class="daddy">DAO y otros patrones de Acceso a Datos</a>
+      <ul class="other-section">
+         <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
+         <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+         <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
+         <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+         <ul class="other-section">
+            <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="ciclo_de_vida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recogiendo_parmetros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Servlet: Hola Mundo</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id60">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_edia.png)"><h2 class="iDeviceTitle">La Radiografía de un Servlet</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_110_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-figure exe-image position-center license-copyright" style="width: 716px;"><img src="Main.svg" alt="Diagrama Servlet" width="716" height="324" />
+<div class="figcaption"><span class="author">Carlos Iñiguez</span> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></div>
+</div>
+<p><span style="font-size: medium;">Es una clase java que <span style="color: #008000; font-family: georgia,palatino;"><i>extiende</i></span> de <b>javax.servlet.http.HttpServlet</b> y sobrescribe los métodos <span style="font-family: courier new,courier;">doPost(..)</span> o <span style="font-family: courier new,courier;">doGet(..)</span> o ambos.</span></p>
+<ul>
+<li><span style="font-size: medium;">La clase debe ser anotada con: <b>@WebServlet("/xxxxxx")</b></span></li>
+<li><span style="font-size: medium;">La petición se representa por la clase <span style="font-family: courier new,courier;"><b>HttpServletRequest</b></span></span></li>
+<li><span style="font-size: medium;">La respuesta se representa por la clase</span><b><span style="font-size: medium;"> <span style="font-family: courier new,courier;">HttpServletResponse</span>. <br /></span></b>
+<ul>
+<li>Normalmente, las respuestas están en el lenguaje HTML, CSS y javascript</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id11">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Creando un Servlet</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_27_2" class="block iDevice_content">
+<ul>
+<li>Crear un proyecto nuevo: “<span style="color: #993300;" color="#993300">Dynamic Web Proyect</span>” (ver <em>Creación de un proyecto Web</em>)</li>
+<li>Crear una página, ej. hola.html y situarla en la carpeta “WebContent”</li>
+<li>Crear un paquete java, por ejemplo “servlets”</li>
+<li>Añadir un servlet mediante “new”&gt;“Servlet” llamado “<strong>HolaMundo</strong>”</li>
+</ul>
+<p>Una vez creado el fichero del servlet HolaMundo, escribimos el siguiente código que se explicará a continuación.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package epn.fis.appweb.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/HolaMundo")
+public class MiServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		PrintWriter salida = response.getWriter();
+		salida.print("&lt;HTML&gt;");
+		salida.print("&lt;head&gt;");
+		salida.print("&lt;title&gt;Pagina devuelta por Servlet&lt;/title&gt;");
+		salida.print("&lt;/head&gt;");
+		salida.print("&lt;body&gt;");
+		salida.print("&lt;h1&gt; Esto fue devuelto por el Servlet&lt;/h1&gt;");
+		salida.print("&lt;/body&gt;");
+		salida.print("&lt;/HTML&gt;");
+		
+		salida.close();
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+}
+</code></pre>
+</div>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id16">
+<div class="iDevice emphasis0">
+<div id="ta16_1" class="block iDevice_content">
+<hr />
+<p>En el código anterior podemos destacar lo siguiente:</p>
+<ul>
+<li>Tenemos un servlet que no es más que una clase Java a la que hemos nombrado HolaMundo.</li>
+<li>La clase ha sido anotada con <b>@WebServlet,</b> esto indicará que la clase se comportará como un Servlet.</li>
+<li>La clase herada de la clase <b>HttpServlet</b></li>
+<li>El Servlet sobreescribe los métodos <b>doGet</b>(), <b>doPost</b>() donde se escribe el código para capturar la solicitud y a su vez, responder al cliente</li>
+</ul>
+<hr />
+<p></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id23">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejecuta tu Servlet.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta23_21_2" class="block iDevice_content">
+
+<ol>
+	<li>En el Explorador de Proyectos, localiza tu Dynamic Project.
+	<ul>
+		<li>(En el caso de este curso, el proyecto denominado &quot;<b><i>Servlet</i></b>&quot;)</li>
+	</ul>
+	</li>
+	<li>Clic Derecho y escoge &quot;<b>Run AS</b>&quot;&gt;&quot;<b>Run on Server</b>&quot;.</li>
+</ol>
+<p>
+Esta acción enviará el archivo war al servidor Apache Tomcat instalado que a su vez publicará la aplicación.
+</p>
+<p>
+Eclipse, seguramente te presentará el resultado, del deploy de la aplicación, en un browser interno. Sin embargo tu puedes acceder a la aplicación desde un browser de tu equipo con la siguiente dirección:
+</p>
+<blockquote>
+	<p>
+	http://nombre_servidor:puerto/nombre_proyecto/_nombre_archivo_servlet
+	</p>
+</blockquote>
+<p>
+En otras palabras, para nuestro ejemplo: 
+</p>
+<blockquote>
+	<p>
+	http://localhost:8080/Servlet/HolaMundo 
+	</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id61">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad: Ejemplificando el Ciclo de Vida</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta61_111_2" class="block iDevice_content">
+<p>En el servlet creado anteriormente:</p>
+<ol>
+<li>Sobre-escribe los métodos del ciclo de vida del Servlet
+<ol>
+<li>En cada método imprime en consola un texto para que tengas referencia que la petición pasó por el método</li>
+</ol>
+</li>
+<li>Ejecuta el Servlet</li>
+<li>Discute los resultados de consola.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-nc">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="ciclo_de_vida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recogiendo_parmetros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

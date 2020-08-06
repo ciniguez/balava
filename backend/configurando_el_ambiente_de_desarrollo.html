@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Configurando el Ambiente de Desarrollo | Fundamentos de JAVA WEB </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Carlos Iniguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-26"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Java Web</a></li>
+   <li><a href="introduccin.html" class="daddy">Introducción</a>
+   <ul class="other-section">
+      <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="instalacin_de_herramientas.html" class="current-page-parent daddy">Instalación de Herramientas</a>
+   <ul>
+      <li id="active"><a href="configurando_el_ambiente_de_desarrollo.html" class="active no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
+   </ul>
+   </li>
+   <li><a href="principios_tecnolgicos.html" class="daddy">Principios Tecnológicos</a>
+   <ul class="other-section">
+      <li><a href="servlets.html" class="daddy">Servlets</a>
+      <ul class="other-section">
+         <li><a href="ciclo_de_vida.html" class="no-ch">Ciclo de Vida</a></li>
+         <li><a href="servlet_hola_mundo.html" class="no-ch">Servlet: Hola Mundo</a></li>
+         <li><a href="recogiendo_parmetros.html" class="no-ch">Recogiendo parámetros</a></li>
+         <li><a href="reenvo_entre_componentes.html" class="no-ch">Reenvío entre componentes</a></li>
+      </ul>
+      </li>
+      <li><a href="jsp.html" class="daddy">JSP</a>
+      <ul class="other-section">
+         <li><a href="cdigo_java_no_recomendado.html" class="no-ch">Código Java: No recomendado</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
+         <li><a href="ejercicios.html" class="no-ch">Ejercicios</a></li>
+      </ul>
+      </li>
+      <li><a href="javabeans.html" class="no-ch">JavaBeans</a></li>
+      <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
+   </ul>
+   </li>
+   <li><a href="persistencia.html" class="daddy">Persistencia</a>
+   <ul class="other-section">
+      <li><a href="jdbc.html" class="daddy">JDBC</a>
+      <ul class="other-section">
+         <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
+         <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+         <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+      </ul>
+      </li>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+         <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
+         <li><a href="arquitectura.html" class="daddy">Arquitectura</a>
+         <ul class="other-section">
+            <li><a href="entitymanger.html" class="no-ch">EntityManger</a></li>
+            <li><a href="entidades.html" class="no-ch">Entidades</a></li>
+            <li><a href="ciclo_de_vida0.html" class="no-ch">Ciclo de Vida</a></li>
+         </ul>
+         </li>
+         <li><a href="relaciones.html" class="daddy">Relaciones</a>
+         <ul class="other-section">
+            <li><a href="anotaciones.html" class="no-ch">Anotaciones</a></li>
+            <li><a href="onetoone.html" class="no-ch">OneToOne</a></li>
+            <li><a href="onetomany_y_manytoone.html" class="no-ch">OneToMany y ManyToOne</a></li>
+            <li><a href="manytomany.html" class="no-ch">ManyToMany</a></li>
+            <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+         </ul>
+         </li>
+         <li><a href="ejemplo_anotaciones_clase_estudiante.html" class="no-ch">Ejemplo Anotaciones: Clase Estudiante</a></li>
+         <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+         <li><a href="jpql.html" class="daddy">JPQL</a>
+         <ul class="other-section">
+            <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
+            <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
+            <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
+            <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
+            <li><a href="named_queries.html" class="no-ch">Named Queries</a></li>
+            <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+            <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
+            <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="dao_y_otros_patrones_de_acceso_a_datos.html" class="daddy">DAO y otros patrones de Acceso a Datos</a>
+      <ul class="other-section">
+         <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
+         <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+         <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
+         <li><a href="implementacin_patrn_dao.html" class="daddy">Implementación patrón DAO</a>
+         <ul class="other-section">
+            <li><a href="cdigo_dao.html" class="no-ch">Código DAO</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="instalacin_de_herramientas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_un_proyecto_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Configurando el Ambiente de Desarrollo</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_1" class="block iDevice_content">
+<div style="text-align: center;">
+<div align="left">En el mercado existen popularmente dos opciones como IDE de desarrollo para Java Web, que se describen a continuación:</div>
+<div style="text-align: center;"> 
+<table style="border-collapse: collapse;" align="center" cellpadding="1" cellspacing="1" height="296" width="619">
+<tbody>
+<tr>
+<td>
+<div align="left"><b>1.- NetBeans IDE</b></div>
+<ul>
+<li>
+<div align="left">http://netbeans.org (7.3)</div>
+</li>
+<li>
+<div align="left">Versión *.exe, seguir los pasos de instalación</div>
+</li>
+<li>
+<div align="left">Incluye IDE, servidor JEE GlassFish y BD Apache Derby</div>
+</li>
+</ul>
+</td>
+<td><img src="Unknown" height="82" width="189" /></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><b>2.- Eclipse IDE for Java EE Developers + Apache Tomcat + MySQL</b></td>
+</tr>
+<tr>
+<td>
+<div align="left"></div>
+<ul>
+<li>
+<div align="left"><b>Servidor Web:</b> Apache Tomcat</div>
+<ul>
+<li>
+<div align="left"><a href="https://tomcat.apache.org/download-80.cgi">http://tomcat.apache.org</a> (8.0)</div>
+</li>
+<li>
+<div align="left">versión zip, sólo se descomprime.</div>
+</li>
+<li>
+<div align="left">Sólo esta certificado para servlets y JSP, el resto de JEE se deben instalar los Jars de la implementación manualmente.</div>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<div style="text-align: center;"><img src="apache-tomcat_logo_nomatte.jpg" height="90" width="187" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left"></div>
+<ul>
+<li>
+<div align="left"><b>Eclipse IDE for Java EE Developers</b></div>
+<ul>
+<li>
+<div align="left"><a href="http://www.eclipse.org">http://www.eclipse.org</a> (ECLIPSE 2020-06)</div>
+</li>
+<li>
+<div align="left">Descomprimirlo y crear una carpeta para el “workspace”</div>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<div style="text-align: center;"><img src="eclipse.png" height="106" width="106" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: center;" align="left">El curso lo desarrollaremos con la segunda opción: Eclipse, Apache Tomcat y MySQL </div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad: Descargando e instalando lo necesario</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_25_2" class="block iDevice_content">
+<ul>
+<li><b>Descargando e Instalando Apache Tomcat</b><br />
+<ul>
+<li>Ingresa a la página <a href="https://tomcat.apache.org/download-80.cgi">http://tomcat.apache.org </a></li>
+<li>Descarga Apache Tomcat versión 8.0.x (versión zip)</li>
+<li>Descomprime el zip descargado y ubícalo en un lugar del disco duro, por ejemplo C:/apacheTomcat (para windows) o /User/nombre_usuario/apacheTomcat (para MAC)</li>
+</ul>
+</li>
+<li><b>Descargando Eclipse</b>
+<ul>
+<li>Ingresa a <a href="https://www.eclipse.org/">http://www.eclipse.org</a></li>
+<li>Descarga la versión 2020-06</li>
+<li>Descomprimir en un lugar del disco duro de preferencia</li>
+<li>Ingresar al directorio descomprimido. Doble click en el lanzador de la aplicación</li>
+<li>En la pantalla de selección y confirmación del Workspace, selecciona un directorio de tu disco duro que vayas a utilizar como Workspace.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-nc">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="instalacin_de_herramientas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_un_proyecto_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
