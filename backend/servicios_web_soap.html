@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JPA en la Arquitectura Web | Fundamentos de JAVA WEB </title>
+<title>Servicios Web SOAP | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-95"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-114"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
@@ -58,8 +58,8 @@
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
-   <ul>
+   <li><a href="persistencia.html" class="daddy">Persistencia</a>
+   <ul class="other-section">
       <li><a href="jdbc.html" class="daddy">JDBC</a>
       <ul class="other-section">
          <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
@@ -67,9 +67,9 @@
          <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
-      <ul>
-         <li id="active"><a href="jpa_en_la_arquitectura_web.html" class="active no-ch">JPA en la Arquitectura Web</a></li>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
          <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
          <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
@@ -119,11 +119,11 @@
       </li>
    </ul>
    </li>
-   <li><a href="servicios_web.html" class="daddy">Servicios Web</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
+   <ul>
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
-      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
-      <ul class="other-section">
+      <li id="active"><a href="servicios_web_soap.html" class="active daddy">Servicios Web SOAP</a>
+      <ul>
          <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
       </ul>
       </li>
@@ -144,18 +144,34 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="concepto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_login_persona.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JPA en la Arquitectura Web</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id85">
-<div class="iDevice emphasis0">
-<div id="ta85_1" class="block iDevice_content">
-<p><span style="color: #ff0000;"><b>Localización de JPA en el Modelo Vista Controlador</b></span></p>
-<p>En el gráfico siguiente, podemos identificar el lugar, dentro de la arquitectura MVC, en el que operaría JPA. Fijaros que el archivo <b>persistence.xml </b>es uno de los archivos más importantes ya que guarda la información de la configuración de JPA. Por ejemplo, si algún día decidimos cambiar el motor de Base de datos, este archivo es el lugar donde cambiaremos la configuración.</p>
-<p><img src="Captura_de_pantalla_2014-12-08_a_la(s)_19.59.30.png" height="339" width="600" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<header id="nodeDecoration"><h1 id="nodeTitle">Servicios Web SOAP</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id144">
+<div class="iDevice emphasis0" >
+<div id="ta144_110_2" class="block iDevice_content">
+<div class="exe-text"><figure class="exe-figure exe-image position-center license-copyright" style="width: 751px;">
+<div class="figcaption header"><strong>Sitios Web en Funcionamiento</strong></div>
+<img src="serviciosWeb1.png" alt="Mensaje SOAP" width="751" height="358" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" />
+<figcaption class="figcaption"><a href="http://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb" target="_blank" class="author" rel="noopener">Fuente: w3c</a> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></figcaption>
+</figure>
+<p><span>SOAP (<strong>Protocolo Simple de Acceso a Objetos</strong>).</span></p>
+<ul>
+<li><span>Protocolo basado en XML que permite la interacción entre varios dispositivos y que tiene la capacidad de transmitir información compleja.</span></li>
+<li><span>Los datos pueden ser transmitidos a través de HTTP , SMTP , etc.</span></li>
+<li><span>Especifica el formato de los mensajes.</span></li>
+<li><span>El mensaje SOAP está compuesto por un <strong>envelope </strong>(sobre), cuya estructura está formada por los siguientes elementos: <strong>header </strong>(cabecera) y <strong>body </strong>(cuerpo).</span></li>
+</ul>
+<figure class="exe-figure exe-image position-center license-copyright" style="text-align: center;"><img src="soap11.png" alt="Mensaje SOAP" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" />
+<figcaption class="figcaption"><a href="http://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb" target="_blank" class="author" rel="noopener">Fuente: http://www.w3c.es</a> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></figcaption>
+</figure>
+<h2><span>WSDL</span></h2>
+<p><strong>WSDL</strong> (Lenguaje de Descripción de Servicios Web), <cite dir="ltr" title="http://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb">"permite que un servicio y un cliente establezcan <strong>un acuerdo en lo que se refiere a los detalles de transporte de mensajes y su contenido,</strong> a través de un documento procesable por dispositivos. WSDL representa una especie de contrato entre el proveedor y el que solicita. WSDL especifica la sintaxis y los mecanismos de intercambio de mensajes"</cite>.</p>
+<figure class="exe-figure exe-image position-center license-copyright" style="width: 751px;"></figure>
+<p><br /><br /></p></div>
 </div>
 </div>
 </article>
@@ -166,7 +182,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="concepto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctica_login_persona.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>

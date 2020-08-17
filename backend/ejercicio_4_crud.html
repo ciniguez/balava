@@ -1,26 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>REST | Fundamentos de JAVA WEB </title>
+<title>Ejercicio 4: CRUD | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-107"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-123"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
-<div id="siteNav">
+<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
+<nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -121,68 +121,89 @@
    </li>
    <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
    <ul>
-      <li id="active"><a href="rest.html" class="active daddy">REST</a>
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
+      <ul class="other-section">
+         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="servicios_web_rest.html" class="current-page-parent daddy">Servicios Web REST</a>
       <ul>
          <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_hola_rest.html" class="no-ch">Ejercicio: Hola Rest</a></li>
+         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
+         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+         <li id="active"><a href="ejercicio_4_crud.html" class="active no-ch">Ejercicio 4: CRUD</a></li>
       </ul>
       </li>
    </ul>
    </li>
 </ul>
-</div>
+</nav>
 <div id='topPagination'>
-<div class="pagination noprt">
-<a href="servicios_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</div>
+<nav class="pagination noprt">
+<a href="ejercicio_3_parmetros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
 </div>
 <div id="main-wrapper">
-<div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">REST</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id118">
-<div class="iDevice emphasis0" >
-<div id="ta118_118_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones sobre la Web.</li>
-<li>Se basa en la Web tal como está en la actualidad: HTTP.</li>
-<li>Fue introducido por Roy T. Fielding en el año 2000</li>
-<li>También referenciado como <strong>RESTful</strong></li>
-<li>Se pretende construir sistemas distribuidos por servicios independientes, con evoluciones independientes y anárquicas</li>
-</ul></div>
-</div>
-</div>
-</div>
-<div class="iDevice_wrapper textIdevice em_iDevice" id="id119">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejercicio 4: CRUD</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id158">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header" style="background-image:url(icon_award.png)"><h2 class="iDeviceTitle">Estilo Arquitectónico</h2></div>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Objetivos</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta119_119_2" class="block iDevice_content">
+<div id="ta158_140_2" class="block iDevice_content">
+<ul>
+<li>Construir un servicio Web "PersonaRecurso" que permita realizar las operaciones CRUD sobre datos de personas.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id159">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Arquitectura </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta159_141_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="diagramas.png" width="621" height="588" alt="ejercicio 4 arquitectura REST" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id160">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_presentation.png)"><h1 class="iDeviceTitle">Instrucciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta160_142_2" class="block iDevice_content">
 <div class="exe-text"><ul>
-<li>Contienen un descriptor del servicio en WADL (Web Application Description Language)
+<li>Crea un proyecto Dynamic Web Project. Lo llamaremos "<strong>rest_ejercicio3_CRUD</strong>"
 <ul>
-<li>http:// .../application.wadl</li>
+<li>Check en Descriptor de Despliegue (web.xml)</li>
 </ul>
 </li>
-<li>Servidor sin estado. El servidor no gestiona los recursos de los clientes. En cada petición el cliente debe enviar toda la información.
+<li>Copia los paquetes DAO, modelo y serviciosrest.persona del ejercicio anterior (rest_ejercicio2_formato) y pegados en el directorio "src" de este proyecto</li>
+<li>En el fiero web.xml, copia el contenido del web.xml del ejercicio est_ejercicio2_formato</li>
+<li>Elimina las clases dentro del paquete serviciosrest.persona</li>
+<li>Crea el servicio Web:
 <ul>
-<li>Los estados diferentes se corresponden con Uri diferente</li>
+<li>Crea la clase PersonaRecurso.java en el paquete serviciosrest.persona</li>
+<li>Implementa los métodos:
+<ul>
+<li>getPersonas (Path del método: ninguno)</li>
+<li>getPersonaByPathParam(int id) (Path del método: /{id})</li>
+<li>getPersinaByQueryParam(int id) (Path del método: /query)</li>
+<li>guardarUsuario(Persona p) (Path del método: /add)</li>
+<li>actualizarUsuario(int id) (Path del método: /update)</li>
+<li>eliminarUsuario(int id) (Path del método: /delete/{id})</li>
 </ul>
 </li>
-<li>Los datos y acciones se consideran como recursos y se acceden mediante las URIs.
-<ul>
-<li>.../cliente/23, /cliente/23/nombre</li>
-</ul>
-</li>
-<li>Se permite la elección del tipo de representación (HTML, XML, JSON...) a través de los tipos MIME</li>
-<li>Métodos HTTP (<strong>CRUD</strong>):
-<ul>
-<li><strong>POST</strong> (C): Para guardar un nuevo objeto (instancia de identidad) en la aplicación</li>
-<li><strong>GET</strong> (R): Para obtener un valor. Puede ser un listado de objetos</li>
-<li><strong>PUT</strong> (U): Para actualizar un objeto</li>
-<li><strong>DELETE</strong> (D): Para eliminar un objeto (instancia de identidad)</li>
 </ul>
 </li>
 </ul></div>
@@ -190,16 +211,16 @@
 </div>
 </div>
 </div>
-</div>
+</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</div>
+</section>
 </div>
 <div id='bottomPagination'>
-<div class="pagination noprt">
-<a href="servicios_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<nav class="pagination noprt">
+<a href="ejercicio_3_parmetros.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
 </div>
-</div>
-<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -2,21 +2,25 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JPA en la Arquitectura Web | Fundamentos de JAVA WEB </title>
+<title>Práctica: Login Persona | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-95"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-115"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
@@ -58,8 +62,8 @@
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
-   <ul>
+   <li><a href="persistencia.html" class="daddy">Persistencia</a>
+   <ul class="other-section">
       <li><a href="jdbc.html" class="daddy">JDBC</a>
       <ul class="other-section">
          <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
@@ -67,9 +71,9 @@
          <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
-      <ul>
-         <li id="active"><a href="jpa_en_la_arquitectura_web.html" class="active no-ch">JPA en la Arquitectura Web</a></li>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
          <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
          <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
@@ -119,12 +123,12 @@
       </li>
    </ul>
    </li>
-   <li><a href="servicios_web.html" class="daddy">Servicios Web</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
+   <ul>
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
-      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
-      <ul class="other-section">
-         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      <li class="current-page-parent"><a href="servicios_web_soap.html" class="current-page-parent daddy">Servicios Web SOAP</a>
+      <ul>
+         <li id="active"><a href="prctica_login_persona.html" class="active no-ch">Práctica: Login Persona</a></li>
       </ul>
       </li>
       <li><a href="servicios_web_rest.html" class="daddy">Servicios Web REST</a>
@@ -144,18 +148,210 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="servicios_web_soap.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="servicios_web_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JPA en la Arquitectura Web</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id85">
-<div class="iDevice emphasis0">
-<div id="ta85_1" class="block iDevice_content">
-<p><span style="color: #ff0000;"><b>Localización de JPA en el Modelo Vista Controlador</b></span></p>
-<p>En el gráfico siguiente, podemos identificar el lugar, dentro de la arquitectura MVC, en el que operaría JPA. Fijaros que el archivo <b>persistence.xml </b>es uno de los archivos más importantes ya que guarda la información de la configuración de JPA. Por ejemplo, si algún día decidimos cambiar el motor de Base de datos, este archivo es el lugar donde cambiaremos la configuración.</p>
-<p><img src="Captura_de_pantalla_2014-12-08_a_la(s)_19.59.30.png" height="339" width="600" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<header id="nodeDecoration"><h1 id="nodeTitle">Práctica: Login Persona</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id141">
+<div class="iDevice emphasis0" >
+<div id="ta141_111_2" class="block iDevice_content">
+<div class="exe-text"><p><span><img src="m1_img0.png" width="502" height="295" alt="practica1" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span>En esta práctica realizaremos el login de una persona a través de Servicio Web utilizando SOAP. Como lo muestra la figura, lo que se pretende es hacer dos aplicaciones:</span></p>
+<ol>
+<li><span>Proveedor del Servicio.- Aplicación Web que expone el servicio <em>validarPersona</em>.</span>
+<ol>
+<li><span>Esta aplicación será desarrollada como DynamicWebProyect y expondrá los servicios a través de SOAP.</span> </li>
+<li><span>El nombre de esta aplicación será: <strong>ProveedorWebSoap</strong></span><span></span></li>
+</ol>
+</li>
+<li><span>Consumidor del Servicio.- Aplicación (de escritorio) que consume el servicio Web <em>validarPersona </em>expuesto por el Servidor. </span>
+<ol>
+<li><span>Esta aplicación será desarrollada como Proyecto Java (escritorio)</span></li>
+<li><span>El nombre de esta aplicación será: <strong>ConsumidorWebSoap</strong></span></li>
+</ol>
+</li>
+</ol></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id142">
+<div class="iDevice emphasis0" >
+<div id="ta142_112_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="m1_img0.1.png" width="721" height="465" alt="Diagrama Clases Practica 1 SOAP" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id143">
+<div class="iDevice emphasis0" >
+<div id="ta143_113_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs" style="text-align: center;">
+<h2>Persona.java (Proveedor)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.modelo;
+
+import java.io.Serializable;
+
+public class Persona implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private String nombre;
+	private String apellido;
+	private String username;
+	private String pass;
+	private String mensaje;
+	private Boolean status;
+
+	// CONSTRUCTOR VACIO
+
+	public Persona() {
+	}
+	//GETTERS AND SEETTERS
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+
+	public Boolean getStatus() {
+		return status;
+	}
+
+	public void setStatus(Boolean status) {
+		this.status = status;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>IPersona (Proveedor)</h2>
+<p>Interfaz en el paquete <strong>ec.edu.epn.ws.service</strong></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.ws.service;
+
+import ec.edu.epn.modelo.Persona;
+
+public interface IPersona {
+	Persona validarPersona(Persona p);
+	String saludo (String nombre);
+}
+</code></pre>
+</div>
+</div>
+<h2>ImplValidacion.java (Proveedor)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.ws.service;
+
+import ec.edu.epn.modelo.Persona;
+
+public class ImplValidacion implements IPersona {
+	public ImplValidacion() {}
+
+	@Override
+	public Persona validarPersona(Persona p) {
+		Persona persona = new Persona();
+		if(p.getUsername().equals("ana") &amp;&amp; p.getPass().equals("anita")) {
+			persona.setNombre("Ana");
+			persona.setApellido("Valdiviezo");
+			persona.setMensaje("Usuario enconatrado");
+			persona.setStatus(true);
+		}else {
+			persona.setMensaje("Usuario no encontrado");
+			persona.setStatus(false);
+		}
+		return persona;
+	}
+
+	@Override
+	public String saludo(String nombre) {
+		return "Hola " + nombre;
+	}
+
+}
+</code></pre>
+</div>
+</div>
+<h2>Principal.java (Consumidor)</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>package ec.edu.epn.cliente;
+
+import java.rmi.RemoteException;
+
+import ec.edu.epn.modelo.Persona;
+import ec.edu.epn.ws.service.ImplValidacion;
+import ec.edu.epn.ws.service.ImplValidacionProxy;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		ImplValidacion iValidacion = new ImplValidacionProxy("http://localhost:8080/ProveedorWebSOAP/services/ImplValidacion");
+		Persona per = new Persona();
+		per.setUsername("ana");
+		per.setPass("anita");
+
+		try {
+			per = iValidacion.validarPersona(per);
+			System.out.println("Estado de usuario:" + per.getStatus() + "  Mensaje de Usuario: " + per.getMensaje());
+			System.out.println(per.getNombre() + " " + per.getApellido());
+			
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+</code></pre>
+</div>
+</div>
+<h2>Video resumen</h2>
+<iframe width="640" height="480" src="https://player.vimeo.com/video/448195307?title=0&amp;amp;byline=0" allowfullscreen="allowfullscreen"></iframe><br /><br /><br /><br /></div>
+<p></p></div>
 </div>
 </div>
 </article>
@@ -166,7 +362,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="servicios_web_soap.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="servicios_web_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>

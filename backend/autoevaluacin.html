@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
@@ -7,10 +7,10 @@
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
 <title>Autoevaluación | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -19,8 +19,8 @@
 <body class="exe-web-site" id="exe-node-100"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
-<div id="siteNav">
+<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
+<nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -121,185 +121,187 @@
    </li>
    <li><a href="servicios_web.html" class="daddy">Servicios Web</a>
    <ul class="other-section">
-      <li><a href="rest.html" class="daddy">REST</a>
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
+      <ul class="other-section">
+         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      </ul>
+      </li>
+      <li><a href="servicios_web_rest.html" class="daddy">Servicios Web REST</a>
       <ul class="other-section">
          <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_hola_rest.html" class="no-ch">Ejercicio: Hola Rest</a></li>
+         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
+         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+         <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       </ul>
       </li>
    </ul>
    </li>
 </ul>
-</div>
+</nav>
 <div id='topPagination'>
-<div class="pagination noprt">
+<nav class="pagination noprt">
 <a href="named_queries.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="caso_prctico_tutorias.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</div>
+</nav>
 </div>
 <div id="main-wrapper">
-<div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Autoevaluación</h1></div>
-<div class="iDevice_wrapper MultiSelectIdevice em_iDevice" id="id88">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Autoevaluación</h1></header>
+<article class="iDevice_wrapper MultiSelectIdevice em_iDevice" id="id88">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Pregunta de Selección Múltiple</h2></div>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta de Selección Múltiple</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div class="question">
+<section class="question">
 <div id="actitity-88_108">
 <form name="multi-select-form-88_108" action="#" class="activity-form multi-select-form">
-<h3 class="js-sr-av">Pregunta</h3>
+<h1 class="js-sr-av">Pregunta</h1>
 <div id="taquestion88_108" class="block question iDevice_content">
 <p>Cuál es el método del EntityManager por el cual se crean sentencias JPQL anotadas en la cabecera de la Entidad o en archivos XML?</p>
 </div>
-<div class="iDevice_answers">
-<h4 class="js-sr-av">Respuestas</h4>
-<div class="iDevice_answer">
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_1080" class="sr-av"><a href="#answer-88_111">Opción 1</a></label><input type="checkbox" id="op88_1080" value="True" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_111"><a name="answer-88_111"></a>
-<div id="taans88_111" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_111"><div id="taans88_111" class="block iDevice_content">
 <p>createNativeQuery</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_1080" style="display:none"></div>
-</div>
-<div class="iDevice_answer">
+<section class="iDevice_answer-feedback feedback" id="feedback-88_1080" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_1081" class="sr-av"><a href="#answer-88_318">Opción 2</a></label><input type="checkbox" id="op88_1081" value="False" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_318"><a name="answer-88_318"></a>
-<div id="taans88_318" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_318"><div id="taans88_318" class="block iDevice_content">
 <p>createNameQuery</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_1081" style="display:none"></div>
-</div>
-<div class="iDevice_answer">
+<section class="iDevice_answer-feedback feedback" id="feedback-88_1081" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_1082" class="sr-av"><a href="#answer-88_320">Opción 3</a></label><input type="checkbox" id="op88_1082" value="True" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_320"><a name="answer-88_320"></a>
-<div id="taans88_320" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_320"><div id="taans88_320" class="block iDevice_content">
 <p>createQuery</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_1082" style="display:none"></div>
-</div>
-</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-88_1082" style="display:none"></section>
+</section>
+</section>
 <div class="block iDevice_buttons feedback-button js-required">
 <p>
 <input type="button" name="submitSelect" class="feedbackbutton multi-select-feedback-toggler" value="Mostrar retroalimentación" id="multi-select-feedback-toggler-3-88_108" /> 
 </p>
 </div>
-<div id="f88_108" class="js-hidden js-feedback">
-<h4 class="js-sr-av">Retroalimentación</h4>
+<section id="f88_108" class="js-hidden js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
 
 <div id="tafeedback88_108" class="feedback iDevice_content">
 <p><span style="font-family: courier new,courier;">createNativeQuery</span> es utilizado para realizar consultas mediante sentenicas SQL puras. Por otro lado <span style="font-family: courier new,courier;">createQuery</span> nos ayuda a crear consultas dinámicas. Las <span style="font-family: courier new,courier;">NameQuery</span>, son consultas que se anotan en la cabecera de la entidad o en un documento XML externo.</p>
 </div>
-</div>
+</section>
 </form>
-<div class="iDevice_solution feedback js-hidden">
-<h4>Solución</h4>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
 <ol>
 <li><a href="#answer-88_111" class="right">Correcto</a></li>
 <li><a href="#answer-88_318" class="wrong">Incorrecto</a></li>
 <li><a href="#answer-88_320" class="right">Correcto</a></li>
 </ol>
+</section>
 </div>
-</div>
-</div>
-<div class="question">
+</section>
+<section class="question">
 <div id="actitity-88_322">
 <form name="multi-select-form-88_322" action="#" class="activity-form multi-select-form">
-<h3 class="js-sr-av">Pregunta</h3>
+<h1 class="js-sr-av">Pregunta</h1>
 <div id="taquestion88_322" class="block question iDevice_content">
 <p>A diferencia de SQL, JPQL realiza las consultas utilizando:</p>
 </div>
-<div class="iDevice_answers">
-<h4 class="js-sr-av">Respuestas</h4>
-<div class="iDevice_answer">
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_3220" class="sr-av"><a href="#answer-88_325">Opción 1</a></label><input type="checkbox" id="op88_3220" value="True" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_325"><a name="answer-88_325"></a>
-<div id="taans88_325" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_325"><div id="taans88_325" class="block iDevice_content">
 <p>tablas y objetos</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_3220" style="display:none"></div>
-</div>
-<div class="iDevice_answer">
+<section class="iDevice_answer-feedback feedback" id="feedback-88_3220" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_3221" class="sr-av"><a href="#answer-88_327">Opción 2</a></label><input type="checkbox" id="op88_3221" value="True" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_327"><a name="answer-88_327"></a>
-<div id="taans88_327" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_327"><div id="taans88_327" class="block iDevice_content">
 <p>tablas y sus columnas</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_3221" style="display:none"></div>
-</div>
-<div class="iDevice_answer">
+<section class="iDevice_answer-feedback feedback" id="feedback-88_3221" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_3222" class="sr-av"><a href="#answer-88_329">Opción 3</a></label><input type="checkbox" id="op88_3222" value="True" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_329"><a name="answer-88_329"></a>
-<div id="taans88_329" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_329"><div id="taans88_329" class="block iDevice_content">
 <p>atributos de entidades</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_3222" style="display:none"></div>
-</div>
-<div class="iDevice_answer">
+<section class="iDevice_answer-feedback feedback" id="feedback-88_3222" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
 <label for="op88_3223" class="sr-av"><a href="#answer-88_331">Opción 4</a></label><input type="checkbox" id="op88_3223" value="False" />
 </p>
-<div class="iDevice_answer-content" id="answer-88_331"><a name="answer-88_331"></a>
-<div id="taans88_331" class="block iDevice_content">
+<div class="iDevice_answer-content" id="answer-88_331"><div id="taans88_331" class="block iDevice_content">
 <p>entidades y sus atributos</p>
 </div>
 </div>
-<div class="iDevice_answer-feedback feedback" id="feedback-88_3223" style="display:none"></div>
-</div>
-</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-88_3223" style="display:none"></section>
+</section>
+</section>
 <div class="block iDevice_buttons feedback-button js-required">
 <p>
 <input type="button" name="submitSelect" class="feedbackbutton multi-select-feedback-toggler" value="Mostrar retroalimentación" id="multi-select-feedback-toggler-4-88_322" /> 
 </p>
 </div>
-<div id="f88_322" class="js-hidden js-feedback">
-<h4 class="js-sr-av">Retroalimentación</h4>
+<section id="f88_322" class="js-hidden js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
 
-</div>
+</section>
 </form>
-<div class="iDevice_solution feedback js-hidden">
-<h4>Solución</h4>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
 <ol>
 <li><a href="#answer-88_325" class="right">Correcto</a></li>
 <li><a href="#answer-88_327" class="right">Correcto</a></li>
 <li><a href="#answer-88_329" class="right">Correcto</a></li>
 <li><a href="#answer-88_331" class="wrong">Incorrecto</a></li>
 </ol>
+</section>
+</div>
+</section>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
+</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</div>
+</section>
 </div>
 <div id='bottomPagination'>
-<div class="pagination noprt">
+<nav class="pagination noprt">
 <a href="named_queries.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="caso_prctico_tutorias.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
-</div>
-<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

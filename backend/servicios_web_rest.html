@@ -1,28 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Ejercicio: Hola Rest | Fundamentos de JAVA WEB </title>
+<title>Servicios Web REST | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
-<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-109"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-116"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
-<div id="siteNav">
+<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
+<nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -123,125 +121,94 @@
    </li>
    <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
    <ul>
-      <li class="current-page-parent"><a href="rest.html" class="current-page-parent daddy">REST</a>
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
+      <ul class="other-section">
+         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="servicios_web_rest.html" class="active daddy">Servicios Web REST</a>
       <ul>
          <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li id="active"><a href="ejercicio_hola_rest.html" class="active no-ch">Ejercicio: Hola Rest</a></li>
+         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
+         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+         <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       </ul>
       </li>
    </ul>
    </li>
 </ul>
-</div>
+</nav>
 <div id='topPagination'>
-<div class="pagination noprt">
-<a href="tecnologas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recursos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</div>
+<nav class="pagination noprt">
+<a href="prctica_login_persona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
 <div id="main-wrapper">
-<div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Ejercicio: Hola Rest</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id121">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Servicios Web REST</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id161">
 <div class="iDevice emphasis0" >
-<div id="ta121_121_2" class="block iDevice_content">
+<div id="ta161_118_2" class="block iDevice_content">
 <div class="exe-text"><ul>
-<li>Tecnologías: Jersey + Eclipse + Tomcat, sin asistente
-<ul>
-<li>Crear un proyecto nuevo: “Dinamic Web Proyect”, Lo llamaremos: “REST”. Activar la creación del descriptor.</li>
-<li>Copiar todos los Jars de Jersey en la carpeta lib, de WEB-INF
-<ul>
-<li><a href="https://ciniguez.github.io/balava/libreriasjava/">https://ciniguez.github.io/balava/libreriasjava/</a>  (Sección Servicios Web - REST)</li>
-</ul>
-</li>
-<li>Crear una clase con el servicio</li>
-</ul>
-</li>
-</ul>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
-@Path("/hello")
-public class Hola {
-
-	@GET @Produces(MediaType.TEXT_PLAIN)
-	public String saludo() {
-		return "Hola, desde RESTful";
-	}
-}</code></pre>
+<li>REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones sobre la Web.</li>
+<li>Se basa en la Web tal como está en la actualidad: HTTP.</li>
+<li>Fue introducido por Roy T. Fielding en el año 2000</li>
+<li>También referenciado como <strong>RESTful</strong></li>
+<li>Se pretende construir sistemas distribuidos por servicios independientes, con evoluciones independientes y anárquicas</li>
+</ul></div>
 </div>
 </div>
-<ul>
-<li>Registrar el servlet de Jersey en el descriptor (web.xml)
-<ul>
-<li>Asociarle al servlet de Jersey, el paquete de java con nuestras clases que representan los servicios</li>
-<li>Mapear el servlet, par que capture doas las peticiones "/rest/*"</li>
-<li>Arrancar el servidor e invocarlo con:
-<ul>
-<li><a href="http://localhost:8080/RS-Server/rest/hello">http://localhost:8080/RS-Server/rest/hello</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>web.xml</strong>:</p>
-<div class="highlighted-code language-markup line-numbers">
-<div>
-<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"&gt;
-  &lt;display-name&gt;REST&lt;/display-name&gt;
-	&lt;welcome-file-list&gt;
-		&lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
-	&lt;/welcome-file-list&gt;
-	
-	
-	&lt;servlet&gt;
-		&lt;servlet-name&gt;Jersey REST Service&lt;/servlet-name&gt;
-		&lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer&lt;/servlet-class&gt;
-		&lt;init-param&gt;
-			&lt;param-name&gt;jersey.config.server.provider.packages&lt;/param-name&gt;
-			&lt;param-value&gt;servicio&lt;/param-value&gt;
-		&lt;/init-param&gt;
-		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-	&lt;/servlet&gt;
-	&lt;servlet-mapping&gt;
-		&lt;servlet-name&gt;Jersey REST Service&lt;/servlet-name&gt;
-		&lt;url-pattern&gt;/rest/*&lt;/url-pattern&gt;
-	&lt;/servlet-mapping&gt;
-&lt;/web-app&gt;</code></pre>
-</div>
-</div>
-<p></p></div>
-</div>
-</div>
-</div>
-<div class="iDevice_wrapper textIdevice em_iDevice" id="id122">
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id162">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header" style="background-image:url(icon_share.png)"><h2 class="iDeviceTitle">Herramienta de Apoyo</h2></div>
+<header class="iDevice_header" style="background-image:url(icon_award.png)"><h1 class="iDeviceTitle">Estilo Arquitectónico</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta122_122_2" class="block iDevice_content">
-<div class="exe-text"><p>Para consumir los servicios web - REST te recomiendo descargar una herramienta para Google Chrome: <strong>Advanced Rest Client</strong></p>
-<p><strong><img src="img0.2.png" width="517" height="133" alt="Advanced REST Client" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p></div>
+<div id="ta162_119_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Contienen un descriptor del servicio en WADL (Web Application Description Language)
+<ul>
+<li>http:// .../application.wadl</li>
+</ul>
+</li>
+<li>Servidor sin estado. El servidor no gestiona los recursos de los clientes. En cada petición el cliente debe enviar toda la información.
+<ul>
+<li>Los estados diferentes se corresponden con Uri diferente</li>
+</ul>
+</li>
+<li>Los datos y acciones se consideran como recursos y se acceden mediante las URIs.
+<ul>
+<li>.../cliente/23, /cliente/23/nombre</li>
+</ul>
+</li>
+<li>Se permite la elección del tipo de representación (HTML, XML, JSON...) a través de los tipos MIME</li>
+<li>Métodos HTTP (<strong>CRUD</strong>):
+<ul>
+<li><strong>POST</strong> (C): Para guardar un nuevo objeto (instancia de identidad) en la aplicación</li>
+<li><strong>GET</strong> (R): Para obtener un valor. Puede ser un listado de objetos</li>
+<li><strong>PUT</strong> (U): Para actualizar un objeto</li>
+<li><strong>DELETE</strong> (D): Para eliminar un objeto (instancia de identidad)</li>
+</ul>
+</li>
+</ul></div>
 </div>
 </div>
 </div>
 </div>
-</div>
+</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</div>
+</section>
 </div>
 <div id='bottomPagination'>
-<div class="pagination noprt">
-<a href="tecnologas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recursos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<nav class="pagination noprt">
+<a href="prctica_login_persona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tecnologas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
-</div>
-<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

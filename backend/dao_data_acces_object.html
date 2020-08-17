@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
@@ -7,10 +7,10 @@
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
 <title>DAO (Data Acces Object) | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
@@ -19,8 +19,8 @@
 <body class="exe-web-site" id="exe-node-47"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
-<div id="siteNav">
+<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
+<nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -121,27 +121,36 @@
    </li>
    <li><a href="servicios_web.html" class="daddy">Servicios Web</a>
    <ul class="other-section">
-      <li><a href="rest.html" class="daddy">REST</a>
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
+      <ul class="other-section">
+         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      </ul>
+      </li>
+      <li><a href="servicios_web_rest.html" class="daddy">Servicios Web REST</a>
       <ul class="other-section">
          <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_hola_rest.html" class="no-ch">Ejercicio: Hola Rest</a></li>
+         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
+         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+         <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       </ul>
       </li>
    </ul>
    </li>
 </ul>
-</div>
+</nav>
 <div id='topPagination'>
-<div class="pagination noprt">
+<nav class="pagination noprt">
 <a href="activerecord.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="de_activerecord_a_dao.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</div>
+</nav>
 </div>
 <div id="main-wrapper">
-<div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">DAO (Data Acces Object)</h1></div>
-<div class="iDevice_wrapper FreeTextIdevice" id="id115">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">DAO (Data Acces Object)</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id115">
 <div class="iDevice emphasis0">
 <div id="ta115_85" class="block iDevice_content">
 <table border="0">
@@ -200,10 +209,10 @@
 <p></p>
 </div>
 </div>
-</div>
-<div class="iDevice_wrapper ReflectionIdevice em_iDevice" id="id116">
+</article>
+<article class="iDevice_wrapper ReflectionIdevice em_iDevice" id="id116">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Decidiento sobre el uso de Patrones</h2></div>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Decidiento sobre el uso de Patrones</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta116_92" class="block iDevice_content">
@@ -213,8 +222,8 @@
 <div class="block iDevice_buttons feedback-button js-required">
 <p><script type="text/javascript">var feedback116_93text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-116_93" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
 </div>
-<div id="feedback-116_93" class="feedback js-feedback js-hidden">
-<h3 class="js-sr-av">Retroalimentación</h3>
+<section id="feedback-116_93" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
 <p>En este caso no estamos en una situación de aislamiento sino en lo contrario. Por lo tanto la mejor opción es aplicar un patrón DAO, para que los métodos problemáticos del patrón ActiveRecord no agreguen basura al módulo de Facturación:</p>
 <table border="1" cellpadding="1" cellspacing="1">
 <tbody>
@@ -231,21 +240,21 @@
 <td>Unicamente los datos relevantes del Bussines Object entrarían al módulo de facturación, y las operaciones CRUD solo serían utilizadas bajo demanda.</td>
 </tr>
 </tbody>
-</table></div>
+</table></section>
 </form>
 </div>
 </div>
 </div>
-</div>
+</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</div>
+</section>
 </div>
 <div id='bottomPagination'>
-<div class="pagination noprt">
+<nav class="pagination noprt">
 <a href="activerecord.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="de_activerecord_a_dao.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
-</div>
-<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

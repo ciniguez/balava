@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
@@ -7,20 +7,20 @@
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
 <title>Tecnologías | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-108"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-117"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<div id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></div>
-<div id="siteNav">
+<header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
+<nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Java Web</a></li>
    <li><a href="introduccin.html" class="daddy">Introducción</a>
@@ -121,31 +121,44 @@
    </li>
    <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
    <ul>
-      <li class="current-page-parent"><a href="rest.html" class="current-page-parent daddy">REST</a>
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
+      <ul class="other-section">
+         <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="servicios_web_rest.html" class="current-page-parent daddy">Servicios Web REST</a>
       <ul>
          <li id="active"><a href="tecnologas.html" class="active no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_hola_rest.html" class="no-ch">Ejercicio: Hola Rest</a></li>
+         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
+         <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+         <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+         <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
       </ul>
       </li>
    </ul>
    </li>
 </ul>
-</div>
+</nav>
 <div id='topPagination'>
-<div class="pagination noprt">
-<a href="rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_hola_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
-</div>
+<nav class="pagination noprt">
+<a href="servicios_web_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_1_hola_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
 <div id="main-wrapper">
-<div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">Tecnologías</h1></div>
-<div class="iDevice_wrapper textIdevice" id="id120">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Tecnologías</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id145">
 <div class="iDevice emphasis0" >
-<div id="ta120_120_2" class="block iDevice_content">
+<div id="ta145_120_2" class="block iDevice_content">
 <div class="exe-text"><ul>
-<li>JAX-RS (Java API para REST Web Services) es una API de programación en lenguaje Java que proporciona apoyo en la creación de servicios web de acuerdo al estilo arquitectónico REST</li>
+<li>JAX-RS (Java API para REST Web Services) es una API de programación en lenguaje Java que proporciona apoyo en la creación de servicios web de acuerdo al estilo arquitectónico REST
+<ul>
+<li>Es un framework que dispone de un<span style="text-decoration: underline;"> servlet que realiza la función de dispatcher</span></li>
+</ul>
+</li>
 <li>Implementaciones
 <ul>
 <li>Oracle (Jersey) <a href="http://jersey.java.net">http://jersey.java.net</a></li>
@@ -156,22 +169,50 @@
 <li>Documentación
 <ul>
 <li><a href="https://wikis.oracle.com/display/Jersey/Main">https://wikis.oracle.com/display/Jersey/Main</a></li>
-<li>http://cxf.apache.org/docs/jax-rs.html</li>
+<li><a href="http://cxf.apache.org/docs/jax-rs.html">http://cxf.apache.org/docs/jax-rs.html</a></li>
 </ul>
 </li>
-</ul></div>
+<li>JAXB (Java Architecture for XML Binding) ayuda a convertir elementos Java a XML y viceversa</li>
+</ul>
+<hr />
+<p>En este curso utilizaremos:</p>
+<table border="0" style="width: 80%; border-style: solid; border-color: #570505; background-color: #f5eab5;" class="exe-table"><caption>Librerías a utilzar en este curso</caption>
+<tbody>
+<tr>
+<td style="width: 22.9602%;"><strong>Librería</strong></td>
+<td style="width: 77.0398%;"><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td style="width: 22.9602%;">Jersey</td>
+<td style="width: 77.0398%;">Implementación de JAX-RS</td>
+</tr>
+<tr>
+<td style="width: 22.9602%;">jAXB</td>
+<td style="width: 77.0398%;">Transformar de manera bidireccional entre Objetos Java y XML</td>
+</tr>
+<tr>
+<td style="width: 22.9602%;">jackson</td>
+<td style="width: 77.0398%;">Transformar de manera bidireccional entre Objetos Java y JSON</td>
+</tr>
+<tr>
+<td style="width: 22.9602%;"></td>
+<td style="width: 77.0398%;"></td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
 </div>
 </div>
-</div>
+</article>
 <div id="packageLicense" class="cc cc-by-nc">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Licencia Creative Commons Reconocimiento No comercial 3.0</a></p>
 </div>
-</div>
+</section>
 </div>
 <div id='bottomPagination'>
-<div class="pagination noprt">
-<a href="rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_hola_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<nav class="pagination noprt">
+<a href="servicios_web_rest.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejercicio_1_hola_rest.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
 </div>
-</div>
-<div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
+<footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
 <script type="text/javascript" src="_intef_js.js"></script></body></html>

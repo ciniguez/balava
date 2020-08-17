@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JPA en la Arquitectura Web | Fundamentos de JAVA WEB </title>
+<title>Ejercicio 1: Hola Rest | Fundamentos de JAVA WEB </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iniguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-95"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-118"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Fundamentos de JAVA WEB</div></header>
@@ -58,8 +60,8 @@
       <li><a href="ejemplo_mvc.html" class="no-ch">Ejemplo MVC</a></li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="persistencia.html" class="current-page-parent daddy">Persistencia</a>
-   <ul>
+   <li><a href="persistencia.html" class="daddy">Persistencia</a>
+   <ul class="other-section">
       <li><a href="jdbc.html" class="daddy">JDBC</a>
       <ul class="other-section">
          <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
@@ -67,9 +69,9 @@
          <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
       </ul>
       </li>
-      <li class="current-page-parent"><a href="jpa.html" class="current-page-parent daddy">JPA</a>
-      <ul>
-         <li id="active"><a href="jpa_en_la_arquitectura_web.html" class="active no-ch">JPA en la Arquitectura Web</a></li>
+      <li><a href="jpa.html" class="daddy">JPA</a>
+      <ul class="other-section">
+         <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
          <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
          <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
          <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
@@ -119,18 +121,18 @@
       </li>
    </ul>
    </li>
-   <li><a href="servicios_web.html" class="daddy">Servicios Web</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="servicios_web.html" class="current-page-parent daddy">Servicios Web</a>
+   <ul>
       <li><a href="concepto.html" class="no-ch">Concepto</a></li>
       <li><a href="servicios_web_soap.html" class="daddy">Servicios Web SOAP</a>
       <ul class="other-section">
          <li><a href="prctica_login_persona.html" class="no-ch">Práctica: Login Persona</a></li>
       </ul>
       </li>
-      <li><a href="servicios_web_rest.html" class="daddy">Servicios Web REST</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="servicios_web_rest.html" class="current-page-parent daddy">Servicios Web REST</a>
+      <ul>
          <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
-         <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
+         <li id="active"><a href="ejercicio_1_hola_rest.html" class="active no-ch">Ejercicio 1: Hola Rest</a></li>
          <li><a href="recursos0.html" class="no-ch">Recursos</a></li>
          <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
          <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
@@ -144,18 +146,101 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="tecnologas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recursos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JPA en la Arquitectura Web</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id85">
-<div class="iDevice emphasis0">
-<div id="ta85_1" class="block iDevice_content">
-<p><span style="color: #ff0000;"><b>Localización de JPA en el Modelo Vista Controlador</b></span></p>
-<p>En el gráfico siguiente, podemos identificar el lugar, dentro de la arquitectura MVC, en el que operaría JPA. Fijaros que el archivo <b>persistence.xml </b>es uno de los archivos más importantes ya que guarda la información de la configuración de JPA. Por ejemplo, si algún día decidimos cambiar el motor de Base de datos, este archivo es el lugar donde cambiaremos la configuración.</p>
-<p><img src="Captura_de_pantalla_2014-12-08_a_la(s)_19.59.30.png" height="339" width="600" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejercicio 1: Hola Rest</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id146">
+<div class="iDevice emphasis0" >
+<div id="ta146_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Tecnologías utilizadas: Jersey + Eclipse + Tomcat, sin asistente</p>
+<hr />
+<h2>Instrucciones (6 pasos)</h2>
+<ul>
+<li>Paso 1: Crear un proyecto nuevo: “Dinamic Web Proyect”. Lo llamaremos: “<strong>rest_ejercicio1_hola</strong>”.
+<ul>
+<li>Activar la creación del descriptor (web.xml).</li>
+</ul>
+</li>
+<li>Paso 2: Copiar todos los Jars de Jersey, jackson, jAXB en la carpeta <span style="font-size: 14pt;"><code>lib</code></span>, de WEB-INF
+<ul>
+<li><a href="https://ciniguez.github.io/balava/libreriasjava/">https://ciniguez.github.io/balava/libreriasjava/</a>  (Sección Servicios Web - REST)</li>
+</ul>
+</li>
+<li>Paso 3: Crear una clase y anotarla para convertirla en el servicio ( o recurso)</li>
+</ul>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+@Path("/hello")
+public class Hola {
+
+	@GET @Produces(MediaType.TEXT_PLAIN)
+	public String saludo() {
+		return "Hola, desde RESTful";
+	}
+}</code></pre>
+</div>
+</div>
+<ul>
+<li>Paso 4: Registrar el servlet de Jersey en el descriptor (web.xml)
+<ul>
+<li>Asociarle al servlet de Jersey, el paquete de java con nuestras clases que representan los servicios</li>
+<li>Mapear el servlet, par que capture doas las peticiones "/rest/*"</li>
+<li>El fichero web.xml debe quedar como se indica en el fragmento de código: <strong>Código del fichero web.xml.</strong></li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 10pt;"><strong>Código del fichero web.xml</strong>:</span></p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"&gt;
+  &lt;display-name&gt;REST&lt;/display-name&gt;
+	&lt;welcome-file-list&gt;
+		&lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
+	&lt;/welcome-file-list&gt;
+	
+	
+	&lt;servlet&gt;
+		&lt;servlet-name&gt;Jersey REST Service&lt;/servlet-name&gt;
+		&lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer&lt;/servlet-class&gt;
+		&lt;init-param&gt;
+			&lt;param-name&gt;jersey.config.server.provider.packages&lt;/param-name&gt;
+			&lt;param-value&gt;servicio&lt;/param-value&gt;
+		&lt;/init-param&gt;
+		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+	&lt;/servlet&gt;
+	&lt;servlet-mapping&gt;
+		&lt;servlet-name&gt;Jersey REST Service&lt;/servlet-name&gt;
+		&lt;url-pattern&gt;/rest/*&lt;/url-pattern&gt;
+	&lt;/servlet-mapping&gt;
+&lt;/web-app&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>Paso 5: Arrancar el servidor ( Run as Server)</li>
+<li>Paso 6: Invocar al Servicio.- Inicia un navegador (Google Chrome, Firefox, etc) y consulta la URL: <a href="http://localhost:8080/RS-Server/rest/hello">http://localhost:8080/RS-Server/rest/hello</a> </li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id147">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Herramienta de Apoyo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta147_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Para consumir los servicios web - REST te recomiendo descargar una herramienta para Google Chrome: <strong>Advanced Rest Client</strong></p>
+<p><strong><img src="img0.2.png" width="517" height="133" alt="Advanced REST Client" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p></div>
+</div>
+</div>
 </div>
 </div>
 </article>
@@ -166,7 +251,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="jpa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="implementaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="tecnologas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="recursos0.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</footer></div>
