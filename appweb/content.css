@@ -29,7 +29,7 @@ body{font:1.05em/1.6 "Encode Sans",Arial,Helvetica,sans-serif;padding:20px;margi
 input,select,textarea,.feedback{font-family:"Encode Sans",​Arial,Helvetica,sans-serif;font-size:1em}
 .pre-code,.highlighted-code{font-family:"Encode Sans",​Arial,Helvetica,sans-serif;font-size:.9em;border-radius:0}
 a{color:#007691}
-b{color:rgb(242, 92, 17);}
+b,strong{color:rgb(193, 2, 17);}
 /* Header is also in single page */
 #header h1{margin:0;font-size:1em;color:#004F66}
 #header,#emptyHeader,#nodeDecoration{height:auto;font-size:1em;text-align:left;letter-spacing:.5px;padding:26px 35px 34px 20px;border:1px solid #ddd;margin-bottom:0;background:url(_intef_title_bg.png) no-repeat 50% bottom}
@@ -147,3 +147,9 @@ li{list-style-position:outside}
 .iDevice_inner .feedback-wrong{background:#FDFDDB}
 .iDevice_inner .iDevice_answer-feedback{background:none;border:none;padding:0;margin:0}
 .TrueFalseIdevice .feedback{margin-top:1.5em}
+/*Carlos Iniguez*/
+
+ .diapositiva {width: 800px;font-size: 1.5em;background-color: antiquewhite;
+  border: 4px solid #de8416;font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;
+            padding: 2px 5px;overflow: hidden;}
+.diapositiva .imagen {float: right;padding-top: 10px;padding-right: 10px;}
