@@ -2,33 +2,35 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Conceptos Clave | Aplicaciones Web </title>
+<title>Practica Sesiones | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-173"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">BIMESTRE 1</a></li>
-   <li class="current-page-parent"><a href="capitulo_1__historia_web.html" class="current-page-parent daddy">CAPITULO 1 - HISTORIA WEB</a>
-   <ul>
-      <li class="current-page-parent"><a href="historia_de_la_web.html" class="current-page-parent daddy">Historia de la Web</a>
-      <ul>
+   <li><a href="capitulo_1__historia_web.html" class="daddy">CAPITULO 1 - HISTORIA WEB</a>
+   <ul class="other-section">
+      <li><a href="historia_de_la_web.html" class="daddy">Historia de la Web</a>
+      <ul class="other-section">
          <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia...</a></li>
-         <li id="active"><a href="conceptos_clave.html" class="active no-ch">Conceptos Clave</a></li>
+         <li><a href="conceptos_clave.html" class="no-ch">Conceptos Clave</a></li>
       </ul>
       </li>
       <li><a href="tipos_de_aplicaciones.html" class="daddy">Tipos de Aplicaciones</a>
@@ -43,8 +45,8 @@
       </li>
    </ul>
    </li>
-   <li><a href="capitulo_2__protocolo_http.html" class="daddy">CAPITULO 2 - PROTOCOLO HTTP</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="capitulo_2__protocolo_http.html" class="current-page-parent daddy">CAPITULO 2 - PROTOCOLO HTTP</a>
+   <ul>
       <li><a href="introduccin.html" class="daddy">Introducción</a>
       <ul class="other-section">
          <li><a href="modelo_clienteservidor.html" class="no-ch">Modelo Cliente-Servidor</a></li>
@@ -99,11 +101,11 @@
          <li><a href="tecnologas_de_lado_del_servidor.html" class="no-ch">Tecnologías de lado del Servidor</a></li>
       </ul>
       </li>
-      <li><a href="cookies_y_sesiones.html" class="daddy">Cookies y Sesiones</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="cookies_y_sesiones.html" class="current-page-parent daddy">Cookies y Sesiones</a>
+      <ul>
          <li><a href="cookies.html" class="no-ch">Cookies</a></li>
          <li><a href="sesiones.html" class="no-ch">Sesiones</a></li>
-         <li><a href="practica_sesiones.html" class="no-ch">Practica Sesiones</a></li>
+         <li id="active"><a href="practica_sesiones.html" class="active no-ch">Practica Sesiones</a></li>
       </ul>
       </li>
    </ul>
@@ -308,40 +310,63 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="un_poco_de_historia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_aplicaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="sesiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capitulo_3_htmlcss.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Conceptos Clave</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id5">
-<div class="iDevice emphasis0" >
-<div id="ta5_129_2" class="block iDevice_content">
-<div class="exe-text"><p><span class="s1"><b><img src="img0.1.png" width="413" height="499" alt="TimBernesLee" style="display: block; float: right; margin: auto 10px auto 10px;" /></b></span></p>
+<header id="nodeDecoration"><h1 id="nodeTitle">Practica Sesiones</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_stars.png)"><h1 class="iDeviceTitle">Conocimientos previos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta50_334_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>session_start()</strong>;  .- Función que inicializa la sesión en el servidor</li>
+<li><strong>isset()</strong>  .- Función verifica si una variables se encuentra configurada o inicializada</li>
+<li><strong>header</strong> (); .- función que envía una cabecera al cliente. (Utilizamos para redireccionar la navegaciónentre ficheros)
 <ul>
-<li class="p1"><span class="s1"><b>World Wide Web</b></span><span class="s2"> (la Web o WWW) fue creada por </span><span class="s1"><b>Tim Berners-Lee</b></span><span class="s2"> en 1991 en el </span><span class="s1"><b>CERN</b></span><span class="s2"> (Organización Europea para la Investigación Nuclear).</span></li>
-</ul>
-<ul class="ul1">
-<li class="li2"><span class="s2">Las ideas precursoras de la Web fueron:</span>
-<ul>
-<li class="li2"><span class="s1"><b>Memex</b></span><span class="s2"> de </span><span class="s1"><b>Vannevar Bush</b></span></li>
-<li class="li2"><span class="s2">el proyecto </span><span class="s1"><b>Xanadu</b></span><span class="s2"> de </span><span class="s1"><b>Ted Nelson</b></span><span class="s2"> </span></li>
+<li>Ejemplo: header("Location_index.php") <span style="color: #339966;"><em>//cabecera que redirecciona la navegación hacia el recurso index.php</em></span></li>
 </ul>
 </li>
-<li class="li2"><span class="s2">La Web es servicio de </span><span class="s1"><b>hipertexto/hipermedia</b></span><span class="s2"> para compartir documentos en Internet.</span></li>
-<li class="li1"><span class="s2">Hoy en día es considerado como el acceso más sencillo y comprensible al universo de la información disponible en Internet</span></li>
-<li class="li1"><b style="color: #333333; font-size: 1.05em;">La Web se fundamenta en 3 estándares:</b>
-<ul>
-<li class="li1"><span class="s1"><b>URL (Localizador de Recursos Universal).- </b>secuencia de caracteres, de acuerdo a una sintaxis, que se usa para </span><span class="s2"><b>nombrar recursos de Internet para su localización o identificación</b></span></li>
-<li class="li2"><span class="s3"></span><span class="s4"><b>HTML ( Lenguaje de marcas de hipertexto)</b>: Lenguaje para </span><span class="s1"><b>describir la estructura y contenido de un recurso Web; la estructura mediante etiquetas y el contenido mediante texto</b></span><span class="s4">, imágenes, videos y otros medios.</span></li>
-<li class="li3"><span class="s1"><b>HTTP</b>: </span><span class="s2"><b>define la sintaxis y la semántica que utilizan los elementos de software de la arquitectura web</b></span><span class="s1">. Orientado a transacciones, sigue el esquema petición-respuesta entre un cliente y un servidor </span><span class="s2"><b>sin estado</b></span><span class="s1">, sin guardar ninguna información sobre conexiones previas</span></li>
+<li><strong>$_POST</strong> .-Array de parámetros que se envían en una solicitud HTTP realizada con el método POT</li>
+<li><strong>$_GET</strong> .- Array de parámetros que se envían en una solicitud HTTP realizada con el método GET</li>
+<li><strong>$_SESSION</strong>.- Array de variables Sesión</li>
 </ul>
-</li>
-</ul>
-<ul>
-<li><b></b><span class="s1"><b>World Wide Web Consortium (W3C) </b>se funda en 1994 para velar por los estándares de la Web</span></li>
-</ul>
-<p><span class="s2"></span></p></div>
+<h3>Formulario en HTML</h3>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;!-- Formulario HTML--&gt;
+&lt;form action="nombre_fichero_recibe_datos" method="metodo_HTTP"&gt;
+    &lt;!-- Caja de texto--&gt;
+    &lt;input type="text" name="nombre"/&gt;&lt;br&gt;
+    &lt;!-- Caja de texto tipo Password--&gt;
+    &lt;input type="password" name="clave"/&gt;&lt;br&gt;
+    &lt;!-- Botón para enviar el formulario--&gt;
+    &lt;input type="submit" name="btnEnviar"/&gt;
+&lt;/form&gt;
+
+
+&lt;!-- Vínculo o Enlace en HTML--&gt;
+&lt;a href="fichero_destino"&gt;Click aquí&lt;/a&gt;</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id51">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_puzzle.png)"><h1 class="iDeviceTitle">Ejercicio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta51_335_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="SesionesPractica.001.jpeg" alt="sistema de autorización usando Sesiones" width="800" height="450" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
 </div>
 </div>
 </article>
@@ -352,7 +377,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="un_poco_de_historia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="tipos_de_aplicaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="sesiones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="capitulo_3_htmlcss.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
