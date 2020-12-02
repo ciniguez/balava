@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="33.5 16.5 651 435" width="651" height="435">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.17.1\n2020-07-25 21:16:18 +0000</metadata>
+  <g id="Lienzo_1" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill-opacity="1" fill="none">
+    <title>Lienzo 1</title>
+    <g id="Lienzo_1_Capa_1">
+      <title>Capa 1</title>
+      <g id="Graphic_2">
+        <rect x="294" y="131" width="162" height="75" fill="white"/>
+        <path d="M 294 131 L 456 131 L 456 206 L 294 206 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+        <text transform="translate(299 140.828)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="37.472" y="15">Entender y </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="28.896" y="33.448">especificar el </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="18.064" y="51.895996">contexto de uso</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="301.5" y="376" width="162" height="75" fill="white"/>
+        <path d="M 301.5 376 L 463.5 376 L 463.5 451 L 301.5 451 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+        <text transform="translate(306.5 395.052)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="5.328" y="15">Producir soluciones </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="40.88" y="33.448">de diseño</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="522" y="237" width="162" height="75" fill="white"/>
+        <path d="M 522 237 L 684 237 L 684 312 L 522 312 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+        <text transform="translate(527 237.604)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="24.008" y="15">Especificar los </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="28.288" y="33.448">requisitos del </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="23.992" y="51.895996">usuario y de la </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="30.608" y="70.34399">organización</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="66" y="247" width="162" height="75" fill="white"/>
+        <path d="M 66 247 L 228 247 L 228 322 L 66 322 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,5.0" stroke-width="1"/>
+        <text transform="translate(71 266.052)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="19.552" y="15">Evaluar diseños </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="3.696" y="33.448">contra los requisitos</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <ellipse cx="131" cy="64.5" rx="97.0001549964839" ry="47.5000759003401" fill="#ccc"/>
+        <ellipse cx="131" cy="64.5" rx="97.0001549964839" ry="47.5000759003401" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(58.4 27.604004)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="29.048" y="15">Identificar la </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="24.439998" y="33.448">necesidad de </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="3.6959985" y="51.895996">diseño centrado en </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="38.08" y="70.34399">el usuario</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <ellipse cx="382.5" cy="284.5" rx="97.0001549964839" ry="47.5000759003401" fill="#ccc"/>
+        <ellipse cx="382.5" cy="284.5" rx="97.0001549964839" ry="47.5000759003401" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(309.9 247.604)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="9.631998" y="15">Sistema satisface </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="24.887998" y="33.448">requisitos del </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="20.591998" y="51.895996">usuario y de la </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="27.208" y="70.34399">organización</tspan>
+        </text>
+      </g>
+      <g id="Line_9">
+        <path d="M 456 168.96116 C 477.5472 171.73347 500.7386 177.1153 522 187 C 546.9529 198.6009 564.7147 214.29664 577.11755 229.19227" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_10">
+        <path d="M 595.36265 312 C 587.72486 332.17958 572.4665 356.7944 542 376 C 521.26097 389.0736 496.71254 397.5997 473.1699 403.1569" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11">
+        <path d="M 301.5 413.93393 C 278.9739 410.79084 254.51532 404.33323 232 392 C 201.5697 375.3312 181.2156 351.50467 168.07652 330.5173" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_12">
+        <line x1="228" y1="284.5" x2="275.59995" y2="284.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <path d="M 163.84797 247 C 176.89591 224.50313 198.5083 197.03964 232 180 C 248.9943 171.35377 266.94474 166.4611 284.17185 163.94537" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <path d="M 227.7668 67.80228 C 261.06214 71.13266 296.77657 77.39657 324 89 C 346.77456 98.70719 360.0782 110.64743 367.6795 122.29565" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
