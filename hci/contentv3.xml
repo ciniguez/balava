@@ -17255,7 +17255,7 @@ for the other options."></unicode>
       <instance class="exe.engine.node.Node" reference="349">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="UNIDAD 3: DISEÑO CENTRADO EN USUARIOTema"></unicode>
+        <unicode value="UNIDAD 3: DISEÑO CENTRADO EN USUARIO"></unicode>
         <string role="key" value="idevices"></string>
         <list></list>
         <string role="key" value="_id"></string>
@@ -17269,7 +17269,7 @@ for the other options."></unicode>
         <string role="key" value="exportType"></string>
         <string value="website"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema"></string>
+        <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO"></string>
         <string role="key" value="parent"></string>
         <reference key="2"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -17293,7 +17293,7 @@ for the other options."></unicode>
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU"></string>
+           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU"></string>
            <string role="key" value="parent"></string>
            <reference key="349"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -17412,7 +17412,7 @@ learning tasks."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio"></string>
               <string role="key" value="parent"></string>
               <reference key="353"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -17622,7 +17622,7 @@ learning tasks."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Introducci%C3%B3n"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Introducci%C3%B3n"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -17903,7 +17903,7 @@ learning tasks."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:%C2%BFQu%C3%A9%20es%20Dise%C3%B1ar%20la%20Interacci%C3%B3n%3F"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:%C2%BFQu%C3%A9%20es%20Dise%C3%B1ar%20la%20Interacci%C3%B3n%3F"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -18205,7 +18205,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:IxD%20en%20el%20Desarrollo%20de%20Software"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:IxD%20en%20el%20Desarrollo%20de%20Software"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -18374,7 +18374,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Importancia%20de%20involucrar%20al%20usuario"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Importancia%20de%20involucrar%20al%20usuario"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -18526,7 +18526,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -18944,7 +18944,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:El%20DCU"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:El%20DCU"></string>
                     <string role="key" value="parent"></string>
                     <reference key="374"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -19121,7 +19121,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Enfoque%20Centrado%20en%20el%20Usuario"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Enfoque%20Centrado%20en%20el%20Usuario"></string>
                     <string role="key" value="parent"></string>
                     <reference key="374"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -19511,7 +19511,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Otros%20Enfoques"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Otros%20Enfoques"></string>
                     <string role="key" value="parent"></string>
                     <reference key="374"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -19708,7 +19708,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Cuestiones%20Pr%C3%A1cticas"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:Cuestiones%20Pr%C3%A1cticas"></string>
                     <string role="key" value="parent"></string>
                     <reference key="374"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -19863,7 +19863,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:T%C3%A9cnicas%20aplicables"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Proceso%20de%20Dise%C3%B1o%20de%20la%20Interacci%C3%B3n:T%C3%A9cnicas%20aplicables"></string>
                     <string role="key" value="parent"></string>
                     <reference key="374"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -20020,7 +20020,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Introducci%C3%B3n%20al%20DCU:Inicio:Bibliograf%C3%ADa%20y%20Recursos"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Introducci%C3%B3n%20al%20DCU:Inicio:Bibliograf%C3%ADa%20y%20Recursos"></string>
                  <string role="key" value="parent"></string>
                  <reference key="352"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -20052,7 +20052,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario"></string>
+           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario"></string>
            <string role="key" value="parent"></string>
            <reference key="349"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -20202,7 +20202,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:Investigaci%C3%B3n%20de%20Usuario"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:Investigaci%C3%B3n%20de%20Usuario"></string>
               <string role="key" value="parent"></string>
               <reference key="405"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -20375,7 +20375,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:Especificaci%C3%B3n%20de%20Requisitos"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:Especificaci%C3%B3n%20de%20Requisitos"></string>
               <string role="key" value="parent"></string>
               <reference key="405"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -20795,7 +20795,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona"></string>
               <string role="key" value="parent"></string>
               <reference key="405"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -21107,7 +21107,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:%C2%BFQu%C3%A9%20es%20una%20Persona%3F"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:%C2%BFQu%C3%A9%20es%20una%20Persona%3F"></string>
                  <string role="key" value="parent"></string>
                  <reference key="411"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -21393,7 +21393,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n"></string>
                  <string role="key" value="parent"></string>
                  <reference key="411"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -21567,7 +21567,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:1-%20Identificar%20Variables%20de%20Comportamiento"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:1-%20Identificar%20Variables%20de%20Comportamiento"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -21792,7 +21792,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:2-%20Mapear%20sujetos%20entrevistados%20a%20las%20variables%20de%20comportamiento"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:2-%20Mapear%20sujetos%20entrevistados%20a%20las%20variables%20de%20comportamiento"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -21964,7 +21964,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:3-%20Identificar%20Patrones%20de%20comportamiento%20significativos"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:3-%20Identificar%20Patrones%20de%20comportamiento%20significativos"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -22328,7 +22328,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:4-%20Sintetizar%20caracter%C3%ADsticas%20y%20objetivos%20relevantes"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:4-%20Sintetizar%20caracter%C3%ADsticas%20y%20objetivos%20relevantes"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -22500,7 +22500,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:5-%20Validar%20redundancia%20y%20completitud"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:5-%20Validar%20redundancia%20y%20completitud"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -22720,7 +22720,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:6-%20Expandir%20descripci%C3%B3n%20de%20atributos%20y%20comportamientos"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:6-%20Expandir%20descripci%C3%B3n%20de%20atributos%20y%20comportamientos"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -22959,7 +22959,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:7-%20Definir%20tipo%20de%20personas"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Pasos%20de%20Construcci%C3%B3n:7-%20Definir%20tipo%20de%20personas"></string>
                     <string role="key" value="parent"></string>
                     <reference key="423"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23117,7 +23117,7 @@ reflective feedback)."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Bibliograf%C3%ADa"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:T%C3%A9cnica%20Persona:Bibliograf%C3%ADa"></string>
                  <string role="key" value="parent"></string>
                  <reference key="411"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23146,7 +23146,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas"></string>
               <string role="key" value="parent"></string>
               <reference key="405"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23304,7 +23304,7 @@ reflective feedback)."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Tipos%20de%20Tareas"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Tipos%20de%20Tareas"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23458,7 +23458,7 @@ reflective feedback)."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Bibliograf%C3%ADa"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Bibliograf%C3%ADa"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23739,7 +23739,7 @@ reflective feedback)."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Operadores%20Temporales"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Operadores%20Temporales"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -23891,7 +23891,7 @@ reflective feedback)."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Creando%20un%20diagrama%20CTT"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Creando%20un%20diagrama%20CTT"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -24007,7 +24007,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Tarea%3A%20Compra%20de%20Productos"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Tarea%3A%20Compra%20de%20Productos"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -24214,7 +24214,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Partes%20de%20la%20notaci%C3%B3n%20CTT"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Investigaci%C3%B3n%20de%20Usuario:An%C3%A1lisis%20de%20Tareas:Partes%20de%20la%20notaci%C3%B3n%20CTT"></string>
                  <string role="key" value="parent"></string>
                  <reference key="458"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -24246,7 +24246,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico"></string>
+           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico"></string>
            <string role="key" value="parent"></string>
            <reference key="349"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -24270,7 +24270,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o"></string>
               <string role="key" value="parent"></string>
               <reference key="477"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -24478,7 +24478,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o:Patrones%20de%20Dise%C3%B1o%20de%20UI"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o:Patrones%20de%20Dise%C3%B1o%20de%20UI"></string>
                  <string role="key" value="parent"></string>
                  <reference key="482"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -26752,7 +26752,7 @@ for the other options."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o:Autoevaluaci%C3%B3n"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:Dise%C3%B1o%20Conceptual%20y%20F%C3%ADsico:Patrones%20de%20Dise%C3%B1o:Autoevaluaci%C3%B3n"></string>
                  <string role="key" value="parent"></string>
                  <reference key="482"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -26784,7 +26784,7 @@ for the other options."></unicode>
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n"></string>
+           <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n"></string>
            <string role="key" value="parent"></string>
            <reference key="349"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -26808,7 +26808,7 @@ for the other options."></unicode>
               <string role="key" value="exportType"></string>
               <string value="website"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad"></string>
+              <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad"></string>
               <string role="key" value="parent"></string>
               <reference key="530"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -27013,7 +27013,7 @@ for the other options."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="website"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario"></string>
+                 <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario"></string>
                  <string role="key" value="parent"></string>
                  <reference key="535"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -27538,7 +27538,7 @@ for the other options."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplos%20de%20Pruebas%20%28Prototipo%20Alta%20Def.%29"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplos%20de%20Pruebas%20%28Prototipo%20Alta%20Def.%29"></string>
                     <string role="key" value="parent"></string>
                     <reference key="533"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -27940,7 +27940,7 @@ for the other options."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplos%20de%20Pruebas%20%28Prototipo%20Baja%20Def.%29"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplos%20de%20Pruebas%20%28Prototipo%20Baja%20Def.%29"></string>
                     <string role="key" value="parent"></string>
                     <reference key="533"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -28098,7 +28098,7 @@ for the other options."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplo%20Experimento%3A%20Paper"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Ejemplo%20Experimento%3A%20Paper"></string>
                     <string role="key" value="parent"></string>
                     <reference key="533"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -28324,7 +28324,7 @@ for the other options."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Las%20m%C3%A9tricas"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Las%20m%C3%A9tricas"></string>
                     <string role="key" value="parent"></string>
                     <reference key="533"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -28536,7 +28536,7 @@ for the other options."></unicode>
                     <string role="key" value="exportType"></string>
                     <string value="website"></string>
                     <string role="key" value="last_full_node_path"></string>
-                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIOTema:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Planeaci%C3%B3n%20de%20un%20Experimento"></string>
+                    <string value="exe-node:HCI:UNIDAD%203%3A%20DISE%C3%91O%20CENTRADO%20EN%20USUARIO:T%C3%A9cnicas%20de%20Evaluaci%C3%B3n:Pruebas%20de%20Usabilidad:Pruebas%20de%20Usuario:Planeaci%C3%B3n%20de%20un%20Experimento"></string>
                     <string role="key" value="parent"></string>
                     <reference key="533"></reference>
                     <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -28868,7 +28868,7 @@ for the other options."></unicode>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="38"></reference>
+  <reference key="349"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
