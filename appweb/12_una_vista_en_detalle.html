@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>1.2 Ejemplo Transiciones | Aplicaciones Web </title>
+<title>1.2 Una vista en detalle | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
-<body class="exe-web-site" id="exe-node-89"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-90"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -175,8 +175,8 @@
       <li class="current-page-parent"><a href="css3.html" class="current-page-parent daddy">CSS3</a>
       <ul>
          <li><a href="1_transiciones.html" class="no-ch">1.- Transiciones</a></li>
-         <li><a href="11_una_vista_en_detalle.html" class="no-ch">1.1 Una vista en detalle</a></li>
-         <li id="active"><a href="12_ejemplo_transiciones.html" class="active no-ch">1.2 Ejemplo Transiciones</a></li>
+         <li><a href="11_ejemplo_transiciones.html" class="no-ch">1.1 Ejemplo Transiciones</a></li>
+         <li id="active"><a href="12_una_vista_en_detalle.html" class="active no-ch">1.2 Una vista en detalle</a></li>
          <li><a href="2_animaciones.html" class="no-ch">2. Animaciones</a></li>
          <li><a href="21_una_vista_en_detalle.html" class="no-ch">2.1 Una vista en detalle</a></li>
          <li><a href="22_ejemplo_animaciones.html" class="no-ch">2.2 Ejemplo Animaciones</a></li>
@@ -258,19 +258,67 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="11_una_vista_en_detalle.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_animaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="11_ejemplo_transiciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_animaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">1.2 Ejemplo Transiciones</h1></header>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id233">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2 Una vista en detalle</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id234">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo Transiciones CSS</h1></header>
+<header class="iDevice_header"><h1 class="iDeviceTitle">Mapa Mental Transiciones CSS</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta233_116_2" class="block iDevice_content">
-<div class="exe-text"><p><iframe width="300" height="300" src="https://ciniguez.github.io/balava/transicionescss/practica.html" onload="this.width=screen.width;"></iframe></p></div>
+<div id="ta234_110_2" class="block iDevice_content">
+<div class="exe-text"><figure class="exe-figure exe-image float-right" style="width: 500px;"><img src="Transiciones.jpg" alt="Mapa Conceptual Transiciones CSS" title="Mapa Conceptual Transiciones CSS" width="500" height="231" style="margin: 5px;" vspace="5" hspace="5" />
+<figcaption class="figcaption"><a href="https://ciniguez.github.io/balava/transicionescss/index.html" target="_blank" class="author" rel="noopener">Carlos Iñiguez</a>. <a href="https://ciniguez.github.io/balava/transicionescss/index.html" target="_blank" class="title" rel="noopener"><em>Mapa Conceptual Transiciones CSS</em></a></figcaption>
+</figure>
+<p>Una transición se especifica usando la propiedad transition, sin embargo es una buena práctica especificar cada una de los diferentes parámetros precedidos por el nombre de la propiedad.</p>
+<p>En este apartado revisaremos las siguientes propiedades:</p>
+<ul>
+<li>transition</li>
+<li>transition-delay</li>
+<li>transition-duration</li>
+<li>transition-property</li>
+<li>transition-timing-function</li>
+</ul>
+<p>Revisa el mapa conceptual de la derecha que estructura cada una de estas propiedades.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id59">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Conocimiento previo: Curva Bezier</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta59_401_2" class="block iDevice_content">
+<div>
+<ul>
+<li><span>En CSS, la curva bezier está definida por 4 puntos: P0, P1, P2 y P3</span></li>
+<li>Los puntos P0 y P3 están fijos en un plano de coordenadas y son el inicio y el fin de la curva. Es decir:
+<ul>
+<li>P0 es la coordenada (0,0)</li>
+<li>P3 es la coordenada (1,1).</li>
+</ul>
+</li>
+<li>Los puntos P1 y P2 son móviles y actúan como radios en el plano de coordenadas. En efecto, la función bezier toma las coordenasa de estos dos puntos:<br />
+<ul></ul>
+</li>
+</ul>
+<p style="text-align: center;"><span style="font-size: 18pt;">bezier ( P1<sub>x</sub>, P1<sub>y</sub>, P2<sub>x</sub>, P2<sub>y</sub> )</span></p>
+<ul>
+<li>Curva Bezier puede recrear todos los movimientos: linear, ease, ease-in, ease-out, ease-in-out.
+<ul>
+<li>Por ejemplo:</li>
+<li>ease ( lento el inicio , entonces rápido y termina lentamente) es equivalente a bezier (0.25, 0.1, 0.25, 1)</li>
+<li>linear (constante) =&gt; bezier (0,0,1,1)</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Accede a la siguiente Web haciendo click <a href="https://cubic-bezier.com/#.31,.01,.1,1">aquí</a> para practicar tus conocimientos sobre Curva Bezier.</p>
 </div>
 </div>
 </div>
@@ -283,7 +331,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="11_una_vista_en_detalle.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_animaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="11_ejemplo_transiciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_animaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
