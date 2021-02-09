@@ -107,8 +107,11 @@
       <li class="current-page-parent"><a href="116_servicios_web.html" class="current-page-parent daddy">1.16 Servicios Web</a>
       <ul>
          <li><a href="1161_concepto.html" class="no-ch">1.16.1 Concepto</a></li>
-         <li><a href="1162_servicios_web_soap.html" class="no-ch">1.16.2 Servicios Web SOAP</a></li>
-         <li><a href="1163_prctica_ws_soap_login_persona.html" class="no-ch">1.16.3 Práctica WS SOAP: Login Persona</a></li>
+         <li><a href="1163_servicios_web_soap.html" class="daddy">1.16.3 Servicios Web SOAP</a>
+         <ul class="other-section">
+            <li><a href="11631_prctica_ws_soap_login_persona.html" class="no-ch">1.16.3.1 Práctica WS SOAP: Login Persona</a></li>
+         </ul>
+         </li>
          <li class="current-page-parent"><a href="1164_servicios_web_rest.html" class="current-page-parent daddy">1.16.4 Servicios Web REST</a>
          <ul>
             <li><a href="1164_1_tecnologas.html" class="no-ch">1.16.4 .1 Tecnologías</a></li>
@@ -238,8 +241,8 @@ public class Hola {
 <ul>
 <li>Paso 4: Registrar el servlet de Jersey en el descriptor (web.xml)
 <ul>
-<li>Asociarle al servlet de Jersey, el paquete de java con nuestras clases que representan los servicios</li>
-<li>Mapear el servlet, par que capture doas las peticiones "/rest/*"</li>
+<li>Asociar ell servlet de Jersey con el paquete de java que contiene las clases que representan los servicios</li>
+<li>Mapear el servlet para que capture las peticiones "/rest/*"</li>
 <li>El fichero web.xml debe quedar como se indica en el fragmento de código: <strong>Código del fichero web.xml.</strong></li>
 </ul>
 </li>
