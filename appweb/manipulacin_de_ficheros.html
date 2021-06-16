@@ -118,7 +118,6 @@
          </ul>
          </li>
          <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
-         <li><a href="solucin.html" class="no-ch">Solución</a></li>
       </ul>
       </li>
    </ul>
@@ -213,7 +212,7 @@
          <ul class="other-section">
             <li><a href="antes_de_empezar0.html" class="no-ch">Antes de empezar...</a></li>
             <li><a href="instrucciones0.html" class="no-ch">Instrucciones</a></li>
-            <li><a href="solucin0.html" class="no-ch">Solución</a></li>
+            <li><a href="solucin.html" class="no-ch">Solución</a></li>
          </ul>
          </li>
          <li><a href="clases_y_objetos.html" class="no-ch">Clases y Objetos</a></li>
@@ -268,13 +267,16 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Manipulación de ficheros</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id341">
-<div class="iDevice emphasis0">
-<div id="ta341_85" class="block iDevice_content">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_piece.png)"><h1 class="iDeviceTitle">Conocimientos Previos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_419_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li class="p1"><strong>apertura de ficheros</strong>
 <ul>
-<li class="p1"><span class="s1"></span>apertura de ficheros
-<ul>
-<li class="p1"><code>$fp = fopen(NombreFichero, modo[, include_path]);</code>
+<li class="p1"><span style="font-size: 14pt;"><code>$fp = fopen(NombreFichero, modo[, include_path]);</code></span>
 <ul>
 <li class="p1">modo: r, r+, w, w+, a, a+</li>
 <li class="p1">include_path<span style="color: #333333; font-size: 1.05em;">: incluye la búsqueda en los directorios del </span>path indicado por defecto</li>
@@ -284,21 +286,23 @@
 </li>
 <li class="p1">lectura
 <ul>
-<li class="p1">texto: <code><span style="color: #333333; font-size: 1.05em;">$cadena = fgets($fp [, longitud]);</span></code></li>
-<li class="p1">binario: <code><span style="color: #333333; font-size: 1.05em;">$cadena = fread($fp, longitud);</span></code></li>
+<li class="p1">texto: <span style="font-size: 14pt;"><code><span style="color: #333333;">$cadena = fgets($fp [, longitud]);</span></code></span></li>
+<li class="p1">binario: <code><span style="color: #333333; font-size: 1.05em;"><span style="font-size: 14pt;">$cadena = fread($fp, longitud);</span></span></code></li>
 </ul>
 </li>
 <li class="p1">escritura
 <ul>
-<li class="p1"><code>$num_bytes = fwrite($fp, $cadena [, longitud]);</code></li>
+<li class="p1"><span style="font-size: 14pt;"><code>$num_bytes = fwrite($fp, $cadena [, longitud]);</code></span></li>
 </ul>
 </li>
 <li class="p1">cierre
 <ul>
-<li class="p1"><code>$ok = fclose($fp);</code></li>
+<li class="p1"><span style="font-size: 14pt;"><code>$ok = fclose($fp);</code></span></li>
 </ul>
 </li>
-</ul>
+</ul></div>
+</div>
+</div>
 </div>
 </div>
 </article>
@@ -310,7 +314,7 @@
 <div id="ta55_342_2" class="block iDevice_content">
 <p>Aplica los comandos PHP para leer un fichero de texto. Usa los ficheros a continuación para la implementación:</p>
 <div class="exe-fx exe-tabs">
-<h2>escribir.php</h2>
+<h2>leer.php</h2>
 <div class="highlighted-code code-style-2 language-php line-numbers">
 <div>
 <pre><code>&lt;?php
