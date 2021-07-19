@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>1.4.2 Creación de un proyecto Web | Segundo Bimestre AppWeb </title>
+<title>Sentencias de Control | Segundo Bimestre AppWeb </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta http-equiv="content-language" content="es" />
 <meta name="author" content="Carlos Iniguez" />
@@ -16,16 +16,16 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-31"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-176"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <div id="header" ><div id="headerContent">Segundo Bimestre AppWeb</div></div>
 <div id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">BIMESTRE II</a></li>
-   <li><a href="1_frontend_javascript.html" class="daddy">1. FRONTEND (JavaScript)</a>
-   <ul class="other-section">
-      <li><a href="sentencias_de_control.html" class="no-ch">Sentencias de Control</a></li>
+   <li class="current-page-parent"><a href="1_frontend_javascript.html" class="current-page-parent daddy">1. FRONTEND (JavaScript)</a>
+   <ul>
+      <li id="active"><a href="sentencias_de_control.html" class="active no-ch">Sentencias de Control</a></li>
       <li><a href="cambio_de_contenido.html" class="no-ch">Cambio de contenido</a></li>
       <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
       <li><a href="ajax.html" class="no-ch">Ajax</a></li>
@@ -64,15 +64,15 @@
       </li>
    </ul>
    </li>
-   <li class="current-page-parent"><a href="2_backend.html" class="current-page-parent daddy">2. BACKEND</a>
-   <ul>
+   <li><a href="2_backend.html" class="daddy">2. BACKEND</a>
+   <ul class="other-section">
       <li><a href="21_patrn_de_arquitectura_mvc.html" class="no-ch">2.1 Patrón de Arquitectura MVC</a></li>
       <li><a href="22_mvc_en_escritorio.html" class="no-ch">2.2 MVC en Escritorio</a></li>
       <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
-      <li class="current-page-parent"><a href="14_instalacin_de_herramientas.html" class="current-page-parent daddy">1.4 Instalación de Herramientas</a>
-      <ul>
+      <li><a href="14_instalacin_de_herramientas.html" class="daddy">1.4 Instalación de Herramientas</a>
+      <ul class="other-section">
          <li><a href="141_configurando_el_ambiente_de_desarrollo.html" class="no-ch">1.4.1 Configurando el Ambiente de Desarrollo</a></li>
-         <li id="active"><a href="142_creacin_de_un_proyecto_web.html" class="active no-ch">1.4.2 Creación de un proyecto Web</a></li>
+         <li><a href="142_creacin_de_un_proyecto_web.html" class="no-ch">1.4.2 Creación de un proyecto Web</a></li>
       </ul>
       </li>
       <li><a href="15_principios_tecnolgicos.html" class="no-ch">1.5 Principios Tecnológicos</a></li>
@@ -195,66 +195,21 @@
 </div>
 <div id='topPagination'>
 <div class="pagination noprt">
-<a href="141_configurando_el_ambiente_de_desarrollo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="15_principios_tecnolgicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="1_frontend_javascript.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cambio_de_contenido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="main-wrapper">
 <div id="main"><a name="main"></a>
-<div id="nodeDecoration"><h1 id="nodeTitle">1.4.2 Creación de un proyecto Web</h1></div>
-<div class="iDevice_wrapper activityIdevice em_iDevice" id="id20">
+<div id="nodeDecoration"><h1 id="nodeTitle">Sentencias de Control</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id119">
 <div class="iDevice emphasis1" >
-<div class="iDevice_header"><h2 class="iDeviceTitle">Crear un Proyecto Web para Java</h2></div>
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Sentencias de Control</h2></div>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta20_28_2" class="block iDevice_content">
-<ul>
-<li>En el IDE de desarrollo Eclipse, seguir los siguientes pasos
-<ul>
-<li>Crear un proyecto nuevo: “<span style="color: #993300;" color="#993300">Dynamic Web Proyect</span>”
-<ul>
-<li>Menu “File”&gt;“New“&gt;”Other”&gt;Web&gt;<span style="color: #993300;">Dinamic Web Project</span></li>
-<li>click en <strong>Siguiente</strong></li>
-</ul>
-</li>
-<li>Configurar el Proyecto:
-<ul>
-<li>En la pantalla que se muestra, ingresar el nombre del Proyecto. ( Ejemplo:<span style="color: #993300;"><strong>1-Servlet )<br /></strong></span></li>
-<li>En “<span style="color: #993300;" color="#993300">Target runtime</span>” elegir “<span style="color: #993300;" color="#993300">Apache Tomcat v8.0</span>”</li>
-<li>“<span style="color: #993300;" color="#993300">Tomcat installation directory</span>” elegir la carpeta donde se descomprimió el Tomcat (Ej: C:/apacheTomcat)</li>
-<li>Click en <strong>Siguiente</strong></li>
-</ul>
-</li>
-<li>Generar el descriptor de despliegue
-<ul>
-<li>Hacer check en la opción <em><strong>Generate web.xml deployment descriptor</strong></em></li>
-<li>Click en <strong>Finalizar</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<div id="ta119_258_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><iframe width="800" height="600" src="SentenciasControl.pdf"></iframe></p></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="iDevice_wrapper FreeTextIdevice" id="id36">
-<div class="iDevice emphasis0">
-<div id="ta36_1" class="block iDevice_content">
-
-<p>
-Como resultado de la actividad anterior, encontrarás  la siguiente estructura  de proyecto.
-</p>
-<p>
-&nbsp;
-</p>
-<div style="text-align: center">
-<img src="Proyecto_Web.png" height="434" width="552" />
-</div>
-<p>
-&nbsp;
-</p>
-
 </div>
 </div>
 </div>
@@ -265,7 +220,7 @@ Como resultado de la actividad anterior, encontrarás  la siguiente estructura  
 </div>
 <div id='bottomPagination'>
 <div class="pagination noprt">
-<a href="141_configurando_el_ambiente_de_desarrollo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="15_principios_tecnolgicos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="1_frontend_javascript.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cambio_de_contenido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </div>
 </div>
 <div id="siteFooter">Created by Carlos Iniguez - Escuela Politécnica Nacional</div></div>
