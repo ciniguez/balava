@@ -2,6 +2,7 @@
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc/3.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -258,6 +260,101 @@
 </ul>
 </li>
 </ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id120">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Dependencias con MAVEN</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta120_257_2" class="block iDevice_content">
+<div class="exe-text"><div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>&lt;dependencies&gt;
+
+		&lt;!-- BASE DE DATOS --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;mysql&lt;/groupId&gt;
+			&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+			&lt;version&gt;8.0.21&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- JSTL --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/javax.servlet/jstl --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+			&lt;artifactId&gt;jstl&lt;/artifactId&gt;
+			&lt;version&gt;1.2&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet.jsp&lt;/groupId&gt;
+			&lt;artifactId&gt;jsp-api&lt;/artifactId&gt;
+			&lt;version&gt;2.1&lt;/version&gt;
+			&lt;scope&gt;provided&lt;/scope&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
+			&lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;
+			&lt;version&gt;3.0.1&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- JAXB --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;
+			&lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;
+			&lt;version&gt;2.3.1&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- PERSISTENCIA --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.persistence&lt;/groupId&gt;
+			&lt;artifactId&gt;javax.persistence-api&lt;/artifactId&gt;
+			&lt;version&gt;2.2&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- EclipseLink --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.eclipse.persistence&lt;/groupId&gt;
+			&lt;artifactId&gt;eclipselink&lt;/artifactId&gt;
+			&lt;version&gt;2.5.2&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- SERVICIO WEB REST --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
+			&lt;version&gt;2.31&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
+			&lt;version&gt;2.28&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- Javax JSON Bind API --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;javax.json.bind&lt;/groupId&gt;
+			&lt;artifactId&gt;javax.json.bind-api&lt;/artifactId&gt;
+			&lt;version&gt;1.0&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;!-- Jackson para MessageBodyWriter --&gt;
+		&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
+			&lt;version&gt;2.31&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;log4j&lt;/groupId&gt;
+			&lt;artifactId&gt;log4j&lt;/artifactId&gt;
+			&lt;version&gt;1.2.17&lt;/version&gt;
+		&lt;/dependency&gt;
+		
+	&lt;/dependencies&gt;</code></pre>
+</div>
+</div>
+<p></p></div>
 </div>
 </div>
 </div>
