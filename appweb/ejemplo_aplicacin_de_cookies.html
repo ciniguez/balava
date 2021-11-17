@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -256,6 +258,64 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Ejemplo: Aplicación de Cookies</h1></header>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id67">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Conocimiento previo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta67_419_2" class="block iDevice_content">
+<h2>set_cookie()</h2>
+<ul>
+<li>Función que crea una cookie</li>
+<li>
+<p class="para rdfs-comment"><span class="function"><strong>setcookie()</strong></span><span> </span>define una cookie para ser enviada junto con el resto de cabeceras HTTP.</p>
+</li>
+<li>
+<p class="para rdfs-comment">Como otros encabezados, cookies deben ser enviadas<span> </span><em class="emphasis">antes</em><span> </span>de cualquier salida en el script (este es un protocolo de restricción). Esto requiere que hagas llamadas a esta función antes de cualquier salida, incluyendo etiquetas<span> </span><code class="literal">&lt;html&gt;</code><span> </span>y<span> </span><code class="literal">&lt;head&gt;</code><span> </span>así como cualquier espacio en blanco.</p>
+</li>
+<li>Sintaxis: <span class="type"><span class="methodname"><strong>setcookie</strong></span><span>(</span><br /><span>    </span><span class="methodparam">string<span> </span><code class="parameter">$name</code></span><span>,</span><br /><span>    </span><span class="methodparam">string<span> </span><code class="parameter">$value</code><span class="initializer"><span> </span>= ""</span></span><span>,</span><br /><span>    </span><span class="methodparam">int<span> </span><code class="parameter">$expires</code><span class="initializer"><span> </span>= 0</span></span><span>,</span><br /><span>    </span><span class="methodparam">string<span> </span><code class="parameter">$path</code><span class="initializer"><span> </span>= ""</span></span><span>,</span><br /><span>    </span><span class="methodparam">string<span> </span><code class="parameter">$domain</code><span class="initializer"><span> </span>= ""</span></span><span>,</span><br /><span>    </span><span class="methodparam">bool<span> </span><code class="parameter">$secure</code><span class="initializer"><span> </span>=<span> </span><strong><code>false</code></strong></span></span><span>,</span><br /><span>    </span><span class="methodparam">bool<span> </span><code class="parameter">$httponly</code><span class="initializer"><span> </span>=<span> </span><strong><code>false</code></strong></span></span><br /><span>): </span>bool</span>
+<ul>
+<li>name: El nombre de la cookie.</li>
+<li>value: El valor de la cookie. Este valor se almacena en el ordenador del cliente; no almacenar información sensible. Asumiendo que el name es 'cookiename', este valor es recuperado a través de $_COOKIE['cookiename']</li>
+<li>expires: El tiempo en que la cookie expira. time()+60*60*24*30 hará que la cookie establecida expire en 30 días. Si se establece a 0, o es omitido, la cookie expirará al final de la sesión (cuando el navegador es cerrado).</li>
+<li>path: La ruta dentro del servidor en la que la cookie estará disponible. Si se utiliza '/', la cookie estará disponible en la totalidad del domain. Si se configura como '/foo/', la cookie sólo estará disponible dentro del directorio /foo/ y todos sus sub-directorios en el domain, tales como /foo/bar/. El valor por defecto es el directorio actual en donde se está configurando la cookie.</li>
+<li>domain: El (sub)dominio al que la cookie está disponible. Estableciendo esto a un subdominio (como 'www.example.com') hará que la cookie esté disponible para ese subdominio y todos los demás subdominios del mismo (p.e. w2.www.example.com). Para que la cookie esté disponible para todo el dominio (incluyendo todos sus subdominios), simplemente establezca el nombre de domonio ('example.com', en este caso).</li>
+<li>secure: Indica que la cookie sólo debiera transmitirse por una conexión segura HTTPS desde el cliente. Cuando se configura como true, la cookie sólo se creará si es que existe una conexión segura. Del lado del servidor, depende del programador el enviar este tipo de cookies solamente a través de conexiones seguras (por ejemplo, con $_SERVER["HTTPS"]).</li>
+<li>httponly: Cuando es true la cookie será accesible sólo a través del protocolo HTTP. Esto significa que la cookie no será accesible por lenguajes de scripting, como JavaScript. Se ha indicado que esta configuración ayuda efectivamente a reducir el robo de identidad a través de ataques XSS (aunque no es soportada por todos los navegadores). pero esa afirmación se disputa a menudo.</li>
+<li>options: Un array asociativo que puede tener cualquiera de las claves expires, path, domain, secure, httponly y samesite.</li>
+</ul>
+</li>
+</ul>
+<h2>$_COOKIE</h2>
+<ul>
+<li>
+<p class="para">Una vez que las cookies se han establecido, se puede acceder a ellas en la siguiente página de carga con el array<span> </span><var class="varname"><a href="https://www.php.net/manual/es/reserved.variables.cookies.php" class="classname">$_COOKIE</a></var>.</p>
+</li>
+</ul>
+<p><span style="font-size: 8pt;"><em>Tomado de: https://www.php.net/manual/es/function.setcookie.php</em></span></p>
+<h2>Formulario en HTML</h2>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;!-- Formulario HTML--&gt;
+&lt;form action="nombre_fichero_recibe_datos" method="metodo_HTTP"&gt;
+    &lt;!-- Caja de texto--&gt;
+    &lt;input type="text" name="nombre"/&gt;&lt;br&gt;
+    &lt;!-- Caja de texto tipo Password--&gt;
+    &lt;input type="password" name="clave"/&gt;&lt;br&gt;
+    &lt;!-- Botón para enviar el formulario--&gt;
+    &lt;input type="submit" name="btnEnviar"/&gt;
+&lt;/form&gt;
+
+
+&lt;!-- Vínculo o Enlace en HTML--&gt;
+&lt;a href="fichero_destino"&gt;Click aquí&lt;/a&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <article class="iDevice_wrapper textIdevice" id="id63">
 <div class="iDevice emphasis0" >
 <div id="ta63_420_2" class="block iDevice_content">
