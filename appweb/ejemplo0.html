@@ -3,10 +3,11 @@
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
 <link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Relaciones | Aplicaciones Web </title>
+<title>Ejemplo | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -14,11 +15,12 @@
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-334"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-500"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -236,13 +238,11 @@
       <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
       <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
       <li><a href="instalacin_eclipselink.html" class="no-ch">Instalación (EclipseLink)</a></li>
-      <li><a href="ejercicio_creando_proyecto_jpa.html" class="no-ch">Ejercicio: Creando proyecto JPA</a></li>
+      <li><a href="entidades_mapeo.html" class="no-ch">Entidades (Mapeo)</a></li>
       <li><a href="arquitectura_entitymanager.html" class="no-ch">Arquitectura EntityManager</a></li>
-      <li><a href="entidades.html" class="no-ch">Entidades</a></li>
-      <li id="active"><a href="relaciones.html" class="active no-ch">Relaciones</a></li>
-      <li><a href="operaciones_crud_entitymanger.html" class="no-ch">Operaciones CRUD EntityManger</a></li>
+      <li id="active"><a href="ejemplo0.html" class="active no-ch">Ejemplo</a></li>
       <li><a href="herencia.html" class="no-ch">Herencia</a></li>
-      <li><a href="ejercicio_tutorias0.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      <li><a href="ejercicio_propuesto_tutorias.html" class="no-ch">Ejercicio Propuesto: Tutorias</a></li>
    </ul>
    </li>
    <li><a href="semana_13_jpa_ii_consultas_jpql.html" class="daddy">SEMANA 13: JPA (II) Consultas JPQL</a>
@@ -364,83 +364,454 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="entidades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operaciones_crud_entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="arquitectura_entitymanager.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="herencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Relaciones</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id616">
-<div class="iDevice emphasis0">
-<div id="ta616_85" class="block iDevice_content">
-<p>En JPA, existen cuatro tipo de relaciones entre las entidades.Las cuatro relaciones cubren las posibles relaciones que pueden existir entre las tablas de una base de datos relacional. Estas cuatro relaciones son expresadas a través de <strong>anotaciones</strong>.</p>
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejemplo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id837">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_puzzle.png)"><h1 class="iDeviceTitle">Cuentas Bancarias</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta837_110_2" class="block iDevice_content">
+<div class="exe-text"><p>En este ejemplo consideraremos que una persona puede tener varias cuentas bancarias en diferentes bancos. El diagrama de clases sería el siguiente.</p>
+<p><img src="EjercicioBanca.png" alt="Modelo Clases Ejercicio Banca" title="Diagrama de Clases: Cuentas Bancarias de una persona" width="471" height="193" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Trataremos de implementar el ORM (JPA) para este ejemplo. Por tanto, primero debemos:</p>
 <ul>
-<li>@OneToOne</li>
-<li>@OneToMany</li>
-<li>@ManyToOne</li>
-<li>@ManyToMany</li>
+<li>Crear y mapear las clases</li>
+<li>Hacer uso del EntityManager para ejecutar las siguientes operaciones de ejemplo:
+<ul>
+<li>Crear una Persona con el nombre Nestor y calve nestor123</li>
+<li>Crear el Banco con nombre HOLANDES</li>
+<li>Crear una cuenta con el número 9993837 para Nestor,  en el banco HOLANDES</li>
+<li>Obtener la persona "Nestor" e imprimir su información</li>
+<li>Actualizar el nombre de "Nestor" por "Nestor Pons"</li>
+<li>Consultar las personas que cumplen con el nombre "Nestor Pons" y clave "nestor123" (realizarlo con JPQL, de manera Nativa y también como NamedQuery)</li>
 </ul>
-<p>Además, cada anotación acepta <strong>atributos</strong> que definen a profundidad el comportamiento de la relación.</p>
-<p>La primera pestaña explica los atributos involucrados en las anotaciones mientras que las otras pestañas describen cada una de las relaciones.</p>
+</li>
+</ul></div>
+</div>
+</div>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice" id="id617">
+<article class="iDevice_wrapper textIdevice" id="id838">
 <div class="iDevice emphasis0" >
-<div id="ta617_428_2" class="block iDevice_content">
+<div id="ta838_830_2" class="block iDevice_content">
 <div class="exe-text"><div class="exe-fx exe-tabs">
-<h2>Atributos de una anotación de relación</h2>
-<div class="diapositiva" style="margin: 0 auto;">
-<ul>
-<li><strong>cascade</strong>. Tipo de operaciones en cascada a aplicar:
-<ul>
-<li><strong>CascadeType.ALL</strong>. Todas las operaciones</li>
-<li><strong>CascadeType.PERSIST</strong>. Operaciones de persistencia</li>
-<li><strong>CascadeType.MERGE</strong>. Operaciones de actualización</li>
-<li><strong>CascadeType.REMOVE</strong>. Operaciones de borrado</li>
-<li><strong>CascadeType.REFRESH</strong>. Operaciones de actualización</li>
-</ul>
-</li>
-<li><strong>fetch</strong>. Tipo de lectura en la BD
-<ul>
-<li><strong>FechType.LAZY</strong>. Los datos se recuperan de forma perezosa</li>
-<li><strong>FechType.EAGER</strong>. Los datos se recuperan de forma temprana</li>
-</ul>
-</li>
-<li><strong>mappedBy</strong>. El campo que posee la relación.
-<ul>
-<li>mappedBy=“variable”</li>
-</ul>
-</li>
-<li><strong>optional</strong>. Si la asociación es opcional</li>
-</ul>
-<ul>
-<li><strong>@JoinColumn</strong>. Se establece como una clave foránea en otra entidad.
-<ul>
-<li>name. Nombre de la columna</li>
-</ul>
-</li>
-</ul>
+<h2>Persona</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>@Entity
+@Table(name="Persona")
+@NamedQueries({
+	@NamedQuery(name="encontrarPersonaPorNombreYClave", query= "SELECT p from Persona p WHERE p.nombre= :param_nombre AND p.clave= :param_clave"),
+	@NamedQuery(name="listarPersonas", query= "SELECT p from Persona p ORDER BY p.nombre ASC")
+})
+public class Persona implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="idPersona")
+	private Integer id;
+	
+	@Column(name="nombre")
+	private String nombre;
+	
+	@Column(name="clave")
+	private String clave;
+
+
+	public Persona() {
+
+	}
+
+	public Persona(int id, String nombre, String clave) {
+		this.id = id;
+		this.nombre = nombre;
+		this.clave = clave;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getClave() {
+		return clave;
+	}
+
+	public void setClave(String clave) {
+		this.clave = clave;
+	}
+
+
+	@Override
+	public String toString() {
+		return this.nombre+ ' '+ this.clave;
+	}
+	@Override
+	public int hashCode() {
+		int hash = 0;
+        hash += (this.id != null ? this.id.hashCode() : 0);
+        return hash;
+	}
+	@Override
+	public boolean equals(Object object) {
+        if (!(object instanceof Persona)) {
+            return false;
+        }
+        Persona other = (Persona) object;
+        if ((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id))) {
+            return false;
+        }
+        return true;
+	}
+}</code></pre>
 </div>
-<h2>OneToOne</h2>
-<p>Cada entidad se relaciona con una sola instancia de otra entidad.</p>
-<ul>
-<li>Por ejemplo, los datos básicos de un Usuario y datos detallados del usuario.<br /><br /></li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToOne.png" title="OneToOne" width="800" height="504" /></p>
-<h2>OneToMany y ManyToOne</h2>
-<p>Una entidad, puede estar relacionada con varias instancias de otras entidades.</p>
-<ul>
-<li>Por ejemplo, una Cesta de la Compra tiene varios Productos comprados.</li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="OneToMany_ManyToOne.png" alt="OneToMany_ManyToOne" title="OneToMany_ManyToOne" width="799" height="513" /></p>
-<h2>ManyToMany</h2>
-<p>Varias instancias de una entidad pueden relacionarse con múltiples instancias de otras entidades.</p>
-<ul>
-<li>Por ejemplo, cada asignatura tiene muchos estudiantes, y cada estudiante puede tener varias asignaturas</li>
-</ul>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="ManyToMany.png" alt="Many To Many" title="Many To Many" width="799" height="517" /></p>
 </div>
+<p></p>
+<h2>Banco</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>@Entity
+@Table(name="Banco")
+public class Banco implements Serializable {
+
+	
+	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="idBanco")
+	private Integer id;
+	
+	@Column (name="nombre_banco")
+	private String nombreBanco;
+	
+	@OneToMany (fetch = FetchType.LAZY, mappedBy = "banco")
+	private List&lt;CuentaBancaria&gt; cuentas;
+
+	public Banco() {
+	}
+	
+	public Banco(String nombreBanco) {
+		this.nombreBanco = nombreBanco;
+	}
+	
+
+	public String getNombreBanco() {
+		return nombreBanco;
+	}
+
+	public void setNombreBanco(String nombreBanco) {
+		this.nombreBanco = nombreBanco;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+
+	public List&lt;CuentaBancaria&gt; getCuentas() {
+		return cuentas;
+	}
+
+	public void setCuentas(List&lt;CuentaBancaria&gt; cuentas) {
+		this.cuentas = cuentas;
+	}
+
+	@Override
+	public int hashCode() {
+		int hash = 0;
+        hash += (this.id != null ? this.id.hashCode() : 0);
+        return hash;
+		
+	}
+
+	@Override
+	public boolean equals(Object object) {
+		
+		// TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof Banco)) {
+            return false;
+        }
+        Banco other = (Banco) object;
+        if ((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id))) {
+            return false;
+        }
+        return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Banco: " + this.nombreBanco;
+	}
+}</code></pre>
+</div>
+</div>
+<h2>CuentaBancaria</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>@Entity
+@Table(name="Cuenta")
+@NamedQueries({
+	@NamedQuery(name = "listarCuentas", query = "SELECT c FROM CuentaBancaria c")
+})
+public class CuentaBancaria implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column (name="id_cuenta")
+	private Integer id;
+	
+	@Column(name="numero")
+	private String numero;
+	
+	@ManyToOne (cascade = CascadeType.PERSIST)
+	@JoinColumn(name = "banco")
+	private Banco banco;
+	
+	@ManyToOne (cascade = CascadeType.PERSIST)
+	@JoinColumn (name="propietario")
+	private Persona propietario;
+
+	public CuentaBancaria() {
+
+	}
+	
+	public CuentaBancaria(String numero, Banco banco, Persona propietario) {
+		this.numero = numero;
+		this.banco = banco;
+		this.propietario = propietario;
+	}
+
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public Banco getBanco() {
+		return banco;
+	}
+
+	public void setBanco(Banco banco) {
+		this.banco = banco;
+	}
+
+	public Persona getPropietario() {
+		return propietario;
+	}
+
+	public void setPropietario(Persona propietario) {
+		this.propietario = propietario;
+	}
+
+	@Override
+	public int hashCode() {
+		int hash = 0;
+		hash += (id != null ? id.hashCode() : 0);
+		return hash;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof CuentaBancaria)) {
+			return false;
+		}
+		CuentaBancaria other = (CuentaBancaria) obj;
+		if ((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id))) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Número cuenta : "+ this.getNumero();
+	}
+
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<h2>Uso de EntityManager</h2>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import modelo.entidades.Banco;
+import modelo.entidades.CuentaBancaria;
+import modelo.entidades.Persona;
+
+public class EntityManagerTest {
+
+	public static void main(String[] args) {
+
+		insertar();
+		
+		leer();
+		
+		actualizar();
+		
+		eliminar();
+		
+		insertarPersist();
+		
+		consultarJPQL();
+		
+		consultarJPQLNativa();
+
+	}
+
+	public static void insertar() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		// Insertar Persona Nestor
+		Persona nestor = new Persona(0, "Nestor", "nestor123");
+		em.getTransaction().begin();
+		em.persist(nestor);
+		em.getTransaction().commit();
+
+		// Insertar Banco
+		Banco holandes = new Banco();
+		holandes.setNombreBanco("BCO. HOLANDES");
+		em.getTransaction().begin();
+		em.persist(holandes);
+		em.getTransaction().commit();
+
+		// Insertar Cuenta Bancaria
+		CuentaBancaria cuenta = new CuentaBancaria();
+		cuenta.setNumero("9993837");
+		cuenta.setPropietario(nestor);
+		cuenta.setBanco(holandes);
+
+		em.getTransaction().begin();
+		em.persist(cuenta);
+		em.getTransaction().commit();
+	}
+
+	/**
+	 * Demostración de insercion en conjunto gracias a la Cascade = Persiste.Insert
+	 */
+	public static void insertarPersist() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		Persona luis = new Persona(0, "Luis", "luis123");
+		Banco pichincha = new Banco();
+		pichincha.setNombreBanco("BCO. PICHINCHA");
+
+		// Insertar Cuenta en banco holandes para Nestor
+		CuentaBancaria cuentaLuisPichincha = new CuentaBancaria();
+		cuentaLuisPichincha.setNumero("9993837");
+		cuentaLuisPichincha.setPropietario(luis);
+		cuentaLuisPichincha.setBanco(pichincha);
+
+		em.getTransaction().begin();
+		em.persist(cuentaLuisPichincha);
+		em.getTransaction().commit();
+
+	}
+
+	public static void leer() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+		
+		// Leer persona con id=1
+		Persona p5 = em.find(Persona.class, 1);
+		System.out.println(p5);
+	}
+
+	public static void actualizar() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		// Actualizar el nombre de Nestor a Nestor Pons Persona p2 =
+		Persona p2 = em.find(Persona.class, 1);
+		p2.setNombre("Nestor Pons");
+		em.getTransaction().begin();
+		em.merge(p2);
+		em.getTransaction().commit();
+
+	}
+
+	public static void eliminar() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		// Eliminar Persona
+		Persona p3 = em.find(Persona.class, 2);
+		em.getTransaction().begin();
+		em.remove(p3);
+		em.getTransaction().commit();
+
+	}
+
+	public static void consultarJPQL() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		String sentenceJPQL = "SELECT p from Persona p WHERE p.nombre= :param_nombre AND p.clave= :param_clave";
+		Query query = em.createQuery(sentenceJPQL);
+		query.setParameter("param_nombre", "Nestor");
+		query.setParameter("param_clave", "nestor123");
+		Persona personaAutorizada = (Persona) query.getSingleResult();
+		System.out.println(personaAutorizada);
+
+	}
+
+	public static void consultarJPQLNativa() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPersona");
+		EntityManager em = emf.createEntityManager();
+
+		String sentenceSQL = "SELECT p.* FROM PERSONA p WHERE p.nombre='Nestor' AND p.clave='nestor123'";
+		Query query2 = em.createNativeQuery(sentenceSQL, Persona.class);
+		Persona persona2 = (Persona) query2.getSingleResult();
+		System.out.println(persona2);
+	}
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+</div>
+<p><br /><br /></p>
 <p></p></div>
 </div>
 </div>
@@ -452,7 +823,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="entidades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="operaciones_crud_entitymanger.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="arquitectura_entitymanager.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="herencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
