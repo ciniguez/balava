@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Creación de Contenido Dinámico | Aplicaciones Web </title>
+<title>Creación de contenido dinámico | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-279"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-507"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -153,9 +153,15 @@
    </li>
    <li class="current-page-parent"><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="current-page-parent daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
    <ul>
-      <li id="active"><a href="creacin_de_contenido_dinmico.html" class="active no-ch">Creación de Contenido Dinámico</a></li>
-      <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-      <li><a href="json.html" class="no-ch">JSON</a></li>
+      <li><a href="qu_es_el_dom.html" class="no-ch">¿Qué es el DOM?</a></li>
+      <li><a href="obtener_informacin_de_nodos.html" class="no-ch">Obtener información de nodos</a></li>
+      <li><a href="ejemplo_recorrer_el_dom.html" class="no-ch">Ejemplo: Recorrer el DOM</a></li>
+      <li id="active"><a href="creacin_de_contenido_dinmico.html" class="active no-ch">Creación de contenido dinámico</a></li>
+      <li><a href="ejemplo_creacin_dinmica.html" class="no-ch">Ejemplo: Creación dinámica</a></li>
+      <li><a href="ajax.html" class="no-ch">AJAX</a></li>
+      <li><a href="ejemplo_leer_fichero_con_ajax.html" class="no-ch">Ejemplo: Leer fichero con AJAX</a></li>
+      <li><a href="diapositivas_de_apoyo_ajax.html" class="no-ch">Diapositivas de Apoyo: Ajax</a></li>
+      <li><a href="diapositiva_de_apoyo_creacin_contenido.html" class="no-ch">Diapositiva de Apoyo: Creación Contenido</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -360,16 +366,60 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejemplo_recorrer_el_dom.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_creacin_dinmica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Creación de Contenido Dinámico</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id535">
+<header id="nodeDecoration"><h1 id="nodeTitle">Creación de contenido dinámico</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id873">
 <div class="iDevice emphasis0" >
-<div id="ta535_109_2" class="block iDevice_content">
-<div class="exe-text"><p style="text-align: center;"><iframe width="900" height="600" src="https://ciniguez.github.io/balava/presentaciones/CreacionContenidoDinamico/"></iframe></p></div>
+<div id="ta873_875_2" class="block iDevice_content">
+<div class="exe-text"><p>JS permite manipular el DOM de manera dinámica. Usando JS es posible crear y eliminar nodos en el DOM. En esta sección se presentan algunas funciones útiles para manipular dinámicamente los nodos en el DOM.</p>
+<table cellspacing="2" style="background-color: #f2e7bd; border-style: solid; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td width="293">
+<p>Funciones / métodos</p>
+</td>
+<td width="293">
+<p>Descripción</p>
+</td>
+</tr>
+<tr>
+<td width="293">
+<p>document.createElement("p");</p>
+</td>
+<td width="293">
+<p> Crea un nodo de tipo Element. en este caso un párrafo</p>
+</td>
+</tr>
+<tr>
+<td width="293">
+<p>document.createTextNode("Hola!")</p>
+</td>
+<td width="293">
+<p> Crea un nodo de tipo texto</p>
+</td>
+</tr>
+<tr>
+<td width="293">
+<p>document.appendChild(contenido)</p>
+</td>
+<td width="293">
+<p> Agregar un nodo hijo al nodo padre</p>
+</td>
+</tr>
+<tr>
+<td width="293">
+<p>document.removeChild(elementoHijo);</p>
+</td>
+<td width="293">
+<p> Elimina un nodo hijo de su padre</p>
+</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </article>
@@ -380,7 +430,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejemplo_recorrer_el_dom.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_creacin_dinmica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

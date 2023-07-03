@@ -2,23 +2,25 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>JSON | Aplicaciones Web </title>
+<title>Ejemplo: Leer fichero con AJAX | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-492"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-510"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -155,9 +157,15 @@
    </li>
    <li class="current-page-parent"><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="current-page-parent daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
    <ul>
-      <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
-      <li><a href="ajax.html" class="no-ch">Ajax</a></li>
-      <li id="active"><a href="json.html" class="active no-ch">JSON</a></li>
+      <li><a href="qu_es_el_dom.html" class="no-ch">¿Qué es el DOM?</a></li>
+      <li><a href="obtener_informacin_de_nodos.html" class="no-ch">Obtener información de nodos</a></li>
+      <li><a href="ejemplo_recorrer_el_dom.html" class="no-ch">Ejemplo: Recorrer el DOM</a></li>
+      <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de contenido dinámico</a></li>
+      <li><a href="ejemplo_creacin_dinmica.html" class="no-ch">Ejemplo: Creación dinámica</a></li>
+      <li><a href="ajax.html" class="no-ch">AJAX</a></li>
+      <li id="active"><a href="ejemplo_leer_fichero_con_ajax.html" class="active no-ch">Ejemplo: Leer fichero con AJAX</a></li>
+      <li><a href="diapositivas_de_apoyo_ajax.html" class="no-ch">Diapositivas de Apoyo: Ajax</a></li>
+      <li><a href="diapositiva_de_apoyo_creacin_contenido.html" class="no-ch">Diapositiva de Apoyo: Creación Contenido</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -362,82 +370,28 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="librera_js_jquery.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="diapositivas_de_apoyo_ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">JSON</h1></header>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id75">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Definiciones</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta75_814_2" class="block iDevice_content">
-<div class="exe-text"><ul>
-<li>Es un formato para estructurar datos en forma de texto y transmitirlo de un sistema a otro.
-<ul>
-<li>Otro formato conocido es XML</li>
-</ul>
-</li>
-<li>Su especificación surgió en el año 2000 y pasó a formar parte de JS después del lanzamiento de la versión 5 de ECMAScript.</li>
-<li>Es independiente del lenguaje de programación</li>
-<li>Usado ampliamente en las peticiones con AJAX.</li>
-<li>JSON =<em><strong> JavaScript Object Notation</strong></em>. </li>
-<li>Estructura básica: Los datos se estructura con
-<ul>
-<li><strong>Clave</strong>: Identificador del contenido (debe estar en comillas porque es un String)</li>
-<li><strong>Valor</strong>: Contenido correspondiente a la Clave. Pueden almacenarse tipos de datos como  string, array, object, number, boolean, null.</li>
-</ul>
-</li>
-<li>Reglas de Formato: Los datos deben seguir la siguiente notación...
-<ul>
-<li><strong>Llaves</strong> { } .- Sirve para delimitar objetos y son obligatorias para iniciar y terminar el contenido</li>
-<li><strong>Corchetes</strong> [ ] .- indican un array</li>
-<li><strong>Dos puntos</strong> : usados para separar la clave y su valor</li>
-<li><strong>Coma</strong> , para separar elementos</li>
-</ul>
-</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id76">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta76_815_2" class="block iDevice_content">
-<div class="exe-text"><h4>String</h4>
-<div class="highlighted-code language-json">
-<div>
-<pre><code>{ "nombre": "Pedro"}</code></pre>
-</div>
-</div>
-<h4>Array</h4>
-<div class="highlighted-code language-json">
-<div>
-<pre><code>{
-	"marca_autos": ["Ford", "Mazda", "Datsun"]
-}
-</code></pre>
-</div>
-</div>
-<h4>Objeto</h4>
-<div class="highlighted-code language-json">
-<div>
-<pre><code>{
-	"persona": {
-		"nombre": "Luis",
-		"apellido": "Gutierrez"
-	}
-}</code></pre>
-</div>
-</div>
-<h4>Lista de Objetos</h4>
-<div class="highlighted-code language-json">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejemplo: Leer fichero con AJAX</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id878">
+<div class="iDevice emphasis0" >
+<div id="ta878_881_2" class="block iDevice_content">
+<div class="exe-text"><p>El objetivo de este ejercicio es aplicar AJAX para leer el contenido de un fichero en formato json ( fichero.json ). La idea es utilizar JS, específicamente la tecnología AJAX para leer el fichero.json.</p>
+<p>Instrucciones:</p>
+<ol>
+<li>Crea un directorio para el proyecto en cualquier parte de tu computador.</li>
+<li>En el directorio, crea el fichero.json (puedes cortar y pegar el código mostrado)</li>
+<li>En el directorio, crea el fichero ejercicio.html (corta y pega el contenido de ejercicio.html mostrado a continuación)</li>
+<li>Despliega ejercicio.html en un navegador y visualiza el comportamiento.</li>
+<li>Analiza principalmente cómo se han aplicado los 4 pasos indicados en la sección anterior.</li>
+</ol>
+<p></p>
+<div class="exe-fx exe-tabs">
+<h2>fichero.json</h2>
+<div class="highlighted-code code-style-2 language-json line-numbers">
 <div>
 <pre><code>{
     "list":[
@@ -455,11 +409,70 @@
       {"item":"Gestión financiera"},
       {"item":"Otra gestión"}
     ]
-  }</code></pre>
+  }
+</code></pre>
 </div>
-</div></div>
+</div>
+<p><br /><br /></p>
+<h2>ejercicio.html</h2>
+<div class="highlighted-code code-style-2 language-markup line-numbers">
+<div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Obtención de JSON con AJAX&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Contenido JSON obtenido&lt;/h1&gt;
+    &lt;div id="datos"&gt;&lt;/div&gt;
+
+    &lt;button onclick="obtenerDatos();"&gt;Obtener Datos&lt;/button&gt;
+    &lt;script&gt;
+        function obtenerDatos() {
+			//PASO 1: Crear el objeto XMLHttpRequest
+            var htr = new XMLHttpRequest();
+
+			//PASO 2: Asignar la función que responde al evento
+
+            htr.onreadystatechange = function(){
+                if (this.readyState == 4 &amp;&amp; this.status == 200) {
+                    console.log(this.response);
+                     
+                     var elementoUL = document.createElement("ul");
+
+                     this.response.list.forEach(element =&gt; {
+                        var elementoLI = document.createElement("li");
+                        var texto = document.createTextNode(element.item) ;
+                        elementoLI.appendChild(texto);
+                        elementoUL.appendChild(elementoLI);
+                     });
+
+                     document.getElementById("datos").appendChild(elementoUL);
+                }
+            }
+//PASO 3: Configurar la solicitud
+            htr.open("GET", "ficheroJSON.json", true);
+            htr.responseType = "json";
+//PASO 4: Enviar la solicitud
+
+            htr.send();
+        }
+
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
 </div>
 </div>
+<p><br /><br /></p>
+</div>
+<p></p></div>
 </div>
 </div>
 </article>
@@ -470,7 +483,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="librera_js_jquery.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ajax.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="diapositivas_de_apoyo_ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

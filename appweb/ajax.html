@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Ajax | Aplicaciones Web </title>
+<title>AJAX | Aplicaciones Web </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Carlos Iñiguez" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-280"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-509"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -153,9 +155,15 @@
    </li>
    <li class="current-page-parent"><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="current-page-parent daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
    <ul>
-      <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de Contenido Dinámico</a></li>
-      <li id="active"><a href="ajax.html" class="active no-ch">Ajax</a></li>
-      <li><a href="json.html" class="no-ch">JSON</a></li>
+      <li><a href="qu_es_el_dom.html" class="no-ch">¿Qué es el DOM?</a></li>
+      <li><a href="obtener_informacin_de_nodos.html" class="no-ch">Obtener información de nodos</a></li>
+      <li><a href="ejemplo_recorrer_el_dom.html" class="no-ch">Ejemplo: Recorrer el DOM</a></li>
+      <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de contenido dinámico</a></li>
+      <li><a href="ejemplo_creacin_dinmica.html" class="no-ch">Ejemplo: Creación dinámica</a></li>
+      <li id="active"><a href="ajax.html" class="active no-ch">AJAX</a></li>
+      <li><a href="ejemplo_leer_fichero_con_ajax.html" class="no-ch">Ejemplo: Leer fichero con AJAX</a></li>
+      <li><a href="diapositivas_de_apoyo_ajax.html" class="no-ch">Diapositivas de Apoyo: Ajax</a></li>
+      <li><a href="diapositiva_de_apoyo_creacin_contenido.html" class="no-ch">Diapositiva de Apoyo: Creación Contenido</a></li>
       <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
       <ul class="other-section">
          <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
@@ -360,16 +368,138 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="json.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejemplo_creacin_dinmica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_leer_fichero_con_ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Ajax</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id536">
+<header id="nodeDecoration"><h1 id="nodeTitle">AJAX</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id876">
 <div class="iDevice emphasis0" >
-<div id="ta536_108_2" class="block iDevice_content">
-<div class="exe-text"><p style="text-align: center;"><iframe width="900" height="600" src="https://ciniguez.github.io/balava/presentaciones/ajax/"></iframe></p></div>
+<div id="ta876_880_2" class="block iDevice_content">
+<div class="exe-text"><p>Ajax es una tecnología. que permite la comunicación asíncrona. Las siglas provienen de Asynchronous JavaScript And XML. Javascript permite hacer la comunicación asíncrona, luego se envian datos al servidor, los cuales están en formato XML.</p>
+<p>A pesar de que AJAX nación con la idea de enviar datos en XML, al día de hoy no solo es posible enviar los datos en XML, sino también en un formato bastante popular: JSON (Notación de objetos de JavaScript).</p>
+<p>AJAX permite enviar y leer datos al servidor, todo esto en "segundo plano". En segundo plano significa que una vez cargada una página HTML, es posible recibir datos del servidor, leerlos y agregar el contenido enviado a la página HTML previamente cargada. En términos técnicos, la recepción de datos se la realiza de manera "asíncrona", por un lado existe un hilo que carga la página web y por otro lado un hilo que recibe la información de servidor y la actualiza en la página que está en el hilo 1.</p>
+<h2>Aplicando AJAX</h2>
+<p>En términos generales, la aplicación de AJAX consiste en 4 simples pasos:</p>
+<ol>
+<li>Crear un objeto XML HttpRequest</li>
+<li>Asignar la función que responde al evento</li>
+<li>Configurar la solicitud</li>
+<li>Enviar la solicitud</li>
+</ol>
+<p>Revisa el siguiente ejemplo donde aplicamos estos 4 pasos.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice" id="id877">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tema adicional: El formato JSON</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta877_115" class="block instructions iDevice_content">
+<ul>
+<li>Es un formato para estructurar datos en forma de texto y transmitirlo de un sistema a otro.
+<ul>
+<li>Otro formato conocido es XML</li>
+</ul>
+</li>
+<li>Su especificación surgió en el año 2000 y pasó a formar parte de JS después del lanzamiento de la versión 5 de ECMAScript.</li>
+<li>Es independiente del lenguaje de programación</li>
+<li>Usado ampliamente en las peticiones con AJAX.</li>
+<li>JSON =<em><strong> JavaScript Object Notation</strong></em>. </li>
+<li>Estructura básica: Los datos se estructura con
+<ul>
+<li><strong>Clave</strong>: Identificador del contenido (debe estar en comillas porque es un String)</li>
+<li><strong>Valor</strong>: Contenido correspondiente a la Clave. Pueden almacenarse tipos de datos como  string, array, object, number, boolean, null.</li>
+</ul>
+</li>
+<li>Reglas de Formato: Los datos deben seguir la siguiente notación...
+<ul>
+<li><strong>Llaves</strong> { } .- Sirve para delimitar objetos y son obligatorias para iniciar y terminar el contenido</li>
+<li><strong>Corchetes</strong> [ ] .- indican un array</li>
+<li><strong>Dos puntos</strong> : usados para separar la clave y su valor</li>
+<li><strong>Coma</strong> , para separar elementos</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pulsa en "Mostrar Retroalimentación" para ver ejemplos de la notación en JSON.</strong></p>
+</section>
+
+<section class="activity" id="activity-877_116">
+<form name="cloze-form-877_116" action="#" class="activity-form cloze-form">
+<div id="cloze877_116">
+<input type="hidden" name="clozeVar877_116.feedbackId" id="clozeVar877_116.feedbackId" value="ta877_117"/>
+
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore877_116" value="Comprobar"  id="getScore877_116" />
+
+<input type="button" name="feedback877_116" value="Mostrar retroalimentación" class="feedbackbutton cloze-feedback-toggler" />
+
+<input type="hidden" name="clozeOtras877_116" id="clozeOtras877_116" value=""/>
+
+<input type="hidden" name="clozeFlag877_116.strictMarking" id="clozeFlag877_116.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag877_116.checkCaps" id="clozeFlag877_116.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag877_116.instantMarking" id="clozeFlag877_116.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore877_116"></div>
+</div>
+</form>
+</section>
+<section id="ta877_117" class="feedback js-feedback iDevice_content" style="display:none">
+<h4>String</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{ "nombre": "Pedro"}</code></pre>
+</div>
+</div>
+<h4>Array</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+	"marca_autos": ["Ford", "Mazda", "Datsun"]
+}
+</code></pre>
+</div>
+</div>
+<h4>Objeto</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+	"persona": {
+		"nombre": "Luis",
+		"apellido": "Gutierrez"
+	}
+}</code></pre>
+</div>
+</div>
+<h4>Lista de Objetos</h4>
+<div class="highlighted-code language-json">
+<div>
+<pre><code>{
+    "list":[
+      {"item":"Gestión de auditoría"},
+      {"item":"Gestión de menús"},
+      {"item":"Gestión de pedidos"},
+      {"item":"Gestión de contratos"},
+      {"item":"Gestion de logistica"},
+      {"item":"Administración"},
+      {"item":"Gestión de recursos humanos"},
+      {"item":"Gestión de compras"},
+      {"item":"Gestión mayorista"},
+      {"item":"Gestion de seguridad"},
+      {"item":"Administración de cuentas"},
+      {"item":"Gestión financiera"},
+      {"item":"Otra gestión"}
+    ]
+  }</code></pre>
+</div>
+</div>
+</section>
+</div>
 </div>
 </div>
 </article>
@@ -380,7 +510,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="creacin_de_contenido_dinmico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="json.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="ejemplo_creacin_dinmica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ejemplo_leer_fichero_con_ajax.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
