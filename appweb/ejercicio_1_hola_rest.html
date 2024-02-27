@@ -20,7 +20,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-532"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-592"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
@@ -391,17 +391,39 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Ejercicio 1: Hola Rest</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id928">
+<article class="iDevice_wrapper textIdevice" id="id1093">
 <div class="iDevice emphasis0" >
-<div id="ta928_121_2" class="block iDevice_content">
+<div id="ta1093_121_2" class="block iDevice_content">
 <div class="exe-text"><p>Sigue los siguientes 5 pasos para poner en marcha tu Servicio Web Rest</p>
 <hr />
 <div class="exe-fx exe-paginated">
-<h2>Crear Proyecto</h2>
+<h2>Crear Proyecto Web</h2>
 <ul>
-<li>Crear un proyecto nuevo: “Dinamic Web Proyect”. Lo llamaremos: “<strong>rest_ejercicio1_hola</strong>”.</li>
+<li>Crear un proyecto nuevo: “Dinamic Web Proyect”.
+<ul>
+<li>Nombre: “<strong>rest_ejercicio1_hola</strong>”</li>
+<li>Activar Web Module: 2.5</li>
+</ul>
+</li>
 <li>Activar la creación del descriptor (web.xml).</li>
 </ul>
+<p>Una vez creado el proyecto, revisa dos configuraciones:</p>
+<ul>
+<li>Clic derecho en el nombre del proyecto / Propiedades / Project Facets y verifica que:
+<ul>
+<li>Dynamic Web Module: 2.5</li>
+<li>Java: 1.8</li>
+<li>Javascript 1.0</li>
+</ul>
+</li>
+<li>Clic derecho en el nombre del proyecto / Propiedades / Java Build Path
+<ul>
+<li>JRE System Library [JavaSE-1.8]</li>
+<li>Server Runtime [Apache Tomcat v10.1]</li>
+</ul>
+</li>
+</ul>
+<p>NOTA IMPORTANTE: Para este proyecto se utiliza Tomcat v10.1</p>
 <h2>Instala librerías</h2>
 <ul>
 <li><strong>Opción Manual:</strong>
@@ -410,54 +432,94 @@
 <li><a href="https://ciniguez.github.io/balava/libreriasjava/">https://ciniguez.github.io/balava/libreriasjava/</a>(Sección Servicios Web - REST)</li>
 </ul>
 </li>
-<li><strong>Opción con Maven</strong>:</li>
+<li><strong>Opción con Maven (pom.xml)</strong>:
+<ul>
+<li>Nota: Líneas 8 y 10 deben ser cambiadas por el nombre del Artefacto o proyecto particular</li>
+</ul>
+</li>
 </ul>
 <div class="highlighted-code language-markup line-numbers">
 <div>
-<pre><code>&lt;!-- SERVICIO WEB REST --&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
-	&lt;version&gt;2.31&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
-	&lt;version&gt;2.28&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;!-- JAXB --&gt;
-&lt;!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api --&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;javax.xml.bind&lt;/groupId&gt;
-	&lt;artifactId&gt;jaxb-api&lt;/artifactId&gt;
-	&lt;version&gt;2.3.1&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;!-- Javax JSON Bind API --&gt;
-&lt;!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api --&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;javax.json.bind&lt;/groupId&gt;
-	&lt;artifactId&gt;javax.json.bind-api&lt;/artifactId&gt;
-	&lt;version&gt;1.0&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;!-- Jackson para MessageBodyWriter --&gt;
-&lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson --&gt;
-&lt;dependency&gt;
-	&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-	&lt;artifactId&gt;jersey-media-json-jackson&lt;/artifactId&gt;
-	&lt;version&gt;2.31&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
+<pre><code>&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
+	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+	&lt;groupId&gt;com.epn.ws&lt;/groupId&gt;
+	&lt;artifactId&gt;serviciosWebREST&lt;/artifactId&gt;
+	&lt;packaging&gt;war&lt;/packaging&gt;
+	&lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+	&lt;name&gt;serviciosWebREST&lt;/name&gt;
+	&lt;build&gt;
+		&lt;finalName&gt;serviciosWebREST&lt;/finalName&gt;
+		&lt;plugins&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+				&lt;version&gt;3.8.1&lt;/version&gt;
+				&lt;inherited&gt;true&lt;/inherited&gt;
+				&lt;configuration&gt;
+					&lt;source&gt;1.8&lt;/source&gt;
+					&lt;target&gt;1.8&lt;/target&gt;
+				&lt;/configuration&gt;
+			&lt;/plugin&gt;
+			&lt;plugin&gt;
+				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+				&lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+				&lt;version&gt;3.4.0&lt;/version&gt;
+			&lt;/plugin&gt;
+		&lt;/plugins&gt;
+	&lt;/build&gt;
+	&lt;dependencyManagement&gt;
+		&lt;dependencies&gt;
+			&lt;dependency&gt;
+				&lt;groupId&gt;org.glassfish.jersey&lt;/groupId&gt;
+				&lt;artifactId&gt;jersey-bom&lt;/artifactId&gt;
+				&lt;version&gt;${jersey.version}&lt;/version&gt;
+				&lt;type&gt;pom&lt;/type&gt;
+				&lt;scope&gt;import&lt;/scope&gt;
+			&lt;/dependency&gt;
+		&lt;/dependencies&gt;
+	&lt;/dependencyManagement&gt;
+	&lt;dependencies&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-container-servlet-core&lt;/artifactId&gt;
+			&lt;!-- use the following artifactId if you don't need servlet 2.x compatibility --&gt;
+			&lt;!-- artifactId&gt;jersey-container-servlet&lt;/artifactId --&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+		&lt;!-- uncomment this to get JSON support --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
+			&lt;artifactId&gt;jersey-media-json-binding&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+
+		&lt;dependency&gt;
+			&lt;groupId&gt;jakarta.xml.bind&lt;/groupId&gt;
+			&lt;artifactId&gt;jakarta.xml.bind-api&lt;/artifactId&gt;
+			&lt;version&gt;4.0.1&lt;/version&gt;
+		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+	&lt;properties&gt;
+		&lt;jersey.version&gt;3.1.5&lt;/jersey.version&gt;
+		&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+		&lt;war.mvn.plugin.version&gt;3.4.0&lt;/war.mvn.plugin.version&gt;
+	&lt;/properties&gt;
+&lt;/project&gt;</code></pre>
 </div>
 </div>
 <h2>Anotar clase</h2>
 <p>Crea una clase y anótala para convertirla en el servicio ( o recurso)</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
-<pre><code>import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+<pre><code>import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 
-@Path("/hello")
+@Path("hello")
 public class Hola {
 
 	@GET @Produces(MediaType.TEXT_PLAIN)
@@ -468,22 +530,17 @@ public class Hola {
 </div>
 </div>
 <h2>Registrar el Servlet</h2>
+<p>Para registrar el Servlet de Jersey es necesario agregar contenido en el fichero web.xml del proyecto. En el siguiente ejemplo "Código del fichero web.xml", el contenido agregado está entre las líneas 9-21. Puedes abrir tu fichero web.xml, copiar y pegar las líneas 9-21. Aquí la explicación de este contenido:</p>
 <ul>
-<li>Registrar el servlet de Jersey en el descriptor (web.xml)</li>
-<li>Asociar el servlet de Jersey con el paquete de java que contiene las clases que representan los servicios</li>
-<li>Mapear el servlet para que capture las peticiones "/rest/*"</li>
-<li>El fichero web.xml debe quedar como se indica en el fragmento de código: <strong>Código del fichero web.xml.</strong></li>
+<li>Registrar el servlet de Jersey en el descriptor (web.xml) (Líneas: 9 - 17)</li>
+<li>Asociar el servlet de Jersey con el paquete de java que contiene las clases que representan los servicios (Línea 14)</li>
+<li>Mapear el servlet para que capture las peticiones "/rest/*" (Línea 20)</li>
 </ul>
 <p style="text-align: center;"><span style="font-size: 10pt;"><strong>Código del fichero web.xml</strong>:</span></p>
 <div class="highlighted-code language-markup line-numbers">
 <div>
 <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"&gt;
-  &lt;display-name&gt;REST&lt;/display-name&gt;
-	&lt;welcome-file-list&gt;
-		&lt;welcome-file&gt;index.html&lt;/welcome-file&gt;
-	&lt;/welcome-file-list&gt;
-	
+&lt;web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"&gt;
 	
 	&lt;servlet&gt;
 		&lt;servlet-name&gt;Jersey REST Service&lt;/servlet-name&gt;
@@ -510,14 +567,28 @@ public class Hola {
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_share" id="id929">
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_share" id="id1094">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(icon_share.png)"><h1 class="iDeviceTitle">Herramienta de Apoyo</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta929_122_2" class="block iDevice_content">
-<div class="exe-text"><p>Para consumir los servicios web - REST te recomiendo descargar una herramienta para Google Chrome: <strong>Advanced Rest Client</strong></p>
-<p><strong><img src="m6_img0.2.png" width="517" height="133" alt="Advanced REST Client" style="display: block; margin-left: auto; margin-right: auto;" /></strong></p></div>
+<div id="ta1094_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Para consumir los servicios web - REST te recomiendo descargar una heramienta de prubeas de Servicios Web, entre ellas:</p>
+<ul>
+<li>Extensiones de Chrome
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/resting/egklacbpeeiooeclkpghepnohaidpeok" target="_blank" rel="noopener">Resting</a></li>
+<li><a href="https://chromewebstore.google.com/detail/rest-client-apishub/dabkfpeebkikmgdianbkchblbdibbfhl" target="_blank" rel="noopener">REST Client APIsHub</a></li>
+<li><a href="https://chromewebstore.google.com/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo?hl=es" target="_blank" rel="noopener">Postman Inspector</a></li>
+</ul>
+</li>
+<li>Programas de Escritorio
+<ul>
+<li><a href="https://www.postman.com/downloads/" target="_blank" rel="noopener">Postman</a></li>
+</ul>
+</li>
+</ul>
+<p><strong> </strong></p></div>
 </div>
 </div>
 </div>
