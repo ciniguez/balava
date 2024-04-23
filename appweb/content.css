@@ -39,7 +39,7 @@ a{color:#007691}
 .nodeTitle{padding:25px 0;border-bottom:1px dotted #97afb2;margin:25px 0 0 0;color:#3a4749;letter-spacing:.5px;font-size:1.5em}
 h2{font-size:1.4em;color:#007691;letter-spacing:.5px;font-weight:normal}
 h3{font-size:1.35em;color:#576F72;letter-spacing:.5px;font-weight:normal}
-p{margin:1em 0}
+p{margin:1em 0; text-align:justify;}
 ol,ul{color:#3a4749}
 #main{height:auto!important;height:300px;min-height:300px}
 #main h4{font-size:1.2em}
@@ -154,3 +154,6 @@ li{list-style-position:outside}
 /* UDL iDevice */
 .exe-udlContent-content-simplified{line-height:2.5em;letter-spacing:.15em;word-spacing:.15em}
 .exe-udlContent-content-simplified p{margin:2em 0}
+/* Estilos de Carlos  */
+.ci_div_resaltado{ border: 1px solid #A0FA8E; padding: 10px; background: #FAFA8E;}
+.ci_div_font_min { padding: 10px; background: #FAFA8E;font-size: 0.8em}
