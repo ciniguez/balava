@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>HTML 5 | Aplicaciones Web </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Carlos Iñiguez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-234"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Aplicaciones Web</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Aplicaciones Web</a></li>
+   <li><a href="semana_1__orgenes_de_la_web.html" class="daddy">SEMANA 1 : Orígenes de la Web</a>
+   <ul class="other-section">
+      <li><a href="un_poco_de_historia.html" class="no-ch">Un poco de historia...</a></li>
+      <li><a href="conceptos_clave.html" class="no-ch">Conceptos Clave</a></li>
+      <li><a href="qu_es_una_aplicacin_web.html" class="no-ch">¿Qué es una Aplicación Web?</a></li>
+      <li><a href="tipos_de_aplicaciones.html" class="no-ch">Tipos de Aplicaciones</a></li>
+      <li><a href="aplicaciones_web_estticas.html" class="no-ch">Aplicaciones Web Estáticas</a></li>
+      <li><a href="aplicaciones_web_dinmicas.html" class="no-ch">Aplicaciones Web Dinámicas</a></li>
+      <li><a href="aplicaciones_web_de_pgina_nica_spa.html" class="no-ch">Aplicaciones Web de Página Única (SPA)</a></li>
+      <li><a href="aplicaciones_web_progresivas_pwa.html" class="no-ch">Aplicaciones Web Progresivas (PWA)</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_2_el_protocolo_http.html" class="daddy">SEMANA 2: El protocolo HTTP</a>
+   <ul class="other-section">
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="arquitectura_web.html" class="no-ch">Arquitectura Web</a></li>
+      <li><a href="el_protocolo_http.html" class="no-ch">El protocolo HTTP</a></li>
+      <li><a href="mensajes_http.html" class="no-ch">Mensajes HTTP</a></li>
+      <li><a href="la_uri.html" class="no-ch">La URI</a></li>
+      <li><a href="cabeceras.html" class="no-ch">Cabeceras</a></li>
+      <li><a href="mtodos_http.html" class="no-ch">Métodos HTTP</a></li>
+      <li><a href="parmetros.html" class="no-ch">Parámetros</a></li>
+      <li><a href="cdigos_de_estado.html" class="no-ch">Códigos de Estado</a></li>
+      <li><a href="cookies_y_sesiones.html" class="no-ch">Cookies y Sesiones</a></li>
+      <li><a href="prctica_http.html" class="no-ch">Práctica HTTP</a></li>
+      <li><a href="ejemplo_aplicacin_de_cookies.html" class="no-ch">Ejemplo: Aplicación de Cookies</a></li>
+      <li><a href="ejemplo_aplicacin_de_sesiones.html" class="no-ch">Ejemplo: Aplicación de Sesiones</a></li>
+      <li><a href="actividad_mi_tienda_virtual.html" class="no-ch">Actividad: Mi Tienda Virtual</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="semana_3_html_y_html5.html" class="current-page-parent daddy">SEMANA 3: HTML y HTML5</a>
+   <ul>
+      <li><a href="un_poco_de_historia0.html" class="no-ch">Un poco de historia...</a></li>
+      <li><a href="qu_es_html.html" class="no-ch">¿Qué es HTML?</a></li>
+      <li><a href="etiquetas_bsicas.html" class="no-ch">Etiquetas básicas</a></li>
+      <li><a href="etiquetas_del_header.html" class="no-ch">Etiquetas del header</a></li>
+      <li><a href="etiquetas_del_body.html" class="no-ch">Etiquetas del body</a></li>
+      <li><a href="formulario_y_controles.html" class="no-ch">Formulario y Controles</a></li>
+      <li><a href="controles_de_formulario.html" class="no-ch">Controles de Formulario</a></li>
+      <li id="active"><a href="html_5.html" class="active no-ch">HTML 5</a></li>
+      <li><a href="actividad_catlogo_de_controles.html" class="no-ch">Actividad: Catálogo de Controles</a></li>
+      <li><a href="autoevaluacin_html.html" class="no-ch">Autoevaluación HTML</a></li>
+      <li><a href="actividad_formulario.html" class="no-ch">Actividad: Formulario</a></li>
+      <li><a href="bibliografa_y_recursos_adicionales.html" class="no-ch">Bibliografía y Recursos adicionales</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_4_css_parte_i__estilizando_la_web.html" class="daddy">SEMANA 4: CSS (Parte I) - Estilizando la Web</a>
+   <ul class="other-section">
+      <li><a href="motivacin.html" class="no-ch">Motivación</a></li>
+      <li><a href="definicin.html" class="no-ch">Definición</a></li>
+      <li><a href="anatoma_de_un_estilo_css.html" class="no-ch">Anatomía de un Estilo CSS</a></li>
+      <li><a href="selectores_simples.html" class="no-ch">Selectores simples</a></li>
+      <li><a href="formas_de_incluir_css.html" class="no-ch">Formas de incluir CSS</a></li>
+      <li><a href="propiedades_css.html" class="daddy">Propiedades CSS</a>
+      <ul class="other-section">
+         <li><a href="propiedad_bordes.html" class="no-ch">Propiedad: Bordes</a></li>
+      </ul>
+      </li>
+      <li><a href="modelo_de_caja.html" class="daddy">Modelo de Caja</a>
+      <ul class="other-section">
+         <li><a href="modelo_de_caja_margin_y_padding.html" class="no-ch">Modelo de Caja: Margin y Padding</a></li>
+         <li><a href="modelo_de_caja_boxsizing.html" class="no-ch">Modelo de Caja: Box-Sizing</a></li>
+         <li><a href="actividad_una_hoja_de_vida.html" class="no-ch">Actividad: Una Hoja de Vida</a></li>
+         <li><a href="bibliografa_y_recursos_adicionales0.html" class="no-ch">Bibliografía y Recursos adicionales</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="semana_5_css_3.html" class="daddy">SEMANA 5: CSS 3</a>
+   <ul class="other-section">
+      <li><a href="selectores_avanzados.html" class="daddy">Selectores avanzados</a>
+      <ul class="other-section">
+         <li><a href="pseudoclases.html" class="no-ch">Pseudo-clases</a></li>
+         <li><a href="pseudoelementos.html" class="no-ch">Pseudo-elementos</a></li>
+         <li><a href="combinadores.html" class="no-ch">Combinadores</a></li>
+         <li><a href="atributos.html" class="no-ch">Atributos</a></li>
+      </ul>
+      </li>
+      <li><a href="transformaciones.html" class="daddy">Transformaciones</a>
+      <ul class="other-section">
+         <li><a href="transformaciones_una_visa_en_detalle.html" class="no-ch">Transformaciones: Una visa en detalle</a></li>
+      </ul>
+      </li>
+      <li><a href="transiciones.html" class="daddy">Transiciones</a>
+      <ul class="other-section">
+         <li><a href="transiciones0.html" class="no-ch">Transiciones</a></li>
+         <li><a href="ejemplo_transiciones.html" class="no-ch">Ejemplo Transiciones</a></li>
+         <li><a href="transiciones_una_vista_en_detalle.html" class="no-ch">Transiciones: Una vista en detalle</a></li>
+         <li><a href="ejemplo_transiciones0.html" class="no-ch">Ejemplo Transiciones</a></li>
+      </ul>
+      </li>
+      <li><a href="animaciones.html" class="daddy">Animaciones</a>
+      <ul class="other-section">
+         <li><a href="animaciones_una_vista_en_detalle.html" class="no-ch">Animaciones: Una vista en detalle</a></li>
+         <li><a href="ejemplo_animaciones.html" class="no-ch">Ejemplo Animaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="bootstrap_una_librera_de_estilos.html" class="daddy">Bootstrap: una librería de estilos</a>
+      <ul class="other-section">
+         <li><a href="instalacin_bootstrap.html" class="no-ch">Instalación Bootstrap</a></li>
+      </ul>
+      </li>
+      <li><a href="sass.html" class="no-ch">Sass</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_6_libreras_de_estilos.html" class="daddy">SEMANA 6: Librerías de Estilos</a>
+   <ul class="other-section">
+      <li><a href="bootstrap_una_librera_de_estilos0.html" class="daddy">Bootstrap: una librería de estilos</a>
+      <ul class="other-section">
+         <li><a href="instalacin_bootstrap0.html" class="no-ch">Instalación Bootstrap</a></li>
+      </ul>
+      </li>
+      <li><a href="sass0.html" class="no-ch">Sass</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_7_javascript_parte_i_agregando_dinamismo.html" class="daddy">SEMANA 7: Javascript (Parte I): Agregando dinamismo</a>
+   <ul class="other-section">
+      <li><a href="sentencias_de_control.html" class="no-ch">Sentencias de Control</a></li>
+      <li><a href="cambio_de_contenido.html" class="no-ch">Cambio de contenido</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_8_javascript_parte_ii_creacin_de_contenido_y_comunicacin_asncrona.html" class="daddy">SEMANA 8: Javascript (Parte II): Creación de contenido y comunicación asíncrona</a>
+   <ul class="other-section">
+      <li><a href="qu_es_el_dom.html" class="no-ch">¿Qué es el DOM?</a></li>
+      <li><a href="obtener_informacin_de_nodos.html" class="no-ch">Obtener información de nodos</a></li>
+      <li><a href="ejemplo_recorrer_el_dom.html" class="no-ch">Ejemplo: Recorrer el DOM</a></li>
+      <li><a href="creacin_de_contenido_dinmico.html" class="no-ch">Creación de contenido dinámico</a></li>
+      <li><a href="ejemplo_creacin_dinmica.html" class="no-ch">Ejemplo: Creación dinámica</a></li>
+      <li><a href="ajax.html" class="no-ch">AJAX</a></li>
+      <li><a href="ejemplo_leer_fichero_con_ajax.html" class="no-ch">Ejemplo: Leer fichero con AJAX</a></li>
+      <li><a href="diapositivas_de_apoyo_ajax.html" class="no-ch">Diapositivas de Apoyo: Ajax</a></li>
+      <li><a href="diapositiva_de_apoyo_creacin_contenido.html" class="no-ch">Diapositiva de Apoyo: Creación Contenido</a></li>
+      <li><a href="librera_js_jquery.html" class="daddy">Librería JS (JQuery)</a>
+      <ul class="other-section">
+         <li><a href="introduccin0.html" class="no-ch">Introducción</a></li>
+         <li><a href="instalacin.html" class="no-ch">Instalación</a></li>
+         <li><a href="iniciacin.html" class="no-ch">Iniciación</a></li>
+         <li><a href="selectores.html" class="no-ch">Selectores</a></li>
+         <li><a href="eventos.html" class="no-ch">Eventos</a></li>
+         <li><a href="modificando_clases.html" class="no-ch">Modificando clases</a></li>
+         <li><a href="modificando_clases_ejercicio.html" class="no-ch">Modificando clases: Ejercicio</a></li>
+         <li><a href="modificando_atributos.html" class="no-ch">Modificando atributos</a></li>
+         <li><a href="modificando_contenido.html" class="no-ch">Modificando contenido</a></li>
+         <li><a href="formularios.html" class="no-ch">Formularios</a></li>
+         <li><a href="modificando_hojas_de_estilo.html" class="no-ch">Modificando Hojas de estilo</a></li>
+         <li><a href="modificando_hojas_de_estilo_ejercicio_redimensionamiento.html" class="no-ch">Modificando Hojas de Estilo: Ejercicio Redimensionamiento</a></li>
+         <li><a href="efectos_visuales.html" class="no-ch">Efectos visuales</a></li>
+         <li><a href="efectos_visuales_ejercicio.html" class="no-ch">Efectos Visuales: Ejercicio</a></li>
+         <li><a href="ajax0.html" class="no-ch">Ajax</a></li>
+         <li><a href="prctica_js.html" class="no-ch">Práctica JS</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="semana_9_fundamentos_back_end_java.html" class="daddy">SEMANA 9: Fundamentos Back End (Java)</a>
+   <ul class="other-section">
+      <li><a href="configurando_el_ambiente_de_desarrollo.html" class="no-ch">Configurando el Ambiente de Desarrollo</a></li>
+      <li><a href="creacin_de_un_proyecto_web.html" class="no-ch">Creación de un proyecto Web</a></li>
+      <li><a href="patrn_de_arquitectura_mvc.html" class="no-ch">Patrón de Arquitectura MVC</a></li>
+      <li><a href="mvc_en_escritorio.html" class="no-ch">MVC en Escritorio</a></li>
+      <li><a href="mvc_en_web.html" class="no-ch">MVC en WEB</a></li>
+      <li><a href="principios_tecnolgicos.html" class="no-ch">Principios Tecnológicos</a></li>
+      <li><a href="servlets.html" class="daddy">SERVLETS</a>
+      <ul class="other-section">
+         <li><a href="ciclo_de_vida_de_un_servlet.html" class="no-ch">Ciclo de Vida de un Servlet</a></li>
+         <li><a href="servlet_hola_mundo.html" class="no-ch">Servlet: Hola Mundo</a></li>
+         <li><a href="recogiendo_parmetros_en_el_servlet.html" class="no-ch">Recogiendo parámetros en el Servlet</a></li>
+         <li><a href="reenvo_entre_componentes_servlet.html" class="no-ch">Reenvío entre componentes (Servlet)</a></li>
+      </ul>
+      </li>
+      <li><a href="javabeans.html" class="no-ch">JAVABEANS</a></li>
+      <li><a href="jsp.html" class="daddy">JSP</a>
+      <ul class="other-section">
+         <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
+         <li><a href="jstl_y_jsp.html" class="no-ch">JSTL y JSP</a></li>
+         <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
+         <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
+      </ul>
+      </li>
+      <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
+      <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
+      <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
+      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
+   <ul class="other-section">
+      <li><a href="persistencia.html" class="no-ch">Persistencia</a></li>
+      <li><a href="jdbc.html" class="no-ch">JDBC</a></li>
+      <li><a href="cmo_implementar_jdbc.html" class="no-ch">¿Cómo implementar JDBC?</a></li>
+      <li><a href="ejemplo.html" class="no-ch">Ejemplo</a></li>
+      <li><a href="ejercicio.html" class="no-ch">Ejercicio</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_11_dao.html" class="daddy">SEMANA 11: DAO</a>
+   <ul class="other-section">
+      <li><a href="patrones_de_diseo_una_revisin.html" class="no-ch">Patrones de Diseño: una revisión.</a></li>
+      <li><a href="patrones_orientados_a_los_datos.html" class="no-ch">Patrones orientados a los datos</a></li>
+      <li><a href="activerecord.html" class="no-ch">ActiveRecord</a></li>
+      <li><a href="dao_data_acces_object.html" class="no-ch">DAO (Data Acces Object)</a></li>
+      <li><a href="de_activerecord_a_dao.html" class="no-ch">De ActiveRecord a DAO</a></li>
+      <li><a href="ejercicio_implementando_patrn_dao.html" class="no-ch">Ejercicio: Implementando patrón DAO</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_12_jpa_i_fundamentos.html" class="daddy">SEMANA 12: JPA (I) Fundamentos</a>
+   <ul class="other-section">
+      <li><a href="qu_es_jpa.html" class="no-ch">¿Qué es JPA?</a></li>
+      <li><a href="jpa_en_la_arquitectura_web.html" class="no-ch">JPA en la Arquitectura Web</a></li>
+      <li><a href="implementaciones.html" class="no-ch">Implementaciones</a></li>
+      <li><a href="instalacin_eclipselink.html" class="no-ch">Instalación (EclipseLink)</a></li>
+      <li><a href="entidades_mapeo.html" class="no-ch">Entidades (Mapeo)</a></li>
+      <li><a href="arquitectura_entitymanager.html" class="no-ch">Arquitectura EntityManager</a></li>
+      <li><a href="ejemplo0.html" class="no-ch">Ejemplo</a></li>
+      <li><a href="herencia.html" class="no-ch">Herencia</a></li>
+      <li><a href="ejercicio_propuesto_tutorias.html" class="no-ch">Ejercicio Propuesto: Tutorias</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_13_jpa_ii_consultas_jpql.html" class="daddy">SEMANA 13: JPA (II) Consultas JPQL</a>
+   <ul class="other-section">
+      <li><a href="sql_vs_jpql.html" class="no-ch">SQL vs JPQL</a></li>
+      <li><a href="ejemplos_de_consultas.html" class="no-ch">Ejemplos de Consultas</a></li>
+      <li><a href="ejercicios_propuestos.html" class="no-ch">Ejercicios Propuestos</a></li>
+      <li><a href="createquery.html" class="no-ch">CreateQuery</a></li>
+      <li><a href="named_queries.html" class="no-ch">Named Queries</a></li>
+      <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+      <li><a href="caso_prctico_tutorias.html" class="no-ch">Caso Práctico: Tutorias</a></li>
+      <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_14_servicios_web_soap.html" class="daddy">SEMANA 14: Servicios Web SOAP</a>
+   <ul class="other-section">
+      <li><a href="concepto.html" class="no-ch">Concepto</a></li>
+      <li><a href="servicios_web_soap.html" class="no-ch">Servicios Web SOAP</a></li>
+      <li><a href="prctica_ws_soap_login_persona.html" class="no-ch">Práctica WS SOAP: Login Persona</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_15_servicios_web_rest.html" class="daddy">SEMANA 15: Servicios Web REST</a>
+   <ul class="other-section">
+      <li><a href="tecnologas.html" class="no-ch">Tecnologías</a></li>
+      <li><a href="ejercicio_1_hola_rest.html" class="no-ch">Ejercicio 1: Hola Rest</a></li>
+      <li><a href="qu_es_un_recurso.html" class="no-ch">¿Qué es un Recurso?</a></li>
+      <li><a href="ejercicio_2_recursos.html" class="no-ch">Ejercicio 2: Recursos</a></li>
+      <li><a href="parmetros0.html" class="no-ch">Parámetros</a></li>
+      <li><a href="ejercicio_3_parmetros.html" class="no-ch">Ejercicio 3: Parámetros</a></li>
+      <li><a href="ejercicio_4_crud.html" class="no-ch">Ejercicio 4: CRUD</a></li>
+      <li><a href="cliente_rest.html" class="no-ch">Cliente Rest</a></li>
+      <li><a href="resolviendo_coors.html" class="no-ch">Resolviendo COORS</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_16_sistemas_manejadores_de_contenido.html" class="daddy">SEMANA 16: Sistemas Manejadores de Contenido</a>
+   <ul class="other-section">
+      <li><a href="qu_es_un_cms.html" class="no-ch">¿Qué es un CMS?</a></li>
+      <li><a href="qu_se_puede_hacer_con_un__cms.html" class="no-ch">¿Qué se puede hacer con un  CMS?</a></li>
+      <li><a href="caractersticas_de_un_cms.html" class="no-ch">Características de un CMS</a></li>
+      <li><a href="con_y_sin_un_cms.html" class="no-ch">Con y sin un CMS</a></li>
+      <li><a href="cms_populares.html" class="no-ch">CMS populares</a></li>
+      <li><a href="aplicando_cms_wordpress.html" class="no-ch">Aplicando CMS: WordPress</a></li>
+      <li><a href="ventajas_de_wordpress.html" class="no-ch">Ventajas de Wordpress</a></li>
+      <li><a href="estructura_de_wordpress.html" class="no-ch">Estructura de WordPress</a></li>
+      <li><a href="perfiles_de_usuarios.html" class="no-ch">Perfiles de Usuarios</a></li>
+      <li><a href="instalacin0.html" class="no-ch">Instalación</a></li>
+      <li><a href="pantalla_de_adminsitracin.html" class="no-ch">Pantalla de adminsitración</a></li>
+      <li><a href="estructura_de_directorio_wordpress.html" class="no-ch">Estructura de Directorio Wordpress</a></li>
+      <li><a href="instalacin_en_host.html" class="no-ch">Instalación en host</a></li>
+      <li><a href="ejemplos_de_instalacin.html" class="no-ch">Ejemplos de instalación</a></li>
+   </ul>
+   </li>
+   <li><a href="anexos.html" class="daddy">ANEXOS</a>
+   <ul class="other-section">
+      <li><a href="lenguaje_php.html" class="daddy">Lenguaje PHP</a>
+      <ul class="other-section">
+         <li><a href="instalacin_y_configuracin.html" class="no-ch">Instalación y Configuración</a></li>
+         <li><a href="primer_ejemplo.html" class="no-ch">Primer Ejemplo</a></li>
+         <li><a href="insercin_de_cdigo_php.html" class="no-ch">Inserción de código PHP</a></li>
+         <li><a href="variables_y_tipos_de_datos.html" class="no-ch">Variables y tipos de datos</a></li>
+         <li><a href="instrucciones_bsicas.html" class="no-ch">Instrucciones básicas</a></li>
+         <li><a href="sentencias_de_control0.html" class="no-ch">Sentencias de Control</a></li>
+         <li><a href="variables_predefinidas.html" class="no-ch">Variables Predefinidas</a></li>
+         <li><a href="manipulacin_de_ficheros.html" class="daddy">Manipulación de ficheros</a>
+         <ul class="other-section">
+            <li><a href="ejemplo_lectura.html" class="no-ch">Ejemplo lectura</a></li>
+            <li><a href="actividad_escritura.html" class="no-ch">Actividad: escritura</a></li>
+         </ul>
+         </li>
+         <li><a href="cabeceras_http.html" class="no-ch">Cabeceras HTTP</a></li>
+         <li><a href="prctica__la_tienda_virtual.html" class="daddy">Práctica - La Tienda Virtual</a>
+         <ul class="other-section">
+            <li><a href="antes_de_empezar.html" class="no-ch">Antes de empezar...</a></li>
+            <li><a href="instrucciones.html" class="no-ch">Instrucciones</a></li>
+         </ul>
+         </li>
+         <li><a href="clases_y_objetos.html" class="no-ch">Clases y Objetos</a></li>
+         <li><a href="conexin_a_base_de_datos.html" class="daddy">Conexión a Base de Datos</a>
+         <ul class="other-section">
+            <li><a href="funciones_de_acceso_a_mysql.html" class="no-ch">Funciones de acceso a MySQL</a></li>
+            <li><a href="conectarse_a_mysql_diferentes_maneras.html" class="no-ch">¿Conectarse a MySQL? ...diferentes maneras</a></li>
+            <li><a href="ejemplo_de_conexin.html" class="no-ch">Ejemplo de Conexión</a></li>
+            <li><a href="ejemplo_los_continentes.html" class="no-ch">Ejemplo: Los Continentes</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="conexin_a_base_de_datos0.html" class="daddy">Conexión a Base de Datos</a>
+      <ul class="other-section">
+         <li><a href="funciones_de_acceso_a_mysql0.html" class="no-ch">Funciones de acceso a MySQL</a></li>
+         <li><a href="conectarse_a_mysql_diferentes_maneras0.html" class="no-ch">¿Conectarse a MySQL? ...diferentes maneras</a></li>
+         <li><a href="ejemplo_de_conexin0.html" class="no-ch">Ejemplo de Conexión</a></li>
+         <li><a href="ejemplo_los_continentes0.html" class="no-ch">Ejemplo: Los Continentes</a></li>
+      </ul>
+      </li>
+      <li><a href="prctica_validacin_de_formularios.html" class="daddy">Práctica: Validación de Formularios</a>
+      <ul class="other-section">
+         <li><a href="introduccin1.html" class="no-ch">Introducción</a></li>
+         <li><a href="tarea.html" class="no-ch">Tarea</a></li>
+         <li><a href="proceso.html" class="no-ch">Proceso</a></li>
+         <li><a href="recursos0.html" class="daddy">Recursos</a>
+         <ul class="other-section">
+            <li><a href="formulario_y_controles0.html" class="daddy">Formulario y Controles</a>
+            <ul class="other-section">
+               <li><a href="atributos_de_etiqueta_form.html" class="no-ch">Atributos de etiqueta FORM</a></li>
+               <li><a href="controles_de_formulario0.html" class="no-ch">Controles de Formulario</a></li>
+               <li><a href="revisando_el_cdigo.html" class="no-ch">Revisando el código</a></li>
+            </ul>
+            </li>
+            <li><a href="validaciones_bsicas_en_formulario.html" class="no-ch">Validaciones básicas en Formulario</a></li>
+         </ul>
+         </li>
+         <li><a href="evaluacin.html" class="no-ch">Evaluación</a></li>
+         <li><a href="conclusin.html" class="no-ch">Conclusión</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="controles_de_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_catlogo_de_controles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">HTML 5</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id78">
+<div class="iDevice emphasis0" >
+<div id="ta78_951_2" class="block iDevice_content">
+<div class="exe-text"><p>La versión más actual de HTML es la versión 5. HTML5 incorpora nuevas etiquetas valiosas para estructurar el cuerpo de la página web, nuevos controles de formulario que integran código javascript transparente para el desarrollador y poderosas APIs del navegador.</p>
+<p>Para definir una página en HTML5, la siguiente sentencia debe estar en la cabecera del documento. </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+<p>Esta sentencia es una versión simplificada de la larga cabecera que se tenía en versiones anteriores a la versión 5.</p>
+<h2 id="estructura-semántica">Estructura semántica</h2>
+<p>HTML 5 trae nuevas etiquetas para brindar semántica al código del contenido de la página (el código entre las etiquetas &lt;body&gt;). Estas etiquetas son:</p>
+<ul>
+<li><strong>&lt;header&gt;</strong> : Etiqueta para indicar que el contenido en ella corresponde a la cabecera de la página. No confundir con la etiqueta &lt;head&gt; que corresponde a la cabecera de una página.</li>
+<li><strong>&lt;nav&gt;</strong>: indica que el contenido en ella corresponde a la navegación</li>
+<li><strong>&lt;section&gt;</strong>: indica una sección de información principal de la página. Generalmente utilizado para contener la información más relevante del documento.</li>
+<li><strong>&lt;aside&gt;</strong>: barra lateral de una página</li>
+<li><strong>&lt;footer&gt;</strong>: pie de página</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id480">
+<div class="iDevice emphasis0" >
+<div id="ta480_109_2" class="block iDevice_content">
+<div class="exe-text"><p>La figura 1 indica algunas de estas etiquetas (header, nav, section, aside, footer) y su localización respecto a las partes de una página normal.</p>
+<p style="text-align: center;"><strong>Figura 1. Etiquetas HTML5</strong></p>
+<p style="text-align: center;"><br /><img src="HTML5_body.PNG" alt="Sectores HTML5" title="Sectores HTML5" width="523" height="548" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">NOTA: El contenido dentro de la etiqueta &lt;section&gt; es información principal de la página, pero está a su vez puede estar dividida en subseccciones. Estas subsecciones pueden ser indicadas/estructuradas mediante una etiqueta denominada &lt;article&gt;.</p>
+<p style="text-align: justify;"><br />El siguiente código muestra un ejemplo de la estructura del contenido de la página aplicando las etiquetas semánticas. Apuesto a que ahora si te puedes dar cuenta de cada una de las secciones que conforman la página. Lo importante de este código es que puedas observar el uso de las etiquetas:</p>
+<div class="highlighted-code language-markup line-numbers">
+<div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="iso-8859-1"&gt;
+    &lt;meta name="description" content="Ejemplo de HTML5"&gt;
+    &lt;meta name="keywords" content="HTML5, CSS3, JavaScript"&gt;
+    &lt;title&gt;Este texto es el título del documento&lt;/title&gt;
+    &lt;link rel="stylesheet" href="misestilos.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Este es el título principal del sitio web&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;principal&lt;/li&gt;
+            &lt;li&gt;fotos&lt;/li&gt;
+            &lt;li&gt;videos&lt;/li&gt;
+            &lt;li&gt;contacto&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;section&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;blockquote&gt;Mensaje número uno&lt;/blockquote&gt;
+        &lt;blockquote&gt;Mensaje número dos&lt;/blockquote&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        Derechos Reservados &amp;copy; 2010-2011
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id77">
+<div class="iDevice emphasis0" >
+<div id="ta77_950_2" class="block iDevice_content">
+<div class="exe-text"><h2>Validaciones básicas de formulario</h2>
+<p>Una de las grandes preocupaciones al crear formularios es la validación de cada uno de los controles que lo contienen. Por ejemplo, una caja de texto en la que el usuario debe ingresar un número de teléfono, tiene que ser validada para verificar que la información ingresada por el usuario sean números y no letras, que el número tenga una sintaxis como tal de número telefónico.</p>
+<p>En las versiones de HTML, la validación se realizaba a través de código Javascript. Era una tarea tediosa escribir código Javascript para validar cada control de formulario, más aún cuando cada control tenía su propia restricción en cuanto al ingreso de información.</p>
+<p> HTML 5 provee varios controles de formulario que se auto-validan. Es decir, controlan que la entrada de datos sea la adecuada. En otras palabras, HTML 5 incluye código Javascript de validación en los controles y este código es transparente para ti como desarrollador, ya no debes preocuparte por escribir extensas líneas de código para validar el ingreso del usuario.</p>
+<p>Algunos de los controles HTML5 se listan a continuación:</p>
+<h3 id="placeholder">placeholder</h3>
+<p>Proporciona sugerencias o ejemplo del contenido a ingresar por el usuario</p>
+<pre><code>&lt;input type="text" placeholder="Ingrese su nombre"&gt;
+</code></pre>
+<h3 id="required">required</h3>
+<p>Entrada de usuario obligatoria</p>
+<pre><code>&lt;input type="text" id="username" name="username" required&gt;
+</code></pre>
+<p>Nota: required o required="required" son correspondientes</p>
+<h3 id="autofocus">autofocus</h3>
+<p>Enfocar en el control al cargar la página</p>
+<pre><code>&lt;input name="q" autofocus /&gt;
+</code></pre>
+<h3 id="form">form</h3>
+<p>Si por un lado se tiene formulario y por otro un control <strong>button</strong> o <strong>submit</strong> fuera del formulario. El atributo <strong>form</strong> es aplicado al control para indicar que al pulsar, se envíe el formulario (aun cuando el control no está dentro del formulario) [1].</p>
+<pre><code>&lt;form id="myForm"&gt;
+Add your telephone: &lt;input type="tel" name="phone" required /&gt;&lt;br /&gt;
+&lt;/form&gt;
+
+&lt;input type="submit" form="myForm" /&gt;
+</code></pre>
+<h3 id="autocomplete">autocomplete</h3>
+<p>Permite especificar si el agente (browser) tiene permiso para permitir el autollenado de los valores de los campos de formulario. Aplicable a controles: input (con entrada numérica o texto), textarea, select, form</p>
+<pre><code>&lt;input name="lastName" id="lastName" type="text" autocomplete="family-name" /&gt;
+</code></pre>
+<p>En este contexto, también es factible utilizar un control <strong>data-list</strong> para conectar valores a un control input [2]</p>
+<pre><code>&lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt;  
+&lt;input list="browsers" name="browser" id="browser"&gt;  
+  
+&lt;datalist id="browsers"&gt;  
+  &lt;option value="Edge"&gt;  
+  &lt;option value="Firefox"&gt;  
+  &lt;option value="Chrome"&gt;  
+  &lt;option value="Opera"&gt;  
+  &lt;option value="Safari"&gt;  
+&lt;/datalist&gt;
+</code></pre>
+<h3 id="pattern">pattern</h3>
+<p>Permite indicar la expresión regular que validará la entrada del usuario.</p>
+<pre><code>Introduce tu TELEFONO con los 9 dígitos: &lt;input type="tel" name="telefono" pattern="[0-9]{9}" title="El número ingresado no cumple con el formato"&gt;
+</code></pre>
+<h3 id="min-max">min, max</h3>
+<p>Permite establecer un rango de valores permitidos. Se puede aplicar en controles tipo number, range, date, datetime-local, month, time y week [3]</p>
+<pre><code>&lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
+</code></pre>
+<h3 id="typedate">type="date"</h3>
+<p>Provee un control que permite al usuario ingresar una fecha. Soporta año, mes y día, mas no el tiempo. El tiempo es soportado por controles cuyo valor del atributo type es <strong>time</strong> y <strong>datatime-local</strong> [4]. Otros controles relacionados a fecha y tiempo son: <strong>month</strong> y <strong>week</strong></p>
+<pre><code>&lt;input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" /&gt;
+</code></pre>
+<h3 id="typerange">type="range"</h3>
+<p>Permite al usuario indicar un número dentro de un rango especificado [5].</p>
+<pre><code>&lt;input type="range" id="volume" name="volume" min="0" max="11" step="1" value="3"/&gt;
+</code></pre>
+<h3 id="typecolor">type="color"</h3>
+<p>Permite al usuario especificar un color utilizando un selector de colores.</p>
+<pre><code>&lt;input type="color" id="head" name="head" value="#e66465" /&gt;
+</code></pre>
+<h3 id="progress">&lt;progress&gt;</h3>
+<p>Etiqueta de HTML 5 que provee una barra de progreso [6]</p>
+<pre><code>&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+</code></pre>
+<h2 id="referencias">Referencias</h2>
+<ol>
+<li>Cravens, J., &amp; Burtoft, J. (2012). <em>HTML5 Hacks: Tips &amp; Tools for Creating Interactive Web Applications</em>. " O'Reilly Media, Inc.".</li>
+<li><a href="https://www.w3schools.com/tags/tag_datalist.asp">https://www.w3schools.com/tags/tag_datalist.asp</a></li>
+<li><a href="https://www.w3schools.com/tags/att_input_min.asp">https://www.w3schools.com/tags/att_input_min.asp</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date">https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_progress.asp">https://www.w3schools.com/tags/tag_progress.asp</a></li>
+</ol></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper readingIdevice em_iDevice em_iDevice_reading" id="id482">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad de Descubrimiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta482_113_4" class="block iDevice_content">
+<p>Lee el siguiente blog sobre validación de controles de formulario con HTML5.</p>
+<ul>
+<li><a href="https://cybmeta.com/validacion-de-formularios-con-html5" target="_blank" rel="noopener">https://cybmeta.com/validacion-de-formularios-con-html5</a></li>
+</ul>
+</section>
+<section id="ta482_113_5" class="block iDevice_content">
+<p>Crea una página Web con un formulario que contenga los componentes HTML5 que se menciona en el artículo. Comprueba que las validaciones funcionan.</p>
+</section>
+<form name="feedback-form-482_113_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback482_113_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-482_113_6" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-482_113_6" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Lo importante de esta actividad es que tengas en cuenta que los controles HTML 5 te permiten automáticamente realizar validaciones en el formulario.</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="controles_de_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="actividad_catlogo_de_controles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
