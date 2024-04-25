@@ -57,7 +57,6 @@
    </li>
    <li class="current-page-parent"><a href="semana_3_html_y_html5.html" class="current-page-parent daddy">SEMANA 3: HTML y HTML5</a>
    <ul>
-      <li><a href="un_poco_de_historia0.html" class="no-ch">Un poco de historia...</a></li>
       <li><a href="qu_es_html.html" class="no-ch">¿Qué es HTML?</a></li>
       <li><a href="etiquetas_bsicas.html" class="no-ch">Etiquetas básicas</a></li>
       <li><a href="etiquetas_del_header.html" class="no-ch">Etiquetas del header</a></li>
@@ -371,7 +370,12 @@
 <article class="iDevice_wrapper textIdevice" id="id78">
 <div class="iDevice emphasis0" >
 <div id="ta78_951_2" class="block iDevice_content">
-<div class="exe-text"><p>La versión más actual de HTML es la versión 5. HTML5 incorpora nuevas etiquetas valiosas para estructurar el cuerpo de la página web, nuevos controles de formulario que integran código javascript transparente para el desarrollador y poderosas APIs del navegador.</p>
+<div class="exe-text"><p>La versión más actual de HTML es la versión 5. HTML5 incorpora nuevas etiquetas valiosas para, por ejemplo:</p>
+<ul>
+<li>estructurar semánticamente el cuerpo de la página web,</li>
+<li>implementar nuevos controles validables de formulario que integran código javascript transparente para el desarrollador, y</li>
+<li>poderosas APIs del navegador.</li>
+</ul>
 <p>Para definir una página en HTML5, la siguiente sentencia debe estar en la cabecera del documento. </p>
 <pre><code>&lt;!DOCTYPE html&gt;
 </code></pre>
@@ -394,8 +398,8 @@
 <div class="exe-text"><p>La figura 1 indica algunas de estas etiquetas (header, nav, section, aside, footer) y su localización respecto a las partes de una página normal.</p>
 <p style="text-align: center;"><strong>Figura 1. Etiquetas HTML5</strong></p>
 <p style="text-align: center;"><br /><img src="HTML5_body.PNG" alt="Sectores HTML5" title="Sectores HTML5" width="523" height="548" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p style="text-align: justify;">NOTA: El contenido dentro de la etiqueta &lt;section&gt; es información principal de la página, pero está a su vez puede estar dividida en subseccciones. Estas subsecciones pueden ser indicadas/estructuradas mediante una etiqueta denominada &lt;article&gt;.</p>
-<p style="text-align: justify;"><br />El siguiente código muestra un ejemplo de la estructura del contenido de la página aplicando las etiquetas semánticas. Apuesto a que ahora si te puedes dar cuenta de cada una de las secciones que conforman la página. Lo importante de este código es que puedas observar el uso de las etiquetas:</p>
+<p style="text-align: justify;">NOTA: El contenido dentro de la etiqueta &lt;section&gt; es información principal de la página, pero ésta a su vez puede estar dividida en subseccciones. Estas subsecciones pueden ser indicadas/estructuradas mediante una etiqueta denominada &lt;article&gt;.</p>
+<p style="text-align: justify;">El siguiente código muestra un ejemplo de la estructura del contenido de la página aplicando las etiquetas semánticas. Apuesto a que ahora si te puedes dar cuenta de cada una de las secciones que conforman la página. Lo importante de este código es que puedas observar el uso de las etiquetas:</p>
 <div class="highlighted-code language-markup line-numbers">
 <div>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -446,67 +450,98 @@
 <p>En las versiones de HTML, la validación se realizaba a través de código Javascript. Era una tarea tediosa escribir código Javascript para validar cada control de formulario, más aún cuando cada control tenía su propia restricción en cuanto al ingreso de información.</p>
 <p> HTML 5 provee varios controles de formulario que se auto-validan. Es decir, controlan que la entrada de datos sea la adecuada. En otras palabras, HTML 5 incluye código Javascript de validación en los controles y este código es transparente para ti como desarrollador, ya no debes preocuparte por escribir extensas líneas de código para validar el ingreso del usuario.</p>
 <p>Algunos de los controles HTML5 se listan a continuación:</p>
-<h3 id="placeholder">placeholder</h3>
+<table class="exe-table" style="height: 130px; width: 628px;"><caption>Controles de HTML 5</caption>
+<thead>
+<tr style="height: 26px;">
+<th style="height: 26px; width: 82.8047px;">Control</th>
+<th style="height: 26px; width: 475.008px;">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 26px;">
+<td style="height: 26px; width: 82.8047px;">placeholder</td>
+<td style="height: 26px; width: 475.008px;">
 <p>Proporciona sugerencias o ejemplo del contenido a ingresar por el usuario</p>
-<pre><code>&lt;input type="text" placeholder="Ingrese su nombre"&gt;
-</code></pre>
-<h3 id="required">required</h3>
+<p>&lt;input type="text" placeholder="Ingrese su nombre"&gt;</p>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px; width: 82.8047px;">required</td>
+<td style="height: 26px; width: 475.008px;">
 <p>Entrada de usuario obligatoria</p>
-<pre><code>&lt;input type="text" id="username" name="username" required&gt;
-</code></pre>
+<p>&lt;input type="text" id="username" name="username" required&gt;</p>
 <p>Nota: required o required="required" son correspondientes</p>
-<h3 id="autofocus">autofocus</h3>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px; width: 82.8047px;">autofocus</td>
+<td style="height: 26px; width: 475.008px;">
 <p>Enfocar en el control al cargar la página</p>
-<pre><code>&lt;input name="q" autofocus /&gt;
-</code></pre>
-<h3 id="form">form</h3>
-<p>Si por un lado se tiene formulario y por otro un control <strong>button</strong> o <strong>submit</strong> fuera del formulario. El atributo <strong>form</strong> es aplicado al control para indicar que al pulsar, se envíe el formulario (aun cuando el control no está dentro del formulario) [1].</p>
-<pre><code>&lt;form id="myForm"&gt;
-Add your telephone: &lt;input type="tel" name="phone" required /&gt;&lt;br /&gt;
-&lt;/form&gt;
-
-&lt;input type="submit" form="myForm" /&gt;
-</code></pre>
-<h3 id="autocomplete">autocomplete</h3>
+<p>&lt;input name="q" autofocus /&gt;</p>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px; width: 82.8047px;">form</td>
+<td style="height: 26px; width: 475.008px;">
+<p>Si por un lado se tiene formulario y por otro un control button o submit fuera del formulario. El atributo form es aplicado al control para indicar que al pulsar, se envíe el formulario (aun cuando el control no está dentro del formulario) [1].</p>
+<p>&lt;form id="myForm"&gt;<br />Add your telephone: &lt;input type="tel" name="phone" required /&gt;&lt;br /&gt;<br />&lt;/form&gt;</p>
+<p>&lt;input type="submit" form="myForm" /&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">autocomplete</td>
+<td style="width: 475.008px;">
 <p>Permite especificar si el agente (browser) tiene permiso para permitir el autollenado de los valores de los campos de formulario. Aplicable a controles: input (con entrada numérica o texto), textarea, select, form</p>
-<pre><code>&lt;input name="lastName" id="lastName" type="text" autocomplete="family-name" /&gt;
-</code></pre>
-<p>En este contexto, también es factible utilizar un control <strong>data-list</strong> para conectar valores a un control input [2]</p>
-<pre><code>&lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt;  
-&lt;input list="browsers" name="browser" id="browser"&gt;  
-  
-&lt;datalist id="browsers"&gt;  
-  &lt;option value="Edge"&gt;  
-  &lt;option value="Firefox"&gt;  
-  &lt;option value="Chrome"&gt;  
-  &lt;option value="Opera"&gt;  
-  &lt;option value="Safari"&gt;  
-&lt;/datalist&gt;
-</code></pre>
-<h3 id="pattern">pattern</h3>
+<p>&lt;input name="lastName" id="lastName" type="text" autocomplete="family-name" /&gt;</p>
+<p>En este contexto, también es factible utilizar un control data-list para conectar valores a un control input [2]</p>
+<p>&lt;label for="browser"&gt;Choose your browser from the list:&lt;/label&gt; <br />&lt;input list="browsers" name="browser" id="browser"&gt; <br /><br />&lt;datalist id="browsers"&gt; <br />  &lt;option value="Edge"&gt; <br />  &lt;option value="Firefox"&gt; <br />  &lt;option value="Chrome"&gt; <br />  &lt;option value="Opera"&gt; <br />  &lt;option value="Safari"&gt; <br />&lt;/datalist&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">pattern</td>
+<td style="width: 475.008px;">
 <p>Permite indicar la expresión regular que validará la entrada del usuario.</p>
-<pre><code>Introduce tu TELEFONO con los 9 dígitos: &lt;input type="tel" name="telefono" pattern="[0-9]{9}" title="El número ingresado no cumple con el formato"&gt;
-</code></pre>
-<h3 id="min-max">min, max</h3>
+<p>Introduce tu TELEFONO con los 9 dígitos: &lt;input type="tel" name="telefono" pattern="[0-9]{9}" title="El número ingresado no cumple con el formato"&gt;</p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">min, max</td>
+<td style="width: 475.008px;">
 <p>Permite establecer un rango de valores permitidos. Se puede aplicar en controles tipo number, range, date, datetime-local, month, time y week [3]</p>
-<pre><code>&lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
-</code></pre>
-<h3 id="typedate">type="date"</h3>
-<p>Provee un control que permite al usuario ingresar una fecha. Soporta año, mes y día, mas no el tiempo. El tiempo es soportado por controles cuyo valor del atributo type es <strong>time</strong> y <strong>datatime-local</strong> [4]. Otros controles relacionados a fecha y tiempo son: <strong>month</strong> y <strong>week</strong></p>
-<pre><code>&lt;input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" /&gt;
-</code></pre>
-<h3 id="typerange">type="range"</h3>
+<p>&lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">type="date"</td>
+<td style="width: 475.008px;">
+<p>Provee un control que permite al usuario ingresar una fecha. Soporta año, mes y día, mas no el tiempo. El tiempo es soportado por controles cuyo valor del atributo type es time y datatime-local [4]. Otros controles relacionados a fecha y tiempo son: month y week</p>
+<p>&lt;input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" /&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">type="range"</td>
+<td style="width: 475.008px;">
 <p>Permite al usuario indicar un número dentro de un rango especificado [5].</p>
-<pre><code>&lt;input type="range" id="volume" name="volume" min="0" max="11" step="1" value="3"/&gt;
-</code></pre>
-<h3 id="typecolor">type="color"</h3>
+<p>&lt;input type="range" id="volume" name="volume" min="0" max="11" step="1" value="3"/&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">type="color"</td>
+<td style="width: 475.008px;">
 <p>Permite al usuario especificar un color utilizando un selector de colores.</p>
-<pre><code>&lt;input type="color" id="head" name="head" value="#e66465" /&gt;
-</code></pre>
-<h3 id="progress">&lt;progress&gt;</h3>
+<p>&lt;input type="color" id="head" name="head" value="#e66465" /&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 82.8047px;">&lt;progress&gt;</td>
+<td style="width: 475.008px;">
 <p>Etiqueta de HTML 5 que provee una barra de progreso [6]</p>
-<pre><code>&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
-</code></pre>
+<p>&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h2 id="referencias">Referencias</h2>
 <ol>
 <li>Cravens, J., &amp; Burtoft, J. (2012). <em>HTML5 Hacks: Tips &amp; Tools for Creating Interactive Web Applications</em>. " O'Reilly Media, Inc.".</li>

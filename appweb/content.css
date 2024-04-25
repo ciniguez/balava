@@ -157,3 +157,4 @@ li{list-style-position:outside}
 /* Estilos de Carlos  */
 .ci_div_resaltado{ border: 1px solid #A0FA8E; padding: 10px; background: #FAFA8E;}
 .ci_div_font_min { padding: 10px; background: #FAFA8E;font-size: 0.8em}
+strong {color:hsl(240, 100%, 50%, 1.0);}
