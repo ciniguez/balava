@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -13,7 +12,6 @@
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
-<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -200,13 +198,10 @@
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
          <li><a href="jstl_y_jsp.html" class="no-ch">JSTL y JSP</a></li>
          <li id="active"><a href="jstl_instalacin_y_uso.html" class="active no-ch">JSTL: Instalación y Uso</a></li>
-         <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
-      <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -355,13 +350,22 @@
          <li><a href="conclusin.html" class="no-ch">Conclusión</a></li>
       </ul>
       </li>
+      <li><a href="libreras_para_desarrollo.html" class="daddy">Librerías para desarrollo</a>
+      <ul class="other-section">
+         <li><a href="modeladores_para_eclipse.html" class="no-ch">Modeladores para Eclipse</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jakartaservlet.html" class="no-ch">Jakarta.servlet</a></li>
+         <li><a href="persistencia0.html" class="no-ch">Persistencia</a></li>
+         <li><a href="junit.html" class="no-ch">JUnit</a></li>
+      </ul>
+      </li>
    </ul>
    </li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="jstl_y_jsp.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="jsp_ejercicios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jstl_y_jsp.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="internacionalizacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -373,34 +377,13 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta755_114_2" class="block iDevice_content">
-<div class="exe-text"><p>Para instalar JSTL lo puedes hacer de dos maneras</p>
-<p><b>Opción manual</b></p>
-<ul>
-<li>Descarga las librerías <a href="http://www.java2s.com/Code/Jar/j/Downloadjstl12jar.htm" target="_blank" rel="noopener">jstl-api.jar</a> y <a href="http://www.java2s.com/Code/Jar/j/Downloadjstlimpljar.htm" target="_blank" rel="noopener">jstl-impl.jar</a>
-<ul>
-<li>O puedes descargar manualmente del <a href="https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api/1.2" target="_blank" rel="noopener">repositorio de MAVEN</a></li>
-<li>O puedes descargar del apartado JSTL de nuestro repositorio de librerías "<a href="https://ciniguez.github.io/balava/libreriasjava/" target="_blank" rel="noopener">Librerías de Desarrollo</a>"</li>
-</ul>
-</li>
-<li>Copiar los Jar en la carpeta<b> \WEB-INF\lib</b></li>
-</ul>
-<p><b>Opción MAVEN</b></p>
-<ul>
-<li>el fichero pom.xml, agrega una dependencia dentro del etiqueta &lt;dependencies&gt; (ver código ejemplo a continuación)</li>
-<li><strong>NOTA:</strong> También puedes visitar el <a href="https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api/1.2" target="_blank" rel="noopener">repositorio MAVEN</a> donde se indica el código de dependencia a incluir en el fichero pom.xml</li>
-</ul>
-<div class="highlighted-code language-markup line-numbers">
-<div>
-<pre><code>&lt;dependencies&gt;
-  	&lt;dependency&gt;
-  		&lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-  		&lt;artifactId&gt;jstl&lt;/artifactId&gt;
-  		&lt;version&gt;1.2&lt;/version&gt;
-  	&lt;/dependency&gt;
-  &lt;/dependencies&gt;</code></pre>
-</div>
-</div>
-<p></p></div>
+<div class="exe-text"><p>Para instalar JSTL:</p>
+<ol>
+<li><span style="color: #3a4749; font-size: 1.05em; text-align: left;">abre el fichero pom.xml de tu proyecto web </span></li>
+<li><span style="color: #3a4749; font-size: 1.05em; text-align: left;">ubícate dentro de la etiqueta &lt;dependencies&gt;.</span></li>
+<li><span style="color: #3a4749; font-size: 1.05em; text-align: left;">agrega la dependencia JSTL que se indica en <a href="libreras_para_desarrollo.html">Librerías de Desarrollo</a></span></li>
+</ol>
+<p><strong>NOTA:</strong> También puedes visitar el <a href="https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api/1.2" target="_blank" rel="noopener">repositorio MAVEN</a> donde se indica el código de dependencia a incluir en el fichero pom.xml</p></div>
 </div>
 </div>
 </div>
@@ -408,15 +391,15 @@
 </article>
 <article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_edia" id="id756">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(icon_edia.png)"><h1 class="iDeviceTitle">Uso de JSP</h1></header>
+<header class="iDevice_header" style="background-image:url(icon_edia.png)"><h1 class="iDeviceTitle">Uso de JSTL en la JSP</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta756_115_2" class="block iDevice_content">
 <div class="exe-text"><ul>
 <li>Añadir
 <ul>
-<li><span style="font-size: 12pt;"><code>&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%&gt;</code></span></li>
-<li><span style="font-size: 12pt;"><code>&lt;%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %&gt;</code></span></li>
+<li><span style="font-size: 12pt;"><code>&lt;%@ taglib prefix="c" uri="jakarta.tags.core"%&gt;</code></span></li>
+<li><span style="font-size: 12pt;"><code>&lt;%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %&gt;</code></span></li>
 </ul>
 </li>
 <li>Se crea una variable: c:set (alcance: page, request, session, application)
@@ -452,7 +435,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="jstl_y_jsp.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="jsp_ejercicios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="jstl_y_jsp.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="internacionalizacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

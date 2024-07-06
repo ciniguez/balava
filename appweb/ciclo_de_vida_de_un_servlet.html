@@ -198,13 +198,10 @@
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
          <li><a href="jstl_y_jsp.html" class="no-ch">JSTL y JSP</a></li>
          <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
-         <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
-      <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -353,6 +350,15 @@
          <li><a href="conclusin.html" class="no-ch">Conclusión</a></li>
       </ul>
       </li>
+      <li><a href="libreras_para_desarrollo.html" class="daddy">Librerías para desarrollo</a>
+      <ul class="other-section">
+         <li><a href="modeladores_para_eclipse.html" class="no-ch">Modeladores para Eclipse</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jakartaservlet.html" class="no-ch">Jakarta.servlet</a></li>
+         <li><a href="persistencia0.html" class="no-ch">Persistencia</a></li>
+         <li><a href="junit.html" class="no-ch">JUnit</a></li>
+      </ul>
+      </li>
    </ul>
    </li>
 </ul>
@@ -368,30 +374,40 @@
 <article class="iDevice_wrapper textIdevice" id="id738">
 <div class="iDevice emphasis0" >
 <div id="ta738_108_2" class="block iDevice_content">
-<div class="exe-text"><div class="exe-figure exe-image position-center license-copyright" style="width: 800px;"><img src="cicloVida.png" alt="CicloVidaServlet" width="800" height="237" />
+<div class="exe-text"><p>Para implementar un servlet, se require de un paquete (librería) denominado <strong>jakarta.servlet</strong> (<em>en el gráfico está el nombre javax.servlet, sin embargo, en el año 2024 fue cambiado de javax a jakarta</em>). El paquete jakarta.servlet contiene todo lo necesario para implementar nuestros servlets. En efecto, contiene tres clases de interés:  <strong>HttpServlet</strong>, <strong>HttpServletRequest</strong> y <strong>HttpServletResponse</strong>.</p>
+<p>Para crear un servlet, <strong>debemos heredar de la clase HttpServlet</strong>. De esta manera heredaremos cuatro métodos que no son más que el <strong>ciclo de vida de un servlet</strong>. Es importante mencionar que cuando creas un servlet, se crea una única instancia que responde a todas las peticiones que el servidor recibe. Es decir, no se crea una instancia por cada petición entrante.</p>
+<div class="exe-figure exe-image position-center license-copyright" style="width: 800px;"></div>
+<div class="exe-figure exe-image position-center license-copyright" style="width: 800px;"><img src="cicloVida.png" alt="CicloVidaServlet" width="800" height="237" />
 <div class="figcaption"><span class="author">Carlos Iñiguez</span> <span class="license"><span class="sep">(</span><span>Todos los derechos reservados</span><span class="sep">)</span></span></div>
+</div></div>
 </div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_write" id="id119">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_write.png)"><h1 class="iDeviceTitle">Resumen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta119_1115_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Existe una sola instancia para todas las peticiones: se crea un hilo por petición.¡Cuidado con la concurrencia!</li>
+<li>El ciclo de vida de servlet está representado por sus cuatro métodos : init(), service(), destroy()
 <ul>
-<li>Existe una sola instancia para todas las peticiones: se crea un hilo por petición.
-<ul>
-<li>¡Cuidado con la concurrencia!</li>
-</ul>
-</li>
-<li>El ciclo de vida de servlet está representado por sus cuatro métodos : <b>init</b>(), <span style="color: #f25c11;"><b>service</b></span>(), <b>destroy</b>()
-<ul>
-<li><b>init</b>(): una sola vez, cuando se crea</li>
-<li><b>service ():</b> es donde el usuario interactúa con el servlet. Service comprende (cada vez que existe una petición):
+<li>init(): se ejecuta una sola vez, cuando se crea el servlet</li>
+<li>service (): es donde el usuario interactúa con el servlet. Service comprende (cada vez que existe una petición) cuatro métodos:
 <ul>
 <li>doGet()</li>
-<li><b>doPost</b>()</li>
-<li><b>doPut</b>()</li>
-<li><b>doDelete</b>()</li>
+<li>doPost()</li>
+<li>doPut()</li>
+<li>doDelete()</li>
 </ul>
 </li>
-<li><b>destroy</b>(): una sola vez, cuando se destruye</li>
+<li>destroy(): se ejecuta una sola vez, cuando se destruye</li>
 </ul>
 </li>
 </ul></div>
+</div>
+</div>
 </div>
 </div>
 </article>

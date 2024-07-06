@@ -198,13 +198,10 @@
          <li><a href="cdigo_java_de_jsp_no_recomendado.html" class="no-ch">Código Java de JSP: No recomendado</a></li>
          <li><a href="jstl_y_jsp.html" class="no-ch">JSTL y JSP</a></li>
          <li><a href="jstl_instalacin_y_uso.html" class="no-ch">JSTL: Instalación y Uso</a></li>
-         <li><a href="jsp_ejercicios.html" class="no-ch">JSP: Ejercicios</a></li>
       </ul>
       </li>
       <li><a href="internacionalizacin.html" class="no-ch">Internacionalización</a></li>
       <li><a href="aplicando_mvc_con_java.html" class="no-ch">Aplicando MVC con JAVA</a></li>
-      <li><a href="ejercicio_tutorias.html" class="no-ch">Ejercicio: Tutorias</a></li>
-      <li><a href="prctica_docente.html" class="no-ch">Práctica docente</a></li>
    </ul>
    </li>
    <li><a href="semana_10_persistencia_con_jdbc.html" class="daddy">SEMANA 10: Persistencia con JDBC</a>
@@ -353,6 +350,15 @@
          <li><a href="conclusin.html" class="no-ch">Conclusión</a></li>
       </ul>
       </li>
+      <li><a href="libreras_para_desarrollo.html" class="daddy">Librerías para desarrollo</a>
+      <ul class="other-section">
+         <li><a href="modeladores_para_eclipse.html" class="no-ch">Modeladores para Eclipse</a></li>
+         <li><a href="jstl.html" class="no-ch">JSTL</a></li>
+         <li><a href="jakartaservlet.html" class="no-ch">Jakarta.servlet</a></li>
+         <li><a href="persistencia0.html" class="no-ch">Persistencia</a></li>
+         <li><a href="junit.html" class="no-ch">JUnit</a></li>
+      </ul>
+      </li>
    </ul>
    </li>
 </ul>
@@ -368,50 +374,28 @@
 <article class="iDevice_wrapper FreeTextIdevice" id="id748">
 <div class="iDevice emphasis0">
 <div id="ta748_1" class="block iDevice_content">
-
-<p>
-<font size="3"></font>
-</p>
-<p align="center">
-<i><font face="georgia,palatino" size="3">JavaBean o bean es un componente hecho en software que se puede reutilizar y que puede ser manipulado visualmente por una herramienta de programación en lenguaje Java.</font></i>
-</p>
-<p align="right">
-<i><font face="georgia,palatino" size="3">Sun Microsystems. </font></i>
-</p>
-<p>
-<font size="3">Un JabaBean no son más que  clases Java simples (<font color="#993300">POJOs</font> = </font><font size="3"><i><font face="georgia,palatino">Plain Old Java Object</font></i></font><font size="3">) que cumplen 3 criterios específicos:</font>
-</p>
+<p><i style="font-size: 1.05em;"><span style="font-family: georgia,palatino; font-size: medium;">JavaBean o bean es un componente hecho en software que se puede reutilizar y que puede ser manipulado visualmente por una herramienta de programación en lenguaje Java.</span></i><br /><span style="font-size: medium;"></span></p>
+<p align="right"><i><span style="font-family: georgia,palatino; font-size: medium;">Sun Microsystems. </span></i></p>
+<p><span style="font-size: medium;">Un JabaBean no es más que una clase Java simple (<span style="color: #993300;">POJOs</span> = </span><span style="font-size: medium;"><i><span style="font-family: georgia,palatino;">Plain Old Java Object</span></i></span><span style="font-size: medium;">) que cumplen 3 criterios específicos:</span></p>
 <ul>
-	<li><font size="3"><b>Debe tener sus propiedades privadas</b>.- Se debe crear los getters y setters para su acceso.</font>
-	<ul>
-		<li><font size="3">Está basado en propiedades con el estilo setPropiedad y getPropiedad o isPropiedad.</font></li>
-	</ul>
-	</li>
-	<li><font size="3"><b>Debe ser serializable</b>.- implementar el interface <b><font color="#993300" face="courier new,courier">java.util.Serializable</font></b>.</font>
-	<ul>
-		<li><i><font size="3"><font face="georgia,palatino">Serializable es un interfaz para serializar el objeto y poderlos almacenar en fichero o enviar por la red.</font> </font></i></li>
-	</ul>
-	</li>
-	<li><font size="3"><b>Deben tener un </b><u><b>constructor sin argumentos</b></u><b>.- </b>Es necesario el constructor sin argumentos, sin embargo puede tener más constructores.</font></li>
+<li><span style="font-size: medium;"><strong>Debe tener sus propiedades privadas</strong>.- Se debe crear los getters y setters para su acceso.</span>
+<ul>
+<li><span style="font-size: medium;">Está basado en propiedades con el estilo setPropiedad y getPropiedad o isPropiedad.</span></li>
 </ul>
-<p>
-<font size="3">Adicionalmente, es importante mencionar que los JavaBeans o Beans, deben situarse en un</font><font size="3"> paquete, ej. beans</font><font size="3">.</font>
-</p>
-<p>
-<font size="3">A continuación, veremos un ejemplo de un POJO representando a una Persona.</font>
-</p>
-<p>
-&nbsp;
-</p>
-<div style="text-align: center">
-<img src="Captura_de_pantalla_2014-12-29_a_la(s)_12.56.58.png" height="484" width="522" />
-</div>
-<br />
-<p>
-&nbsp;
-</p>
-<font size="3"></font>
-
+</li>
+<li><span style="font-size: medium;"><strong>Debe ser serializable</strong>.- implementar el interface <b><span style="color: #993300; font-family: courier new,courier;">java.util.Serializable</span></b>.</span>
+<ul>
+<li><i><span style="font-size: medium;"><span style="font-family: georgia,palatino;">Serializable es un interfaz para serializar el objeto y poderlos almacenar en fichero o enviar por la red.</span> </span></i></li>
+</ul>
+</li>
+<li><span style="font-size: medium;"><strong>Deben tener un <u>constructor sin argumentos</u></strong><b>.- </b>Es necesario el constructor sin argumentos, sin embargo puede tener más constructores.</span></li>
+</ul>
+<p><span style="font-size: medium;">Adicionalmente, es importante mencionar que los JavaBeans o Beans, deben situarse en un</span><span style="font-size: medium;"> paquete, ej. beans</span><span style="font-size: medium;">. </span><span style="font-size: medium;">A continuación, veremos un ejemplo de un POJO representando a una Persona.</span></p>
+<p> </p>
+<div style="text-align: center;"><img src="Captura_de_pantalla_2014-12-29_a_la(s)_12.56.58.png" height="484" width="522" /></div>
+<p></p>
+<p> </p>
+<p><span style="font-size: medium;"></span></p>
 </div>
 </div>
 </article>
